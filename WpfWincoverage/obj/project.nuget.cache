@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fw+lFiHdSJSKl9OECJM2zPJzQyypMJhkMpry15yR/Gv+72aOJcLRau+IdjkgxLbKz+43sE4bXL4KXcbDt8obTg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leandrov\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leandrov\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.114.3\\stub.system.data.sqlite.core.netstandard.1.0.114.3.nupkg.sha512",
+    "C:\\Users\\leandrov\\.nuget\\packages\\system.data.sqlite.core\\1.0.114.3\\system.data.sqlite.core.1.0.114.3.nupkg.sha512"
+  ],
+  "logs": []
+}
