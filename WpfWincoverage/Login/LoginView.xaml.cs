@@ -44,25 +44,46 @@ namespace WpfWincoverage.Login
             LoginFrame.Content = new ForgotPassView(MainFrame);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonChange_Click(object sender, RoutedEventArgs e)
         {
-            userBox.Visibility = Visibility.Hidden;
-            passBox.Visibility = Visibility.Hidden;
-            mensaje.Visibility = Visibility.Hidden;
-            labelPass.Visibility = Visibility.Hidden;
-            labelUser.Visibility = Visibility.Hidden;
-            loginButton.Visibility = Visibility.Hidden;
-            forgotButton.Visibility = Visibility.Hidden;
-            buttonChange.Visibility = Visibility.Hidden;
-            LoginFrame.Content = new ChangePass(MainFrame,true);
+            if (string.IsNullOrEmpty(userBox.Text))
+                MessageBox.Show("Complete user information", "Information");
+            else if (string.IsNullOrEmpty(passBox.Password))
+                MessageBox.Show("Complete password information", "Information");
+            else 
+            {
+                userBox.Visibility = Visibility.Hidden;
+                passBox.Visibility = Visibility.Hidden;
+                mensaje.Visibility = Visibility.Hidden;
+                labelPass.Visibility = Visibility.Hidden;
+                labelUser.Visibility = Visibility.Hidden;
+                loginButton.Visibility = Visibility.Hidden;
+                forgotButton.Visibility = Visibility.Hidden;
+                buttonChange.Visibility = Visibility.Hidden;
+                LoginFrame.Content = new ChangePass(MainFrame, true);
+            }          
 
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            WelcomeProfile welcomeProfile = new WelcomeProfile();
-            welcomeProfile.Show();
-            windowHome.Close();
+            if (string.IsNullOrEmpty(userBox.Text))
+                MessageBox.Show("Complete user information", "Information");
+            else if (string.IsNullOrEmpty(passBox.Password))
+                MessageBox.Show("Complete password information", "Information");
+            else
+            {
+                if (userBox.Text == "admin")
+                    new UserModel(userBox.Text);    
+                if (userBox.Text == "terre")
+                    new UserModel(userBox.Text);
+                if (userBox.Text == "inge")
+                    new UserModel(userBox.Text);
+
+                WelcomeProfile welcomeProfile = new WelcomeProfile();
+                welcomeProfile.Show();
+                windowHome.Close();
+            }
         }
     }
 }

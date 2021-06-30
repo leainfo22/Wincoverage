@@ -93,7 +93,7 @@ namespace WpfWincoverage.Login {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfWincoverage;V1.0.0.0;component/login/changepass.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfWincoverage;component/login/changepass.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Login\ChangePass.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

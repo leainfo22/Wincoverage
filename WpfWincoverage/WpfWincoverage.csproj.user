@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Configuration\NewUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Configuration\UserManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login\ChangePass.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +30,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Configuration\NewUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Configuration\UserManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Login\ChangePass.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -36,3 +36,45 @@ D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug
 D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ChangePass.baml
 D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.g.cs
 D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\UserManagement.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ChangePass.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ForgotPassView.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\HomeView.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\LoginView.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage_MarkupCompile.cache
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage_MarkupCompile.lref
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\WpfWincoverage.exe
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\WpfWincoverage.deps.json
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\WpfWincoverage.runtimeconfig.json
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\WpfWincoverage.runtimeconfig.dev.json
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\WpfWincoverage.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\ref\WpfWincoverage.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\WpfWincoverage.pdb
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\System.Data.SQLite.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\UserManagement.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ChangePass.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ForgotPassView.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\HomeView.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\LoginView.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.g.resources
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.AssemblyInfoInputs.cache
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.AssemblyInfo.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.csproj.CoreCompileInputs.cache
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.csproj.CopyComplete
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\ref\WpfWincoverage.dll
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.pdb
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.genruntimeconfig.cache
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.csproj.AssemblyReference.cache
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\NewUser.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\NewUser.baml

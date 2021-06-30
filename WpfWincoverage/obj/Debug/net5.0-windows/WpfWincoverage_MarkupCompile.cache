@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\
 WpfWincoverage
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\App.xaml
-6-999200707
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\App.xaml
+8336102586
 
-8909162037
+111901892067
 1941514418192
-Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;WelcomeProfile.xaml;
+Configuration\NewUser.xaml;Configuration\UserManagement.xaml;Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;WelcomeProfile.xaml;
 
 False
 

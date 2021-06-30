@@ -7,28 +7,28 @@
         mc:Ignorable="d"
         Title="WelcomeProfile" Height="450" Width="800">
     <Grid>
-        <Menu IsMainMenu="True" VerticalAlignment="Top">
-            <MenuItem Header="_Login">
-                <MenuItem Header="_Log in" Click="Login_Click"/>
-                <MenuItem Header="_Log out" />
+        <Menu x:Name="mainMenu" IsMainMenu="True" VerticalAlignment="Top">
+            <MenuItem x:Name="loginMenu" Header="_Login" Click="menu_Click">
+                <MenuItem Header="_Log in"/>
+                <MenuItem Header="_Log out" Click="Logout_Click"/>
                 <Separator />
                 <MenuItem Header="_Exit"/>
             </MenuItem>
-            <MenuItem Header="_Configuration">
-                <MenuItem Header="_User Management"/>
+            <MenuItem x:Name="configMenu" Header="_Configuration">
+                <MenuItem x:Name="userMenu" Header="_User Management" Click="userManagement_Click" />
                 <MenuItem Header="_Language"/>
-                <MenuItem Header="_CPE/AP Management"/>
-                <MenuItem Header="_GPS Management"/>
-                <MenuItem Header="_Site/Location Management"/>
-                <MenuItem Header="_Vector Managemet"/>
-                <MenuItem Header="_Channels Management"/>
+                <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management"/>
+                <MenuItem  x:Name="GPSMenu" Header="_GPS Management"/>
+                <MenuItem  x:Name="siteMenu" Header="_Site/Location Management"/>
+                <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet"/>
+                <MenuItem  x:Name="channelMenu" Header="_Channels Management"/>
             </MenuItem>
-            <MenuItem Header="_Coverage Measure">
+            <MenuItem x:Name="winMenu" Header="_Coverage Measure" Click="menu_Click">
                 <MenuItem Header="_Local Project Configuration"/>
                 <MenuItem Header="_Datalogger Configuration"/>
                 <MenuItem Header="_Local Project Capture"/>
                 <MenuItem Header="_Datalogger Extport"/>
-                <MenuItem Header="_Conversion">
+                <MenuItem x:Name="converMenu" Header="_Conversion">
                     <MenuItem Header="_Project to KML"/>
                     <MenuItem Header="_Project to XMS"/>
                     <MenuItem Header="_XLS->KML / KML->XLS"/>
@@ -37,9 +37,9 @@
                     <MenuItem Header="_Project Configuration"/>
                     <MenuItem Header="_Project Result"/>
                 </MenuItem>
-                <MenuItem Header="_Project comparation"/>
+                <MenuItem x:Name="compaMenu"  Header="_Project comparation"/>
             </MenuItem>
-            <MenuItem Header="_Help" >
+            <MenuItem x:Name="helpMenu" Header="_Help"  Click="menu_Click">
                 <MenuItem Header="_Help and troubleshooting"/>
                 <MenuItem Header="_Tickets and support"/>
                 <MenuItem Header="_Hardware validation"/>
@@ -47,21 +47,25 @@
                 <MenuItem Header="_Feedback"/>
             </MenuItem>
         </Menu>
-        <Image HorizontalAlignment="Right" Height="33" Margin="0,58,22,0" VerticalAlignment="Top" Width="208" RenderTransformOrigin="1.5,0.5" Source="/Login/logoGeyser.JPG">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="logoGeyser.JPG"/>
-            </Image.OpacityMask>
-        </Image>
-        <Image HorizontalAlignment="Center" Height="60" VerticalAlignment="Top" Width="406" RenderTransformOrigin="1.5,0.5" Source="/Login/logoGeyser.JPG" Margin="0,157,0,0">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="logoGeyser.JPG"/>
-            </Image.OpacityMask>
-        </Image>
-        <Frame x:Name="Main" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
-        <Label Content="Welcome XXXX " HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial"/>
-        <Button Content="Local" HorizontalAlignment="Left" Margin="643,0,0,0" VerticalAlignment="Center"/>
-        <Button Content="Datalogger Configuration" HorizontalAlignment="Left" Margin="641,244,0,0" VerticalAlignment="Top"/>
-        <Button Content="Dataogger Extraction" HorizontalAlignment="Left" Margin="639,289,0,0" VerticalAlignment="Top"/>
+        
+        <Canvas SizeChanged="Canvas_SizeChanged">
+            <Image x:Name="imageMain2" Canvas.Top="5" Canvas.Left="530" Height="33" Margin="0,58,22,0" Width="208" RenderTransformOrigin="1.5,0.5" Source="/Login/logoGeyser.JPG">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="logoGeyser.JPG"/>
+                </Image.OpacityMask>
+            </Image>
+            <Image x:Name="imageMain" Canvas.Top="5" Canvas.Left="200"  Height="60" Width="406" RenderTransformOrigin="1.5,0.5" Source="/Login/logoGeyser.JPG" Margin="0,157,0,0">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="logoGeyser.JPG"/>
+                </Image.OpacityMask>
+            </Image>
+            <Frame x:Name="Main" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
+            <Label x:Name="labelText" Content="Welcome XXXX " Margin="0,281,0,0" FontSize="20" FontFamily="Arial" Canvas.Top="5" Canvas.Left="320"/>
+            <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" />
+            <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610"/>
+            <Button x:Name="button3" Content="Dataogger Extraction" Canvas.Top="350" Canvas.Left="610" />
+        </Canvas>
+        
 
     </Grid>
 </Window>

@@ -67,33 +67,20 @@ namespace WpfWincoverage
             Main.Content = new Login.HomeView();
         }
 
-        private void timerSession_Tick(object sender, EventArgs e)
-        {
-            const string message = "Your session expired.";
-            const string caption = "Attention";
-            var result = MessageBox.Show(message, caption);
-            this.Show();
-            isLogin = "NO";
-            timerSession.Enabled = false;
-            InitializeComponent();
-        }
+
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new Login.LoginView(Main, Application.Current.MainWindow);
-            //userBox.Visibility = Visibility.Visible;
-            //passBox.Visibility = Visibility.Visible;
-
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Close();
+
             //userBox.Visibility = Visibility.Visible;
             //passBox.Visibility = Visibility.Visible;
-
         }
-
 
     }
 }

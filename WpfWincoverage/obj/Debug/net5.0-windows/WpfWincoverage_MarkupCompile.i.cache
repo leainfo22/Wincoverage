@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\App.xaml
-6-999200707
+8336102586
 
-10-113602185
+13879127845
 1941514418192
-Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;WelcomeProfile.xaml;
+Configuration\NewUser.xaml;Configuration\UserManagement.xaml;Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;WelcomeProfile.xaml;
 
 False
 
