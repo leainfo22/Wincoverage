@@ -14,21 +14,25 @@
                 <ImageBrush ImageSource="logoGeyser.JPG"/>
             </Image.OpacityMask>
         </Image>
-        <Label Content="New Managemente" Canvas.Left="194" Canvas.Top="54" FontSize="36" FontFamily="Arial"/>
-        <Button Content="Save and new" Canvas.Left="400" Canvas.Top="353" Height="35" Width="93" RenderTransformOrigin="0.468,-0.968"/>
-        <Button Content="Save and close" Canvas.Left="586" Canvas.Top="353" Width="105" Height="35"/>
+        <Label x:Name="labelMnj" Content="New User" Canvas.Left="362" Canvas.Top="54" FontSize="36" FontFamily="Arial"/>
+        <Button x:Name="saveNew" Content="Save and new" Canvas.Left="400" Canvas.Top="317" Height="35" Width="93" RenderTransformOrigin="0.468,-0.968" Click="Button_Click_1"/>
+        <Button Content="Save and close" Canvas.Left="586" Canvas.Top="317" Width="105" Height="35" Click="Button_Click"/>
         <Label Content="User" Canvas.Left="118" Canvas.Top="143"/>
         <Label Content="Name" Canvas.Left="118" Canvas.Top="199" RenderTransformOrigin="0.585,0.172"/>
         <Label Content="Email" Canvas.Left="118" Canvas.Top="249"/>
         <Label Content="Phone" Canvas.Left="530" Canvas.Top="143"/>
         <Label Content="Charge" Canvas.Left="530" Canvas.Top="199"/>
         <Label Content="Rol" Canvas.Left="530" Canvas.Top="249"/>
-        <TextBox Canvas.Left="194" Canvas.Top="151" Text="TextBox" TextWrapping="Wrap" Width="120"/>
-        <TextBox Canvas.Left="194" Canvas.Top="203" Text="TextBox" TextWrapping="Wrap" Width="120" RenderTransformOrigin="0.497,0.764"/>
-        <TextBox Canvas.Left="194" Canvas.Top="253" Text="TextBox" TextWrapping="Wrap" Width="120"/>
-        <TextBox Canvas.Left="586" Canvas.Top="151" Text="TextBox" TextWrapping="Wrap" Width="120"/>
-        <TextBox Canvas.Left="586" Canvas.Top="203" Text="TextBox" TextWrapping="Wrap" Width="120"/>
-        <TextBox Canvas.Left="586" Canvas.Top="253" Text="TextBox" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="texboxUser" Canvas.Left="194" Canvas.Top="151" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="texboxName" Canvas.Left="194" Canvas.Top="203" TextWrapping="Wrap" Width="120" RenderTransformOrigin="0.497,0.764"/>
+        <TextBox x:Name="texboxEmail" Canvas.Left="194" Canvas.Top="253" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="texboxPhone" Canvas.Left="586" Canvas.Top="151" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="texboxCharge" Canvas.Left="586" Canvas.Top="203"  TextWrapping="Wrap" Width="120"/>
+        <ComboBox x:Name="comboBox" Canvas.Left="586" Canvas.Top="249" Width="120">
+            <ComboBoxItem>Admin</ComboBoxItem>
+            <ComboBoxItem>Engineer</ComboBoxItem>
+            <ComboBoxItem>Technical</ComboBoxItem>
+        </ComboBox>
 
     </Canvas>
 </Page>

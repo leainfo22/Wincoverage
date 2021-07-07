@@ -36,11 +36,6 @@ D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug
 D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ChangePass.baml
 D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.g.cs
 D:\lvasquez\Documents\Visual Studio 2019\WpfWincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.baml
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\UserManagement.g.cs
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ChangePass.g.cs
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ForgotPassView.g.cs
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\HomeView.g.cs
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\LoginView.g.cs
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.g.cs
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\App.g.cs
@@ -58,11 +53,6 @@ C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windo
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\UserManagement.baml
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ChangePass.baml
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\ForgotPassView.baml
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\HomeView.baml
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Login\LoginView.baml
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\MainWindow.baml
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WelcomeProfile.baml
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.g.resources
@@ -76,5 +66,17 @@ C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windo
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.pdb
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.genruntimeconfig.cache
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\WpfWincoverage.csproj.AssemblyReference.cache
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\NewUser.g.cs
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Configuration\NewUser.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\NewUser.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\UserManagement.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\ChangePass.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\ForgotPassView.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\HomeView.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\LoginView.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\NewUser.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\UserManagement.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\ChangePass.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\ForgotPassView.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\HomeView.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\LoginView.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\cpeapManagement.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\cpeapManagement.baml

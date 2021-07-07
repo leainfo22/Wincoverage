@@ -76,6 +76,9 @@ namespace WpfWincoverage
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
+            const string message = "Thanks for using Wincoverage.";
+            const string caption = "Attention";
+            var result = MessageBox.Show(message, caption);
             Close();
 
             //userBox.Visibility = Visibility.Visible;

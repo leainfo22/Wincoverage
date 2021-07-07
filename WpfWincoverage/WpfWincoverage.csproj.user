@@ -7,22 +7,25 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Configuration\NewUser.xaml.cs">
+    <Compile Update="Views\Configuration\cpeapManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Configuration\UserManagement.xaml.cs">
+    <Compile Update="Views\Configuration\NewUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login\ChangePass.xaml.cs">
+    <Compile Update="Views\Configuration\UserManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login\ForgotPassView.xaml.cs">
+    <Compile Update="Views\Login\ChangePass.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login\HomeView.xaml.cs">
+    <Compile Update="Views\Login\ForgotPassView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Login\LoginView.xaml.cs">
+    <Compile Update="Views\Login\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login\LoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="WelcomeProfile.xaml.cs">
@@ -30,22 +33,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Configuration\NewUser.xaml">
+    <Page Update="Views\Configuration\cpeapManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Configuration\UserManagement.xaml">
+    <Page Update="Views\Configuration\NewUser.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\ChangePass.xaml">
+    <Page Update="Views\Configuration\UserManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\ForgotPassView.xaml">
+    <Page Update="Views\Login\ChangePass.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\HomeView.xaml">
+    <Page Update="Views\Login\ForgotPassView.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Login\LoginView.xaml">
+    <Page Update="Views\Login\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login\LoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

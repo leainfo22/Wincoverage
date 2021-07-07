@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfWincoverage.Models;
 
 namespace WpfWincoverage
 {
@@ -29,17 +30,17 @@ namespace WpfWincoverage
             //timerSession.Elapsed += timerSession_Tick;
             dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(timerSession_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 45);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
             //dispatcherTimer.Start();
 
             InitializeComponent();
 
-            if (UserModel.rol == "inge")
+            if (UserCurrentModel.rol == "inge")
             {
                 configMenu.Items.Remove(userMenu);
 
             }
-            if (UserModel.rol == "terre") 
+            if (UserCurrentModel.rol == "terre") 
             {
                 configMenu.Items.Remove(userMenu);
                 configMenu.Items.Remove(CPEMenu);
@@ -71,18 +72,33 @@ namespace WpfWincoverage
             button1.Visibility = Visibility.Hidden;
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
-            Main.Content = new Configuration.UserManagement();
+            Main.Content = new Configuration.UserManagement(Main);
         }
-        
+
+        private void CPEAP_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Configuration.cpeapManagement();
+        }
+
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logout", "Logout");
             dispatcherTimer.Stop();
+            foreach (Window w in Application.Current.Windows)
+            {
+                w.Hide();
+            }
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
         }
-        /**/private void menu_Click(object sender, RoutedEventArgs e) 
+        private void menu_Click(object sender, RoutedEventArgs e) 
         {
             //reseTimer();
         }

@@ -1,11 +1,12 @@
 ﻿
 
-FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Configuration\UserManagement.xaml;;
-FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Login\ChangePass.xaml;;
-FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Login\ForgotPassView.xaml;;
-FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Login\HomeView.xaml;;
-FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Login\LoginView.xaml;;
 FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\MainWindow.xaml;;
 FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\WelcomeProfile.xaml;;
-FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Configuration\NewUser.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\NewUser.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\UserManagement.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Login\ChangePass.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Login\ForgotPassView.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Login\HomeView.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Login\LoginView.xaml;;
+FC:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\cpeapManagement.xaml;;
 

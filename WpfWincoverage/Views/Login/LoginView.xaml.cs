@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfWincoverage.Models;
 
 namespace WpfWincoverage.Login
 {
@@ -74,11 +75,11 @@ namespace WpfWincoverage.Login
             else
             {
                 if (userBox.Text == "admin")
-                    new UserModel(userBox.Text);    
+                    UserCurrentModel.rol = userBox.Text;    
                 if (userBox.Text == "terre")
-                    new UserModel(userBox.Text);
+                    UserCurrentModel.rol = userBox.Text;
                 if (userBox.Text == "inge")
-                    new UserModel(userBox.Text);
+                    UserCurrentModel.rol = userBox.Text;
 
                 WelcomeProfile welcomeProfile = new WelcomeProfile();
                 welcomeProfile.Show();

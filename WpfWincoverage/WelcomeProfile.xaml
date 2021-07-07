@@ -1,12 +1,13 @@
-﻿<Window x:Class="WpfWincoverage.WelcomeProfile"
+﻿<Window x:Name="WelcomeWindowName" x:Class="WpfWincoverage.WelcomeProfile"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfWincoverage"
         mc:Ignorable="d"
-        Title="WelcomeProfile" Height="450" Width="800">
-    <Grid>
+        Title="WelcomeProfile" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    
+  <Canvas SizeChanged="Canvas_SizeChanged">
         <Menu x:Name="mainMenu" IsMainMenu="True" VerticalAlignment="Top">
             <MenuItem x:Name="loginMenu" Header="_Login" Click="menu_Click">
                 <MenuItem Header="_Log in"/>
@@ -17,7 +18,7 @@
             <MenuItem x:Name="configMenu" Header="_Configuration">
                 <MenuItem x:Name="userMenu" Header="_User Management" Click="userManagement_Click" />
                 <MenuItem Header="_Language"/>
-                <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management"/>
+                <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management" Click="CPEAP_Click"/>
                 <MenuItem  x:Name="GPSMenu" Header="_GPS Management"/>
                 <MenuItem  x:Name="siteMenu" Header="_Site/Location Management"/>
                 <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet"/>
@@ -48,13 +49,13 @@
             </MenuItem>
         </Menu>
         
-        <Canvas SizeChanged="Canvas_SizeChanged">
-            <Image x:Name="imageMain2" Canvas.Top="5" Canvas.Left="530" Height="33" Margin="0,58,22,0" Width="208" RenderTransformOrigin="1.5,0.5" Source="/Login/logoGeyser.JPG">
+        
+            <Image x:Name="imageMain2" Canvas.Top="5" Canvas.Left="530" Height="33" Margin="0,58,22,0" Width="208" RenderTransformOrigin="1.5,0.5" Source="/logoGeyser.JPG">
                 <Image.OpacityMask>
                     <ImageBrush ImageSource="logoGeyser.JPG"/>
                 </Image.OpacityMask>
             </Image>
-            <Image x:Name="imageMain" Canvas.Top="5" Canvas.Left="200"  Height="60" Width="406" RenderTransformOrigin="1.5,0.5" Source="/Login/logoGeyser.JPG" Margin="0,157,0,0">
+            <Image x:Name="imageMain" Canvas.Top="5" Canvas.Left="200"  Height="60" Width="406" RenderTransformOrigin="1.5,0.5" Source="/logoGeyser.JPG" Margin="0,157,0,0">
                 <Image.OpacityMask>
                     <ImageBrush ImageSource="logoGeyser.JPG"/>
                 </Image.OpacityMask>
@@ -64,8 +65,5 @@
             <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" />
             <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610"/>
             <Button x:Name="button3" Content="Dataogger Extraction" Canvas.Top="350" Canvas.Left="610" />
-        </Canvas>
-        
-
-    </Grid>
+        </Canvas>       
 </Window>
