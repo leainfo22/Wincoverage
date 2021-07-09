@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Configuration\cpeapEditAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Configuration\cpeapManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +36,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\Configuration\cpeapEditAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Configuration\cpeapManagement.xaml">
       <SubType>Designer</SubType>
     </Page>

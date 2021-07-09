@@ -171,9 +171,9 @@ namespace WpfWincoverage.Database
             return coutCPE;
         }
 
-        public static List<CPEAP> getAPList(int limit, int offset)
+        public static List<CPEAModel> getAPList(int limit, int offset)
         {
-            List<CPEAP> listProfiel = new List<CPEAP>();
+            List<CPEAModel> listProfiel = new List<CPEAModel>();
             try
             {
                 using (var connection = new SQLiteConnection(stringConnection))
@@ -189,7 +189,7 @@ namespace WpfWincoverage.Database
                         {
                             while (reader.Read())
                             {
-                                CPEAP userModer = new CPEAP();
+                                CPEAModel userModer = new CPEAModel();
                                 userModer.Code = reader.GetString(0);
                                 userModer.Brand = reader.GetString(1);
                                 userModer.Model = reader.GetString(2);
@@ -211,9 +211,9 @@ namespace WpfWincoverage.Database
             return listProfiel;
         }
 
-        public static List<CPEAP> getCPEList(int limit, int offset)
+        public static List<CPEAModel> getCPEList(int limit, int offset)
         {
-            List<CPEAP> listProfiel = new List<CPEAP>();
+            List<CPEAModel> listProfiel = new List<CPEAModel>();
             try
             {
                 using (var connection = new SQLiteConnection(stringConnection))
@@ -229,7 +229,7 @@ namespace WpfWincoverage.Database
                         {
                             while (reader.Read())
                             {
-                                CPEAP userModer = new CPEAP();
+                                CPEAModel userModer = new CPEAModel();
                                 userModer.Code = reader.GetString(0);
                                 userModer.Brand = reader.GetString(1);
                                 userModer.Model = reader.GetString(2);
@@ -250,6 +250,95 @@ namespace WpfWincoverage.Database
 
             return listProfiel;
         }
+
+        public static void deleteCPEAP(string code)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(stringConnection))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+                    command.CommandText = string.Format("delete FROM CPEAP where code ='{0}' ", code);
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+
+        public static List<FamilyModel> getFamilyList(int limit, int offset)
+        {
+            List<FamilyModel> listProfiel = new List<FamilyModel>();
+            try
+            {
+                using (var connection = new SQLiteConnection(stringConnection))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+
+                    command.CommandText = string.Format("select family,data,location from family limit {0} offset {1}", limit, offset);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            while (reader.Read()) 
+                            { 
+                            
+                                FamilyModel userModer = new FamilyModel();
+                                userModer.Family = reader.GetString(0);
+                                userModer.Data = reader.GetString(1);
+                                userModer.OID_Location = reader.GetString(2);                              
+                                listProfiel.Add(userModer);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return listProfiel;
+        }
+
+        public static int getCoutFamily()
+        {
+            int coutCPE = 0;
+            try
+            {
+                using (var connection = new SQLiteConnection(stringConnection))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+
+                    command.CommandText = "SELECT count(*) from family";
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            if (reader.Read())
+                            {
+                                coutCPE = reader.GetInt32(0);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return coutCPE;
+        }
+
 
     }
 }

@@ -80,3 +80,5 @@ C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windo
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Login\LoginView.baml
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\cpeapManagement.g.cs
 C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\cpeapManagement.baml
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\cpeapEditAdd.g.cs
+C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Configuration\cpeapEditAdd.baml

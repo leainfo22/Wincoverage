@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfWincoverage.Models
 {
-    public class CPEAP
+    public class CPEAModel
     {
         public string Code { get; set; }
         public string Brand { get; set; }

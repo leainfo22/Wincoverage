@@ -83,7 +83,7 @@ namespace WpfWincoverage
             button1.Visibility = Visibility.Hidden;
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
-            Main.Content = new Views.Configuration.cpeapManagement();
+            Main.Content = new Views.Configuration.cpeapManagement(Main);
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
