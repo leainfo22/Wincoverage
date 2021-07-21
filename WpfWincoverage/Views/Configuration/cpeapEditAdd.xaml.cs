@@ -22,10 +22,18 @@ namespace WpfWincoverage.Views.Configuration
     {
         private int  limit = 3;
         private int coutFamily = 0;
+        Frame MainFrame;
+        bool isEdit;
+        Models.CPEAModel user;
+        string type;
 
-        public cpeapEditAdd(Frame MainWin, bool isEdit, Models.CPEAModel user)
+        public cpeapEditAdd(Frame MainWin, bool isEdit, Models.CPEAModel user,string type)
         {
             InitializeComponent();
+            this.MainFrame = MainWin;
+            this.isEdit = isEdit;
+            this.user = user;
+            this.type = type;
             coutFamily = Database.DatabaseController.getCoutFamily();
             try
             {
@@ -102,5 +110,35 @@ namespace WpfWincoverage.Views.Configuration
             }
         }
 
+        private void Button_Exit(object sender, RoutedEventArgs e) 
+        {
+            MainFrame.Content = new cpeapManagement(MainFrame);
+
+        }
+        private void Button_Save(object sender, RoutedEventArgs e)
+        {
+            if (isEdit)
+            {
+                Database.DatabaseController.updateCPEAP(user,box1.Text, box2.Text, box3.Text, box4.Text);
+            }
+            else 
+            {
+                if (type == "CPE") 
+                {
+                    Database.DatabaseController.addCPE( box1.Text, box2.Text, box3.Text, box4.Text);
+                }
+                else if (type == "AP")
+                {
+                    Database.DatabaseController.addAP( box1.Text, box2.Text, box3.Text, box4.Text);
+                }
+            }
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+            
+        }
+
+        
     }
 }

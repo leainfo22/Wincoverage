@@ -13,15 +13,17 @@
         <Label Content="Model" Canvas.Left="37" Canvas.Top="88" Height="25"/>
         <Label Content="Part number" Canvas.Left="37" Canvas.Top="129"/>
         <Label Content="Firmware version" Canvas.Left="37" Canvas.Top="170"/>
-        <DataGrid x:Name="dataFamily" Height="95" Width="335" Canvas.Left="108" Canvas.Top="245"/>
-        <ComboBox x:Name="box1" Canvas.Left="141" Canvas.Top="50" Width="203"/>
-        <ComboBox x:Name="box2" Canvas.Left="141" Canvas.Top="91" Width="203"/>
-        <ComboBox x:Name="box3" Canvas.Left="141" Canvas.Top="129" Width="203"/>
-        <ComboBox x:Name="box4" Canvas.Left="141" Canvas.Top="170" Width="203"/>
-        <Label x:Name="labelAP" Content="" Canvas.Left="634" Canvas.Top="278"/>
-        <Label x:Name="labelDeAP" Content="de" Canvas.Left="581" Canvas.Top="278"/>
-        <Button x:Name="bottonNext" Content="Next" Canvas.Left="683" Canvas.Top="281" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
-        <Button x:Name="bottonBefore" Content="Before" Canvas.Left="481" Canvas.Top="281" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
-        <TextBox x:Name="boxAP" Canvas.Left="541" Canvas.Top="284" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
+        <DataGrid x:Name="dataFamily" Height="95" Width="335" Canvas.Left="37" Canvas.Top="245"/>
+        <TextBox x:Name="box1" Canvas.Left="141" Canvas.Top="50" Width="203"/>
+        <TextBox x:Name="box2" Canvas.Left="141" Canvas.Top="91" Width="203"/>
+        <TextBox x:Name="box3" Canvas.Left="141" Canvas.Top="129" Width="203"/>
+        <TextBox x:Name="box4" Canvas.Left="141" Canvas.Top="170" Width="203"/>
+        <Label x:Name="labelAP" Content="" Canvas.Left="634" Canvas.Top="239"/>
+        <Label x:Name="labelDeAP" Content="de" Canvas.Left="581" Canvas.Top="239"/>
+        <Button x:Name="bottonNext" Content="Next" Canvas.Left="683" Canvas.Top="242" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
+        <Button x:Name="bottonBefore" Content="Before" Canvas.Left="481" Canvas.Top="242" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
+        <TextBox x:Name="boxAP" Canvas.Left="541" Canvas.Top="245" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
+        <Button x:Name="buttonBack" Content="Back" Canvas.Left="481" Canvas.Top="312" Height="28" Width="67" Click="Button_Exit"/>
+        <Button x:Name="buttonSave" Content="Save-Back" Canvas.Left="648" Canvas.Top="312" RenderTransformOrigin="1.329,0.985" Height="28" Width="64" Click="Button_Save"/>
     </Canvas>
 </Page>

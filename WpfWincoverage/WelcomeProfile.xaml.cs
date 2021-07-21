@@ -90,13 +90,11 @@ namespace WpfWincoverage
         {
             MessageBox.Show("Logout", "Logout");
             dispatcherTimer.Stop();
-            foreach (Window w in Application.Current.Windows)
-            {
-                w.Hide();
-            }
+
+            var w = Application.Current.Windows;
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Close();
+            foreach (Window ww in w) ww.Close();
         }
         private void menu_Click(object sender, RoutedEventArgs e) 
         {

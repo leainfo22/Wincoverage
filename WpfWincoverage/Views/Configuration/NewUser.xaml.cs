@@ -88,12 +88,10 @@ namespace WpfWincoverage.Configuration
             else
                 Database.DatabaseController.addUser(user);
 
-            foreach (Window w in Application.Current.Windows) 
-            {
-                w.Hide();
-            }            
+            var w = Application.Current.Windows;
             WelcomeProfile welcomeProfile = new WelcomeProfile();
             welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
 
         }
 

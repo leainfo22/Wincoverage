@@ -80,10 +80,14 @@ namespace WpfWincoverage.Login
                     UserCurrentModel.rol = userBox.Text;
                 if (userBox.Text == "inge")
                     UserCurrentModel.rol = userBox.Text;
+                //cambiar para sacar los privilegios a cualquiera **lvasquez
+                else
+                    UserCurrentModel.rol = userBox.Text;
 
+                var w = Application.Current.Windows;
                 WelcomeProfile welcomeProfile = new WelcomeProfile();
                 welcomeProfile.Show();
-                windowHome.Close();
+                foreach (Window ww in w) ww.Close();
             }
         }
     }

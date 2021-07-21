@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,10 +25,12 @@ namespace WpfWincoverage.Views.Configuration
         public int coutAP = 0;
         public int limit = 3;
         private Frame MainWin;
+        string type;   
 
         public cpeapManagement(Frame MainWin)
         {
             InitializeComponent();
+            this.type = "";
             this.MainWin = MainWin;
             buttonEdit.IsEnabled = false;
             coutCPE = Database.DatabaseController.getCoutCPE();
@@ -125,6 +128,12 @@ namespace WpfWincoverage.Views.Configuration
                     dataAP.ItemsSource = Database.DatabaseController.getUserList();
                 if(CPEflag)
                     dataCPE.ItemsSource = Database.DatabaseController.getUserList();
+
+                var w = Application.Current.Windows;
+                WelcomeProfile welcomeProfile = new WelcomeProfile();
+                welcomeProfile.Show();
+                foreach (Window ww in w) ww.Close();
+
             }
         }
 
@@ -134,10 +143,12 @@ namespace WpfWincoverage.Views.Configuration
             if (dataAP.SelectedItem != null)
             {
                 user = (Models.CPEAModel)dataAP.SelectedItem;
+                type = "AP";
             }
             if (dataCPE.SelectedItem != null)
             {
                 user = (Models.CPEAModel)dataCPE.SelectedItem;
+                type = "CPE";
             }
 
             labelMnj.Visibility = Visibility.Hidden;
@@ -162,7 +173,77 @@ namespace WpfWincoverage.Views.Configuration
             boxAP.Visibility = Visibility.Hidden;
             boxCPE.Visibility = Visibility.Hidden;            
 
-            userFrame.Content = new cpeapEditAdd(this.MainWin, true, user);
+            userFrame.Content = new cpeapEditAdd(this.MainWin, true, user,type);
+        }
+
+        private void buttonAddAP_Click(object sender, RoutedEventArgs e)
+        {
+            Models.CPEAModel user = new Models.CPEAModel();
+          
+            type = "AP";
+
+            labelMnj.Visibility = Visibility.Hidden;
+            dataAP.Visibility = Visibility.Hidden;
+            dataCPE.Visibility = Visibility.Hidden;
+            labelListAP.Visibility = Visibility.Hidden;
+            labelListCPE.Visibility = Visibility.Hidden;
+            buttonADDAP.Visibility = Visibility.Hidden;
+            buttonADDCPE.Visibility = Visibility.Hidden;
+            buttonEdit.Visibility = Visibility.Hidden;
+            buttonDelete.Visibility = Visibility.Hidden;
+            buttonImport.Visibility = Visibility.Hidden;
+            buttonViz.Visibility = Visibility.Hidden;
+            labelAP.Visibility = Visibility.Hidden;
+            labelDeAP.Visibility = Visibility.Hidden;
+            bottonAPNext.Visibility = Visibility.Hidden;
+            bottonAPBefore.Visibility = Visibility.Hidden;
+            labelCPE.Visibility = Visibility.Hidden;
+            labelDeCPE.Visibility = Visibility.Hidden;
+            bottonCPENext.Visibility = Visibility.Hidden;
+            bottonCPEBefore.Visibility = Visibility.Hidden;
+            boxAP.Visibility = Visibility.Hidden;
+            boxCPE.Visibility = Visibility.Hidden;
+
+            userFrame.Content = new cpeapEditAdd(this.MainWin, false, user,type);
+        }
+
+        private void buttonAddCPE_Click(object sender, RoutedEventArgs e)
+        {
+            Models.CPEAModel user = new Models.CPEAModel();
+
+            type = "CPE";
+
+            labelMnj.Visibility = Visibility.Hidden;
+            dataAP.Visibility = Visibility.Hidden;
+            dataCPE.Visibility = Visibility.Hidden;
+            labelListAP.Visibility = Visibility.Hidden;
+            labelListCPE.Visibility = Visibility.Hidden;
+            buttonADDAP.Visibility = Visibility.Hidden;
+            buttonADDCPE.Visibility = Visibility.Hidden;
+            buttonEdit.Visibility = Visibility.Hidden;
+            buttonDelete.Visibility = Visibility.Hidden;
+            buttonImport.Visibility = Visibility.Hidden;
+            buttonViz.Visibility = Visibility.Hidden;
+            labelAP.Visibility = Visibility.Hidden;
+            labelDeAP.Visibility = Visibility.Hidden;
+            bottonAPNext.Visibility = Visibility.Hidden;
+            bottonAPBefore.Visibility = Visibility.Hidden;
+            labelCPE.Visibility = Visibility.Hidden;
+            labelDeCPE.Visibility = Visibility.Hidden;
+            bottonCPENext.Visibility = Visibility.Hidden;
+            bottonCPEBefore.Visibility = Visibility.Hidden;
+            boxAP.Visibility = Visibility.Hidden;
+            boxCPE.Visibility = Visibility.Hidden;
+
+            userFrame.Content = new cpeapEditAdd(this.MainWin, false, user, type);
+        }
+
+        private void buttonImport_Click(object sender, RoutedEventArgs e) 
+        {
+            string path = "";
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                path = File.ReadAllText(openFileDialog.FileName);
         }
 
         private void Button_NextAP(object sender, RoutedEventArgs e)
