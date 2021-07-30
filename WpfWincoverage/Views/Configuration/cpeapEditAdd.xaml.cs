@@ -123,14 +123,9 @@ namespace WpfWincoverage.Views.Configuration
             }
             else 
             {
-                if (type == "CPE") 
-                {
-                    Database.DatabaseController.addCPE( box1.Text, box2.Text, box3.Text, box4.Text);
-                }
-                else if (type == "AP")
-                {
-                    Database.DatabaseController.addAP( box1.Text, box2.Text, box3.Text, box4.Text);
-                }
+                
+                Database.DatabaseController.addGPS( box1.Text, box2.Text, box3.Text, box4.Text);
+                
             }
             var w = Application.Current.Windows;
             WelcomeProfile welcomeProfile = new WelcomeProfile();

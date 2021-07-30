@@ -77,27 +77,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leandrov\\.nuget\\packages\\": {},
-    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\leand\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leandrov\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
+      "projectUniqueName": "C:\\Users\\leand\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
       "projectName": "WpfWincoverage",
-      "projectPath": "C:\\Users\\leandrov\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
-      "packagesPath": "C:\\Users\\leandrov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leandrov\\source\\repos\\Wincoverage\\WpfWincoverage\\obj\\",
+      "projectPath": "C:\\Users\\leand\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
+      "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leand\\source\\repos\\Wincoverage\\WpfWincoverage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\leandrov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

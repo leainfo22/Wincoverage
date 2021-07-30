@@ -289,6 +289,26 @@ namespace WpfWincoverage.Database
             }
         }
 
+        public static void addGPS(string code, string brand, string model, string firmware)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(stringConnection))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+                    string query = string.Format("INSERT INTO CPEAP(code, brand, model, firmware, date, last_edit_date, edit_by, type) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", code, brand, model, firmware, DateTime.Now.ToString("dd-MM-yyyy"), DateTime.Now.ToString("dd-MM-yyyy"), UserCurrentModel.charge, "GPS");
+                    command.CommandText = query;
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+
         public static void updateCPEAP(CPEAModel user, string code, string brand, string model,string firmware)
         {
             try
@@ -297,7 +317,7 @@ namespace WpfWincoverage.Database
                 {
                     connection.Open();
                     var command = connection.CreateCommand();
-                    command.CommandText = string.Format("UPDATE USER SET code = '{0}',brand='{1}',model='{2}',firmware='{3}',last_edit_date='{4}',edit_by='{5}' WHERE USER='{6}' AND NAME='{7}' AND EMAIL='{8}'", code, brand, model, firmware, DateTime.Now.ToString("dd-MM-yyyy"), UserCurrentModel.charge);
+                    command.CommandText = string.Format("UPDATE CPEAP SET code = '{0}',brand='{1}',model='{2}',firmware='{3}',last_edit_date='{4}',edit_by='{5}' WHERE USER='{6}' AND NAME='{7}' AND EMAIL='{8}'", code, brand, model, firmware, DateTime.Now.ToString("dd-MM-yyyy"), UserCurrentModel.charge);
                     command.ExecuteNonQuery();
                 }
             }

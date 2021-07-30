@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8BWUYQjNkNYKz8fEDmmhr2oRm5Q1b9i1s4LofedSZeWrQ+2Ab3zg4CqJMzx16Zhf1X8tsvxjPhrVyZ8g6OjprQ==",
+  "dgSpecHash": "PYAJD+nY31iJ2NGWJMK+Tysr1TY/oY9Dee7zIklO42Lgzu3dNLn/F9COHCnu+wxHBk9L58C43B4QFg50KcFhQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leandrov\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
+  "projectFilePath": "C:\\Users\\leand\\source\\repos\\Wincoverage\\WpfWincoverage\\WpfWincoverage.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\leandrov\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.114.3\\stub.system.data.sqlite.core.netstandard.1.0.114.3.nupkg.sha512",
-    "C:\\Users\\leandrov\\.nuget\\packages\\system.data.sqlite.core\\1.0.114.3\\system.data.sqlite.core.1.0.114.3.nupkg.sha512"
+    "C:\\Users\\leand\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.114.3\\stub.system.data.sqlite.core.netstandard.1.0.114.3.nupkg.sha512",
+    "C:\\Users\\leand\\.nuget\\packages\\system.data.sqlite.core\\1.0.114.3\\system.data.sqlite.core.1.0.114.3.nupkg.sha512"
   ],
   "logs": []
 }

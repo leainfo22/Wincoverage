@@ -13,10 +13,19 @@
     <Compile Update="Views\Configuration\cpeapManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Configuration\GPS\gpsEditAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Configuration\GPS\gpsManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Configuration\NewUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Configuration\UserManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Configuration\Vector\Vector.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Login\ChangePass.xaml.cs">
@@ -42,10 +51,19 @@
     <Page Update="Views\Configuration\cpeapManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Configuration\GPS\gpsEditAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Configuration\GPS\gpsManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Configuration\NewUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Configuration\UserManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Configuration\Vector\Vector.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Login\ChangePass.xaml">

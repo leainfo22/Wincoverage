@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Configuration\GPS\logoGeyser.JPG" />
     <None Remove="Views\Configuration\logoGeyser.JPG" />
+    <None Remove="Views\Configuration\Vector\logoGeyser.JPG" />
     <None Remove="Views\Login\logoGeyser.JPG" />
     <None Remove="logoGeyser.JPG" />
   </ItemGroup>
@@ -17,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Views\Configuration\GPS\logoGeyser.JPG" />
     <Resource Include="Views\Configuration\logoGeyser.JPG" />
+    <Resource Include="Views\Configuration\Vector\logoGeyser.JPG" />
     <Resource Include="Views\Login\logoGeyser.JPG" />
     <Resource Include="logoGeyser.JPG" />
   </ItemGroup>

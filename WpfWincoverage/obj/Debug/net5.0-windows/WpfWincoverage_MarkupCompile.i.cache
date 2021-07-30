@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\
 WpfWincoverage
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\leandrov\source\repos\Wincoverage\WpfWincoverage\App.xaml
-101006409127
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\App.xaml
+131003715918
 
-191993155275
-1941514418192
-MainWindow.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\UserManagement.xaml;Views\Login\ChangePass.xaml;Views\Login\ForgotPassView.xaml;Views\Login\HomeView.xaml;Views\Login\LoginView.xaml;WelcomeProfile.xaml;
+22-663988964
+194392451143
+MainWindow.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\GPS\gpsEditAdd.xaml;Views\Configuration\GPS\gpsManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\UserManagement.xaml;Views\Configuration\Vector\Vector.xaml;Views\Login\ChangePass.xaml;Views\Login\ForgotPassView.xaml;Views\Login\HomeView.xaml;Views\Login\LoginView.xaml;WelcomeProfile.xaml;
 
 True
 
