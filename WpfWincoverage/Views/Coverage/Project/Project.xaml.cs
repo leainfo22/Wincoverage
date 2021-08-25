@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfWincoverage.Views.Configuration.Vector
+namespace WpfWincoverage.Views.Coverage.Project
 {
     /// <summary>
-    /// Lógica de interacción para Vector.xaml
+    /// Lógica de interacción para Project.xaml
     /// </summary>
-    public partial class Vector : Window
+    public partial class Project : Page
     {
-        public Vector()
+        public Project(Frame MainWin)
         {
             InitializeComponent();
         }
@@ -49,6 +50,5 @@ namespace WpfWincoverage.Views.Configuration.Vector
                 element.Height = element.Height * scale_Height;
             }
         }
-
     }
 }

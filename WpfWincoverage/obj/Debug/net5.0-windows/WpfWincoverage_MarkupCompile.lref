@@ -1,16 +1,25 @@
 ﻿
 
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\MainWindow.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\Channel\channelEditAdd.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\Channel\channelManagement.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\cpeapEditAdd.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\cpeapManagement.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\GPS\gpsEditAdd.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\GPS\gpsManagement.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\NewUser.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\Site\siteEditAdd.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\Site\siteManagement.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\UserManagement.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\Vector\vectorPage.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Login\ChangePass.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Login\ForgotPassView.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Login\HomeView.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Login\LoginView.xaml;;
 FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\WelcomeProfile.xaml;;
-FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\GPS\gpsEditAdd.xaml;;
-FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\GPS\gpsManagement.xaml;;
-FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Configuration\Vector\Vector.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Coverage\DataLoggerEx\DataLoggerEx.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Coverage\LocalCapture\LocalCapture.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Coverage\Project\Project.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Coverage\Vector\Vector.xaml;;
+FC:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml;;
 

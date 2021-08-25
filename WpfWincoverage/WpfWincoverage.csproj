@@ -7,9 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Configuration\Channel\logoGeyser.JPG" />
     <None Remove="Views\Configuration\GPS\logoGeyser.JPG" />
     <None Remove="Views\Configuration\logoGeyser.JPG" />
+    <None Remove="Views\Configuration\Site\logoGeyser.JPG" />
     <None Remove="Views\Configuration\Vector\logoGeyser.JPG" />
+    <None Remove="Views\Coverage\DataLoggerEx\logoGeyser.JPG" />
+    <None Remove="Views\Coverage\LocalCapture\logoGeyser.JPG" />
+    <None Remove="Views\Coverage\LocalProjectConf\logoGeyser.JPG" />
+    <None Remove="Views\Coverage\Project\logoGeyser.JPG" />
+    <None Remove="Views\Coverage\Vector\logoGeyser.JPG" />
     <None Remove="Views\Login\logoGeyser.JPG" />
     <None Remove="logoGeyser.JPG" />
   </ItemGroup>
@@ -19,9 +26,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Views\Configuration\Channel\logoGeyser.JPG" />
     <Resource Include="Views\Configuration\GPS\logoGeyser.JPG" />
     <Resource Include="Views\Configuration\logoGeyser.JPG" />
+    <Resource Include="Views\Configuration\Site\logoGeyser.JPG" />
     <Resource Include="Views\Configuration\Vector\logoGeyser.JPG" />
+    <Resource Include="Views\Coverage\DataLoggerEx\logoGeyser.JPG" />
+    <Resource Include="Views\Coverage\LocalCapture\logoGeyser.JPG" />
+    <Resource Include="Views\Coverage\LocalProjectConf\logoGeyser.JPG" />
+    <Resource Include="Views\Coverage\Project\logoGeyser.JPG" />
+    <Resource Include="Views\Coverage\Vector\logoGeyser.JPG" />
     <Resource Include="Views\Login\logoGeyser.JPG" />
     <Resource Include="logoGeyser.JPG" />
   </ItemGroup>

@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\Configuration\Channel\channelEditAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Configuration\Channel\channelManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Configuration\cpeapEditAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,10 +30,31 @@
     <Compile Update="Views\Configuration\NewUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Configuration\Site\siteEditAdd.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Configuration\Site\siteManagement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Configuration\UserManagement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\Configuration\Vector\Vector.xaml.cs">
+    <Compile Update="Views\Configuration\Vector\vectorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\DataLoggerEx\DataLoggerEx.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\LocalCapture\LocalCapture.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\Project\Project.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\Vector\Vector.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Login\ChangePass.xaml.cs">
@@ -45,6 +74,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\Configuration\Channel\channelEditAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Configuration\Channel\channelManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Configuration\cpeapEditAdd.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -60,10 +95,31 @@
     <Page Update="Views\Configuration\NewUser.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Configuration\Site\siteEditAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Configuration\Site\siteManagement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Configuration\UserManagement.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\Configuration\Vector\Vector.xaml">
+    <Page Update="Views\Configuration\Vector\vectorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\DataLoggerEx\DataLoggerEx.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\LocalCapture\LocalCapture.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\Project\Project.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\Vector\Vector.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Login\ChangePass.xaml">

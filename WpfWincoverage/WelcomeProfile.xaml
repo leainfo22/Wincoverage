@@ -19,16 +19,16 @@
                 <MenuItem x:Name="userMenu" Header="_User Management" Click="userManagement_Click" />
                 <MenuItem Header="_Language"/>
                 <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management" Click="CPEAP_Click"/>
-                <MenuItem  x:Name="GPSMenu" Header="_GPS Management"/>
-                <MenuItem  x:Name="siteMenu" Header="_Site/Location Management"/>
-                <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet"/>
-                <MenuItem  x:Name="channelMenu" Header="_Channels Management"/>
+                <MenuItem  x:Name="GPSMenu" Header="_GPS Management" Click="GPS_Click"/>
+                <MenuItem  x:Name="siteMenu" Header="_Site/Location Management" Click="Site_Click"/>
+                <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet" Click="Vector_Click"/>
+                <MenuItem  x:Name="channelMenu" Header="_Channels Management" Click="Channel_Click"/>
             </MenuItem>
             <MenuItem x:Name="winMenu" Header="_Coverage Measure" Click="menu_Click">
-                <MenuItem Header="_Local Project Configuration"/>
+                <MenuItem Header="_Local Project Configuration" Click="ProjectConf_Click"/>
                 <MenuItem Header="_Datalogger Configuration"/>
-                <MenuItem Header="_Local Project Capture"/>
-                <MenuItem Header="_Datalogger Extport"/>
+                <MenuItem Header="_Local Project Capture" Click="LocalCapture_Click"/>
+                <MenuItem Header="_Datalogger Export" Click="DataloggerEx_Click"/>
                 <MenuItem x:Name="converMenu" Header="_Conversion">
                     <MenuItem Header="_Project to KML"/>
                     <MenuItem Header="_Project to XMS"/>
@@ -38,7 +38,8 @@
                     <MenuItem Header="_Project Configuration"/>
                     <MenuItem Header="_Project Result"/>
                 </MenuItem>
-                <MenuItem x:Name="compaMenu"  Header="_Project comparation"/>
+                <MenuItem x:Name="vectorMenu2"  Header="Vector asignation" Click="Vector2_Click"/>
+                <MenuItem x:Name="compaMenu"  Header="Project comparison" Click="Project_Click"/>
             </MenuItem>
             <MenuItem x:Name="helpMenu" Header="_Help"  Click="menu_Click">
                 <MenuItem Header="_Help and troubleshooting"/>
@@ -64,6 +65,6 @@
             <Label x:Name="labelText" Content="Welcome XXXX " Margin="0,281,0,0" FontSize="20" FontFamily="Arial" Canvas.Top="5" Canvas.Left="320"/>
             <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" />
             <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610"/>
-            <Button x:Name="button3" Content="Dataogger Extraction" Canvas.Top="350" Canvas.Left="610" />
+            <Button x:Name="button3" Content="Datalogger Extraction" Canvas.Top="350" Canvas.Left="610" />
         </Canvas>       
 </Window>

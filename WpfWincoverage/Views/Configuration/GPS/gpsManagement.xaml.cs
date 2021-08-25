@@ -11,6 +11,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfWincoverage.Views.Configuration.GPS
@@ -18,9 +19,8 @@ namespace WpfWincoverage.Views.Configuration.GPS
     /// <summary>
     /// Lógica de interacción para gpsManagement.xaml
     /// </summary>
-    public partial class gpsManagement : Window
-    {
-
+    public partial class gpsManagement : Page
+    {       
         public int coutCPE = 0;
         public int coutAP = 0;
         public int limit = 3;
@@ -30,6 +30,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
         public gpsManagement(Frame MainWin)
         {
             InitializeComponent();
+
             this.type = "";
             this.MainWin = MainWin;
             buttonEdit.IsEnabled = false;
@@ -40,9 +41,9 @@ namespace WpfWincoverage.Views.Configuration.GPS
                 if (coutAP % limit == 0)
                     labelAP.Content = coutAP / limit;
                 else
-                    labelAP.Content = (coutAP / limit) + 1;           
+                    labelAP.Content = (coutAP / limit) + 1;
 
-             
+
                 if (labelAP.Content.ToString() == boxAP.Text)
                     bottonAPNext.IsEnabled = false;
 
@@ -50,14 +51,13 @@ namespace WpfWincoverage.Views.Configuration.GPS
                     bottonAPBefore.IsEnabled = false;
 
 
-                dataAP.ItemsSource = Database.DatabaseController.getAPList(3, 0);
+                dataAP.ItemsSource = Database.DatabaseController.getGPSList(3, 0);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
         }
-
 
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
         {
@@ -96,14 +96,13 @@ namespace WpfWincoverage.Views.Configuration.GPS
         {
             Models.CPEAModel user = new Models.CPEAModel();
             bool APflag = false;
-            bool CPEflag = false;
 
             if (dataAP.SelectedItem != null)
             {
                 user = (Models.CPEAModel)dataAP.SelectedItem;
                 APflag = true;
             }
-            
+
 
             string msj = string.Format("Are you sure to delete {0} ? ", user.Code);
             var result = MessageBox.Show(msj, "User remove", MessageBoxButton.OKCancel);
@@ -114,7 +113,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
                 Database.DatabaseController.deleteCPEAP(user.Code);
                 if (APflag)
                     dataAP.ItemsSource = Database.DatabaseController.getUserList();
-             
+
 
                 var w = Application.Current.Windows;
                 WelcomeProfile welcomeProfile = new WelcomeProfile();
@@ -127,12 +126,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
         private void buttonEdit_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
-            if (dataAP.SelectedItem != null)
-            {
-                user = (Models.CPEAModel)dataAP.SelectedItem;
-                type = "AP";
-            }         
-
+           
             labelMnj.Visibility = Visibility.Hidden;
             dataAP.Visibility = Visibility.Hidden;
             labelListAP.Visibility = Visibility.Hidden;
@@ -144,9 +138,9 @@ namespace WpfWincoverage.Views.Configuration.GPS
             labelAP.Visibility = Visibility.Hidden;
             labelDeAP.Visibility = Visibility.Hidden;
             bottonAPNext.Visibility = Visibility.Hidden;
-            bottonAPBefore.Visibility = Visibility.Hidden;        
+            bottonAPBefore.Visibility = Visibility.Hidden;
             boxAP.Visibility = Visibility.Hidden;
-            userFrame.Content = new gpsEditAdd(this.MainWin, true, user, type);
+            userFrame.Content = new gpsEditAdd(this.MainWin, true, user, "GPS");
         }
 
         private void buttonAddAP_Click(object sender, RoutedEventArgs e)
@@ -167,7 +161,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
             labelDeAP.Visibility = Visibility.Hidden;
             bottonAPNext.Visibility = Visibility.Hidden;
             bottonAPBefore.Visibility = Visibility.Hidden;
-          
+
             boxAP.Visibility = Visibility.Hidden;
 
             userFrame.Content = new cpeapEditAdd(this.MainWin, false, user, type);
@@ -185,7 +179,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
         {
             try
             {
-                dataAP.ItemsSource = Database.DatabaseController.getAPList(limit, limit * Int32.Parse(boxAP.Text));
+                dataAP.ItemsSource = Database.DatabaseController.getGPSList(limit, limit * Int32.Parse(boxAP.Text));
                 boxAP.Text = (Int32.Parse(boxAP.Text.ToString()) + 1).ToString();
 
                 if (labelAP.Content.ToString() == boxAP.Text)
@@ -207,7 +201,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
         {
             try
             {
-                dataAP.ItemsSource = Database.DatabaseController.getAPList(limit, limit * ((Int32.Parse(boxAP.Text) - 1) - limit));
+                dataAP.ItemsSource = Database.DatabaseController.getGPSList(limit, limit * ((Int32.Parse(boxAP.Text) - 1) - limit));
                 boxAP.Text = (Int32.Parse(boxAP.Text.ToString()) - 1).ToString();
                 if ("1" == boxAP.Text)
                     bottonAPBefore.IsEnabled = false;
@@ -226,3 +220,4 @@ namespace WpfWincoverage.Views.Configuration.GPS
         }
     }
 }
+
