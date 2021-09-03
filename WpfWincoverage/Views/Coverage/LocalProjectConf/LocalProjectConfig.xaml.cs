@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,12 +22,13 @@ namespace WpfWincoverage.Views.Coverage.LocalProjectConf
     /// </summary>
     public partial class LocalProjectConfig : Page
     {
+        Frame MainWin;
         public LocalProjectConfig(Frame MainWin)
         {
             InitializeComponent();
             List<ProjectConfModel> list = new List<ProjectConfModel>();
-
-            for (int i = 0; i < 2; i++) 
+            this.MainWin = MainWin;
+            for (int i = 0; i < 2; i++)
             {
                 ProjectConfModel aux = new ProjectConfModel();
                 aux.Project_Name = "";
@@ -38,7 +40,12 @@ namespace WpfWincoverage.Views.Coverage.LocalProjectConf
             }
 
             dataGrid.ItemsSource = list;
+            dataGrid.MinColumnWidth = 80;
+            dataGrid.MinRowHeight = 20;
+            buttonDelete.IsEnabled = false;
+            buttonEdit.IsEnabled = false;
         }
+
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             Canvas canvas = sender as Canvas;
@@ -66,5 +73,59 @@ namespace WpfWincoverage.Views.Coverage.LocalProjectConf
             }
         }
 
+        private void buttonEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+            dataGrid.Visibility = Visibility.Hidden;
+            buttonADDAP.Visibility = Visibility.Hidden;
+            buttonEdit.Visibility = Visibility.Hidden;
+            buttonDelete.Visibility = Visibility.Hidden;
+            buttonImport.Visibility = Visibility.Hidden;
+            labelMnj.Visibility = Visibility.Hidden;
+            imageMain2.Visibility = Visibility.Hidden;
+            userFrame.Content = new NewProject(this.MainWin, true);
+        }
+
+        private void buttonNew_Click(object sender, RoutedEventArgs e)
+        {
+            dataGrid.Visibility = Visibility.Hidden;
+            buttonADDAP.Visibility = Visibility.Hidden;
+            buttonEdit.Visibility = Visibility.Hidden;
+            buttonDelete.Visibility = Visibility.Hidden;
+            buttonImport.Visibility = Visibility.Hidden;
+            labelMnj.Visibility = Visibility.Hidden;
+            imageMain2.Visibility = Visibility.Hidden;
+            userFrame.Content = new NewProject(this.MainWin, false);
+        }
+
+        private void buttonImport_Click(object sender, RoutedEventArgs e)
+        {
+            string path = "";
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                path = File.ReadAllText(openFileDialog.FileName);
+        }
+
+        private void grid_Selected(object sender, RoutedEventArgs e)
+        {
+            buttonDelete.IsEnabled = true;
+            buttonEdit.IsEnabled = true;
+        } 
+
+        private void buttonDelete_Click(object sender, RoutedEventArgs e)
+        {
+            string msj = string.Format("Are you sure to delete the project ? ");
+            var result = MessageBox.Show(msj, "User remove", MessageBoxButton.OKCancel);
+
+
+            if (result == MessageBoxResult.OK)
+            {                 
+                var w = Application.Current.Windows;
+                WelcomeProfile welcomeProfile = new WelcomeProfile();
+                welcomeProfile.Show();
+                foreach (Window ww in w) ww.Close();
+
+            }
+        }
     }
 }

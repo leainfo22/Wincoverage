@@ -15,13 +15,12 @@
             </Image.OpacityMask>
         </Image>
         <Label x:Name="labelMnj" Content="Project Configuration"  FontSize="36" FontFamily="Arial" RenderTransformOrigin="0.503,0.565" Canvas.Left="236"/>
-        <DataGrid x:Name="dataGrid" Height="85" Width="440" Canvas.Left="180" Canvas.Top="129">
-            
-        </DataGrid>
-        <Button x:Name="buttonADDAP" Content="New" RenderTransformOrigin="0.612,0.589" Height="40" Width="60"  Canvas.Left="182" Canvas.Top="264"   />
-        <Button x:Name="buttonEdit" Content="Edit" RenderTransformOrigin="0.348,-0.414" Width="63" Height="40"  Canvas.Left="266" Canvas.Top="264"       />
-        <Button x:Name="buttonDelete" Content="Remove" RenderTransformOrigin="0.348,-0.414" Width="64" Height="40"  Canvas.Left="556" Canvas.Top="264" />
-        <Button x:Name="buttonImport" Content="Import" RenderTransformOrigin="0.527,0.56" Width="64" Height="40" Canvas.Left="471" Canvas.Top="264" />
+        <DataGrid x:Name="dataGrid" Height="85" Width="422" Canvas.Left="153" Canvas.Top="132" SelectionChanged="grid_Selected"/>
+        <Button x:Name="buttonADDAP" Content="New" RenderTransformOrigin="0.612,0.589" Height="40" Width="60"  Canvas.Left="155" Canvas.Top="267"  Click="buttonNew_Click"/>
+        <Button x:Name="buttonEdit" Content="Edit" RenderTransformOrigin="0.348,-0.414" Width="63" Height="40"  Canvas.Left="239" Canvas.Top="267" Click="buttonEdit_Click"/>
+        <Button x:Name="buttonDelete" Content="Remove" RenderTransformOrigin="0.348,-0.414" Width="64" Height="40"  Canvas.Left="511" Canvas.Top="267" Click="buttonDelete_Click" />
+        <Button x:Name="buttonImport" Content="Import" RenderTransformOrigin="0.527,0.56" Width="64" Height="40" Canvas.Left="423" Canvas.Top="267" Click="buttonImport_Click"/>
+        <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
 
     </Canvas>
 </Page>

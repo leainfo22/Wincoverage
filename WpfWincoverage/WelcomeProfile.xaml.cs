@@ -190,6 +190,48 @@ namespace WpfWincoverage
             Main.Content = new Views.Coverage.LocalProjectConf.LocalProjectConfig(Main);
         }
 
+        private void DataloggerConf_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Coverage.DataLoggerConfig.DataLoggerConfig(Main);
+        }
+
+        private void XLS_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Coverage.Convertion.XLS(Main);
+        }
+        private void KML_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Coverage.Convertion.KML(Main);
+        }
+        private void XSLKML_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Coverage.Convertion.XLSKML(Main);
+        }
+
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logout", "Logout");

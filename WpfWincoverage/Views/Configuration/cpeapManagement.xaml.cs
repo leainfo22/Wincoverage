@@ -93,13 +93,11 @@ namespace WpfWincoverage.Views.Configuration
                 element.Height = element.Height * scale_Height;
             }
         }
-
         private void grid_Selected(object sender, RoutedEventArgs e)
         {
             buttonDelete.IsEnabled = true;
             buttonEdit.IsEnabled = true;
         }
-
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
@@ -136,7 +134,6 @@ namespace WpfWincoverage.Views.Configuration
 
             }
         }
-
         private void buttonEdit_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
@@ -175,7 +172,6 @@ namespace WpfWincoverage.Views.Configuration
 
             userFrame.Content = new cpeapEditAdd(this.MainWin, true, user,type);
         }
-
         private void buttonAddAP_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
@@ -206,7 +202,6 @@ namespace WpfWincoverage.Views.Configuration
 
             userFrame.Content = new cpeapEditAdd(this.MainWin, false, user,type);
         }
-
         private void buttonAddCPE_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
@@ -237,7 +232,6 @@ namespace WpfWincoverage.Views.Configuration
 
             userFrame.Content = new cpeapEditAdd(this.MainWin, false, user, type);
         }
-
         private void buttonImport_Click(object sender, RoutedEventArgs e) 
         {
             string path = "";
@@ -245,7 +239,6 @@ namespace WpfWincoverage.Views.Configuration
             if (openFileDialog.ShowDialog() == true)
                 path = File.ReadAllText(openFileDialog.FileName);
         }
-
         private void Button_NextAP(object sender, RoutedEventArgs e)
         {
             try

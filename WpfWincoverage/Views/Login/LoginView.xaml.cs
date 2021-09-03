@@ -28,8 +28,10 @@ namespace WpfWincoverage.Login
             MainFrame = Main;
             windowHome = home;
             InitializeComponent();
+           
+
         }
-    
+
 
         private void ForgotButton_Click(object sender, RoutedEventArgs e)
         {
@@ -43,6 +45,7 @@ namespace WpfWincoverage.Login
             buttonChange.Visibility = Visibility.Hidden;
             userBox.Visibility = Visibility.Visible;
             LoginFrame.Content = new ForgotPassView(MainFrame);
+           
         }
 
         private void ButtonChange_Click(object sender, RoutedEventArgs e)

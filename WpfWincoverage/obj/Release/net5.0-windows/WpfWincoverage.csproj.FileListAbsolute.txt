@@ -68,3 +68,5 @@ C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Release\net5.0-window
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Release\net5.0-windows\Views\Coverage\Vector\Vector.baml
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Release\net5.0-windows\Views\Coverage\LocalProjectConf\LocalProjectConfig.g.cs
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Release\net5.0-windows\Views\Coverage\LocalProjectConf\LocalProjectConfig.baml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Release\net5.0-windows\Views\Coverage\LocalProjectConf\NewProject.g.cs
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Release\net5.0-windows\Views\Coverage\LocalProjectConf\NewProject.baml

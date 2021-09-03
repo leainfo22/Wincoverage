@@ -42,6 +42,27 @@
     <Compile Update="Views\Configuration\Vector\vectorPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Coverage\Conversion\KML.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\Conversion\KMLEdition.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\Conversion\XLS.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\Conversion\XLSKML.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\DataLoggerConfig\DataLoggerConfig.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\DataLoggerConfig\NewDataLoggerConfig.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\DataLoggerConfig\ProjectoConfigInDatalogger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Coverage\DataLoggerEx\DataLoggerEx.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -49,6 +70,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Coverage\LocalProjectConf\NewProject.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\Coverage\Project\Project.xaml.cs">
@@ -107,6 +131,27 @@
     <Page Update="Views\Configuration\Vector\vectorPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\Coverage\Conversion\KML.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\Conversion\KMLEdition.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\Conversion\XLS.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\Conversion\XLSKML.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\DataLoggerConfig\DataLoggerConfig.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\DataLoggerConfig\NewDataLoggerConfig.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\DataLoggerConfig\ProjectoConfigInDatalogger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Coverage\DataLoggerEx\DataLoggerEx.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -114,6 +159,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\LocalProjectConf\NewProject.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Coverage\Project\Project.xaml">

@@ -26,13 +26,13 @@
             </MenuItem>
             <MenuItem x:Name="winMenu" Header="_Coverage Measure" Click="menu_Click">
                 <MenuItem Header="_Local Project Configuration" Click="ProjectConf_Click"/>
-                <MenuItem Header="_Datalogger Configuration"/>
+                <MenuItem Header="_Datalogger Configuration" Click="DataloggerConf_Click"/>
                 <MenuItem Header="_Local Project Capture" Click="LocalCapture_Click"/>
                 <MenuItem Header="_Datalogger Export" Click="DataloggerEx_Click"/>
                 <MenuItem x:Name="converMenu" Header="_Conversion">
-                    <MenuItem Header="_Project to KML"/>
-                    <MenuItem Header="_Project to XMS"/>
-                    <MenuItem Header="_XLS->KML / KML->XLS"/>
+                    <MenuItem Header="_Project to KML" Click="KML_Click"/>
+                    <MenuItem Header="_Project to XMS" Click="XLS_Click"/>
+                    <MenuItem Header="_XLS->KML / KML->XLS" Click="XSLKML_Click"/>
                 </MenuItem>
                 <MenuItem Header="_Sharing">
                     <MenuItem Header="_Project Configuration"/>
@@ -63,8 +63,8 @@
             </Image>
             <Frame x:Name="Main" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
             <Label x:Name="labelText" Content="Welcome XXXX " Margin="0,281,0,0" FontSize="20" FontFamily="Arial" Canvas.Top="5" Canvas.Left="320"/>
-            <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" />
-            <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610"/>
-            <Button x:Name="button3" Content="Datalogger Extraction" Canvas.Top="350" Canvas.Left="610" />
+        <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" Click="LocalCapture_Click"/>
+        <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610" Click="ProjectConf_Click"/>
+        <Button x:Name="button3" Content="Datalogger Extraction" Canvas.Top="350" Canvas.Left="610" Click="DataloggerEx_Click"/>
         </Canvas>       
 </Window>
