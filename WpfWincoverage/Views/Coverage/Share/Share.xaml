@@ -1,0 +1,35 @@
+﻿<Page x:Class="WpfWincoverage.Views.Coverage.Share.Share"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfWincoverage.Views.Coverage.Share"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Share">
+
+    <Canvas SizeChanged="Canvas_SizeChanged">
+        <Image x:Name="imageMain2" Height="33"  Width="208" RenderTransformOrigin="0.497,0.586" Source="/logoGeyser.JPG" Canvas.Left="552" Canvas.Top="25" >
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Views/Coverage/LocalProjectConf/logoGeyser.JPG"/>
+            </Image.OpacityMask>
+        </Image>
+        <Label  x:Name="labelMnj" Content="Share File"  FontSize="36" FontFamily="Arial" RenderTransformOrigin="0.503,0.565" Canvas.Left="283" Canvas.Top="6"/>
+        <Button x:Name="buttonClose" Content="Cancel" Canvas.Left="486" Canvas.Top="307" Width="64" Height="40" />
+        <Label   x:Name="labelChannel" Content="Project File" Canvas.Left="62" Canvas.Top="87"/>
+        <Label   x:Name="labelPassword" Content="CPE / AP / GPS / Sites file" Canvas.Left="62" Canvas.Top="120"/>
+        <TextBox x:Name="textBoxChannel" Canvas.Left="261" Canvas.Top="91" Text="" TextWrapping="Wrap" Width="289"/>
+        <TextBox x:Name="textBoxPass" Canvas.Left="261" Canvas.Top="124" Text="" TextWrapping="Wrap" Width="289"/>
+        <Label   x:Name="labelPassword_Copy" Content="Datalogger Project" Canvas.Left="62" Canvas.Top="154"/>
+        <TextBox x:Name="textBoxPass_Copy" Canvas.Left="261" Canvas.Top="158" Text="" TextWrapping="Wrap" Width="289"/>
+        <Button x:Name="buttonClose_Copy" Content="Share" Canvas.Left="261" Canvas.Top="307" Width="64" Height="40" />
+        <Label   x:Name="labelChannel_Copy" Content="XLS File" Canvas.Left="62" Canvas.Top="192"/>
+        <Label   x:Name="labelPassword_Copy1" Content="KML File" Canvas.Left="62" Canvas.Top="225"/>
+        <TextBox x:Name="textBoxChannel_Copy" Canvas.Left="261" Canvas.Top="196" Text="" TextWrapping="Wrap" Width="289"/>
+        <TextBox x:Name="textBoxPass_Copy1" Canvas.Left="261" Canvas.Top="229" Text="" TextWrapping="Wrap" Width="289"/>
+        <Label   x:Name="labelPassword_Copy2" Content="KML Configuration" Canvas.Left="62" Canvas.Top="259"/>
+        <TextBox x:Name="textBoxPass_Copy2" Canvas.Left="261" Canvas.Top="263" Text="" TextWrapping="Wrap" Width="289"/>
+        <Button x:Name="buttonClose_Copy1" Content="Load" Canvas.Left="624" Canvas.Top="164" Width="64" Height="40" />
+
+    </Canvas>
+</Page>

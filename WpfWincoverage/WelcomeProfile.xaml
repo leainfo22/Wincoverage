@@ -35,8 +35,8 @@
                     <MenuItem Header="_XLS->KML / KML->XLS" Click="XSLKML_Click"/>
                 </MenuItem>
                 <MenuItem Header="_Sharing">
-                    <MenuItem Header="_Project Configuration"/>
-                    <MenuItem Header="_Project Result"/>
+                    <MenuItem Header="_Project Configuration" Click="Share_Click"/>
+                    <MenuItem Header="_Project Result" Click="Share_Click"/>
                 </MenuItem>
                 <MenuItem x:Name="vectorMenu2"  Header="Vector asignation" Click="Vector2_Click"/>
                 <MenuItem x:Name="compaMenu"  Header="Project comparison" Click="Project_Click"/>

@@ -168,3 +168,5 @@ C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Conversion\KMLEdition.baml
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Conversion\XLS.baml
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Conversion\XLSKML.baml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Share\Share.g.cs
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Share\Share.baml

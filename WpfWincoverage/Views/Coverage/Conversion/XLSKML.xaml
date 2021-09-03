@@ -23,7 +23,7 @@
         <TextBox x:Name="textBoxPass" Canvas.Left="261" Canvas.Top="184" Text="" TextWrapping="Wrap" Width="289"/>
         <Label   x:Name="labelPassword_Copy" Content="KML Configuration" Canvas.Left="62" Canvas.Top="234"/>
         <TextBox x:Name="textBoxPass_Copy" Canvas.Left="261" Canvas.Top="238" Text="" TextWrapping="Wrap" Width="289"/>
-        <Button  x:Name="buttonClose_Copy" Content="Edit" Canvas.Left="177" Canvas.Top="299" Width="64" Height="40" />
+        <Button  x:Name="buttonClose_Copy" Content="Edit" Canvas.Left="177" Canvas.Top="299" Width="64" Height="40" Click="KMLedition_Click"/>
         <Label   x:Name="labelMnj_Copy" Content="XLS to KML"  FontSize="30" FontFamily="Arial" RenderTransformOrigin="0.503,0.565" Canvas.Left="258" Canvas.Top="57"/>
 
     </Canvas>

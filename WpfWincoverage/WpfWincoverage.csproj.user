@@ -78,6 +78,9 @@
     <Compile Update="Views\Coverage\Project\Project.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Coverage\Share\Share.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Coverage\Vector\Vector.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -165,6 +168,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Coverage\Project\Project.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Coverage\Share\Share.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Coverage\Vector\Vector.xaml">

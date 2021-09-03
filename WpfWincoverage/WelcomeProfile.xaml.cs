@@ -231,7 +231,16 @@ namespace WpfWincoverage
             button3.Visibility = Visibility.Hidden;
             Main.Content = new Views.Coverage.Convertion.XLSKML(Main);
         }
-
+        private void Share_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Coverage.Share.Share(Main);
+        }
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logout", "Logout");
