@@ -17,7 +17,10 @@
             </MenuItem>
             <MenuItem x:Name="configMenu" Header="_Configuration">
                 <MenuItem x:Name="userMenu" Header="_User Management" Click="userManagement_Click" />
-                <MenuItem Header="_Language"/>
+                <MenuItem Header="_Language">
+                    <MenuItem Header="Spanish" IsEnabled="False"/>
+                    <MenuItem Header="English" />
+                </MenuItem>
                 <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management" Click="CPEAP_Click"/>
                 <MenuItem  x:Name="GPSMenu" Header="_GPS Management" Click="GPS_Click"/>
                 <MenuItem  x:Name="siteMenu" Header="_Site/Location Management" Click="Site_Click"/>
