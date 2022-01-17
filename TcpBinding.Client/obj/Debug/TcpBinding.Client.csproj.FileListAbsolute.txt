@@ -1,0 +1,14 @@
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TcpBinding.Client.exe.config
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TcpBinding.Client.exe.manifest
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TcpBinding.Client.application
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TcpBinding.Client.exe
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TcpBinding.Client.pdb
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TpcBinding.Contracts.dll
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\bin\Debug\TpcBinding.Contracts.pdb
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.csproj.AssemblyReference.cache
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.csproj.CoreCompileInputs.cache
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.exe.manifest
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.application
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.csproj.CopyComplete
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.exe
+C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Debug\TcpBinding.Client.pdb

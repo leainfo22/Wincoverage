@@ -1,0 +1,64 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TcpBinding.Service.Database
+{
+    public class Usuarios
+    {
+        //public static string ODBCConnectionString = "Driver={ODBC Driver 13 for SQL Server};Server=tcp:testmilliways.database.windows.net,1433;Database=Test;Uid=testmilliways;Pwd=testmilliways22_;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;";
+        public static string SQLConnectionString = "Server=tcp:testmilliways.database.windows.net,1433;Initial Catalog = Test; Persist Security Info=False;User ID = testmilliways; Password=milliwaystest22_; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;";
+        public static List<List<string>> GetUsuarios()
+        {
+            List<List<string>> returnData = new List<List<string>>();
+            /*for (int i = 0; i < 3; i++)
+            {
+                List<string> data = new List<string>();
+                data.Add("1");
+                data.Add("2");
+                data.Add("3");
+                data.Add("4");
+                data.Add("5");
+                data.Add("5");
+                data.Add("66");
+                returnData.Add(data);
+            }*/
+            using (SqlConnection connection = new SqlConnection(SQLConnectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand("spGetAllUsers", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            List<string> data = new List<string>();
+                            data.Add(reader[0].ToString());
+                            data.Add(reader[1].ToString());
+                            data.Add(reader[2].ToString());
+                            data.Add(reader[3].ToString());
+                            data.Add(reader[4].ToString());
+                            data.Add(reader[5].ToString());
+                            data.Add(reader[6].ToString());
+                            returnData.Add(data);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
+                    return null;
+                }
+            }
+            return returnData;
+        }
+    }
+}

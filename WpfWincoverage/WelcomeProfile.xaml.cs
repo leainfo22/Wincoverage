@@ -64,7 +64,7 @@ namespace WpfWincoverage
             //InitializeComponent();
         }
 
-        private void userManagement_Click(object sender, RoutedEventArgs e)
+        private async void userManagement_Click(object sender, RoutedEventArgs e)
         {
             imageMain2.Visibility = Visibility.Hidden;
             imageMain.Visibility = Visibility.Hidden;
@@ -72,7 +72,8 @@ namespace WpfWincoverage
             button1.Visibility = Visibility.Hidden;
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
-            Main.Content = new Configuration.UserManagement(Main);
+            var users = await Database.DatabaseController.getUserList();
+            Main.Content = new Configuration.UserManagement(Main, users);
         }
 
         private void CPEAP_Click(object sender, RoutedEventArgs e)

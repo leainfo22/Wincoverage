@@ -181,7 +181,7 @@ namespace WpfWincoverage.Views.Configuration.Channel
                 Console.WriteLine(ex.Message);
             }
         }
-        private void buttonDelete_Click(object sender, RoutedEventArgs e)
+        private async void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
             Models.ChannelModel user = new Models.ChannelModel();            
 
@@ -192,8 +192,7 @@ namespace WpfWincoverage.Views.Configuration.Channel
             if (result == MessageBoxResult.OK)
             {
                 Database.DatabaseController.deleteChannel(user);
-                dataAP.ItemsSource = Database.DatabaseController.getUserList();
-                
+                dataAP.ItemsSource = await Database.DatabaseController.getUserList();                
 
                 var w = Application.Current.Windows;
                 WelcomeProfile welcomeProfile = new WelcomeProfile();

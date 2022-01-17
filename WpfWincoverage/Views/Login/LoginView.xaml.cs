@@ -27,9 +27,7 @@ namespace WpfWincoverage.Login
         {
             MainFrame = Main;
             windowHome = home;
-            InitializeComponent();
-           
-
+            InitializeComponent();        
         }
 
 

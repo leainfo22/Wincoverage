@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:WpfWincoverage"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary x:Name="GlobalDictionary" Source="Resources/Dictionary.xaml"/>
     </Application.Resources>
 </Application>

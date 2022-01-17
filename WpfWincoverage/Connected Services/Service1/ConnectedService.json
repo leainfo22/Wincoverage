@@ -1,0 +1,40 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.40203.910",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://wincoveragesoap.azurewebsites.net/Service1.svc"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, Service1"
+    ],
+    "references": [
+      "C:\\Users\\leand\\source\\repos\\Wincoverage\\WpfWincoverage\\bin\\Debug\\netcoreapp3.1\\NLog.dll",
+      "C:\\Users\\leand\\source\\repos\\Wincoverage\\WpfWincoverage\\bin\\Debug\\netcoreapp3.1\\WincoverageSOAP.dll",
+      "System.Data.SqlClient, {System.Data.SqlClient, 4.8.3}",
+      "System.Data.SQLite, {Stub.System.Data.SQLite.Core.NetStandard, 1.0.114.3}",
+      "System.Reflection.DispatchProxy, {System.Reflection.DispatchProxy, 4.7.1}",
+      "System.Security.AccessControl, {System.Security.AccessControl, 4.7.0}",
+      "System.Security.Cryptography.Xml, {System.Security.Cryptography.Xml, 4.7.0}",
+      "System.Security.Permissions, {System.Security.Permissions, 4.7.0}",
+      "System.Security.Principal.Windows, {System.Security.Principal.Windows, 4.7.0}",
+      "System.ServiceModel, {System.ServiceModel.Primitives, 4.8.1}",
+      "System.ServiceModel.Duplex, {System.ServiceModel.Duplex, 4.4.4}",
+      "System.ServiceModel.Http, {System.ServiceModel.Http, 4.4.4}",
+      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 4.4.4}",
+      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 4.8.1}",
+      "System.ServiceModel.Security, {System.ServiceModel.Security, 4.4.4}",
+      "System.Windows.Extensions, {System.Windows.Extensions, 4.7.0}"
+    ],
+    "sync": true,
+    "targetFramework": "netcoreapp3.1",
+    "typeReuseMode": "All"
+  }
+}

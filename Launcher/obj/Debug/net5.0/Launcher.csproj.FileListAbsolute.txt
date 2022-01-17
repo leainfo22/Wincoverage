@@ -1,0 +1,16 @@
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.exe
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.deps.json
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.runtimeconfig.json
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.runtimeconfig.dev.json
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.dll
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\ref\Launcher.dll
+C:\Users\leand\source\repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.pdb
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.AssemblyInfoInputs.cache
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.AssemblyInfo.cs
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.dll
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\ref\Launcher.dll
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.pdb
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.genruntimeconfig.cache
+C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.csproj.AssemblyReference.cache

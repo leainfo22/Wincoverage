@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfWincoverage.Models;
 
 namespace WpfWincoverage.Configuration
 {
@@ -22,11 +23,11 @@ namespace WpfWincoverage.Configuration
     {
         private Frame MainWin;
 
-        public UserManagement(Frame MainWin)
+        public UserManagement(Frame MainWin,List<UserModel> users)
         {
             InitializeComponent();
             this.MainWin = MainWin;
-            grid.ItemsSource = Database.DatabaseController.getUserList();
+            grid.ItemsSource = users;
             buttonDelete.IsEnabled = false;
             buttonEdit.IsEnabled = false;
         }
@@ -76,24 +77,24 @@ namespace WpfWincoverage.Configuration
             buttonEdit.IsEnabled = true;
         }
 
-        private void buttonDelete_Click(object sender, RoutedEventArgs e)
+        private async void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
-            Models.UserModel user = (Models.UserModel)grid.SelectedItem;
+            UserModel user = (UserModel)grid.SelectedItem;
             string msj = string.Format("Are you sure to delete {0} ? ",user.Name);
             var result = MessageBox.Show(msj, "User remove",MessageBoxButton.OKCancel);
 
             
             if (result == MessageBoxResult.OK) 
             {
-                Database.DatabaseController.deleteUser(user.User,user.Name);
-                grid.ItemsSource = Database.DatabaseController.getUserList();
+                await Database.DatabaseController.deleteUser(user.User,user.Name);
+                grid.ItemsSource = await Database.DatabaseController.getUserList();
 
             }
         }
 
         private void buttonEdit_Click(object sender, RoutedEventArgs e)
         {
-            Models.UserModel user = (Models.UserModel)grid.SelectedItem;
+            UserModel user = (UserModel)grid.SelectedItem;
             buttonEdit.Visibility = Visibility.Hidden;
             buttonDelete.Visibility = Visibility.Hidden;
             buttonNew.Visibility = Visibility.Hidden;

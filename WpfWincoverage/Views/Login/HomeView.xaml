@@ -15,7 +15,7 @@
                 <ImageBrush ImageSource="logoGeyser.JPG"/>
             </Image.OpacityMask>
         </Image>
-        <Label Content="MENSAJE DE BIENVENIDA" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="24"/>
-        <Label Content="Nombre empresa y numero de licencia" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label x:Name="labelWelcome" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="24"/>
+        <Label x:Name="labelCompany" Content="Nombre empresa y numero de licencia" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Page>

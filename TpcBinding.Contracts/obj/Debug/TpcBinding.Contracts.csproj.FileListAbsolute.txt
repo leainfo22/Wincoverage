@@ -1,0 +1,10 @@
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\bin\Debug\TpcBinding.Contracts.dll
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\bin\Debug\TpcBinding.Contracts.pdb
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.csproj.AssemblyReference.cache
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.csproj.CopyComplete
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.dll
+C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.pdb

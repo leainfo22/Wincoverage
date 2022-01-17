@@ -1,0 +1,73 @@
+﻿<Window x:Class="WpfWincoverage.NetFramework.WelcomeProfile"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWincoverage"
+        mc:Ignorable="d"
+        Title="WelcomeProfile" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
+    <Canvas SizeChanged="Canvas_SizeChanged">
+        <Menu x:Name="mainMenu" IsMainMenu="True" VerticalAlignment="Top">
+            <MenuItem x:Name="loginMenu" Header="_Login" Click="menu_Click">
+                <MenuItem Header="_Log in"/>
+                <MenuItem Header="_Log out" Click="Logout_Click"/>
+                <Separator />
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+            <MenuItem x:Name="configMenu" Header="_Configuration">
+                <MenuItem x:Name="userMenu" Header="_User Management" Click="userManagement_Click" />
+                <MenuItem Header="_Language">
+                    <MenuItem Header="Spanish" IsEnabled="False"/>
+                    <MenuItem Header="English" />
+                </MenuItem>
+                <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management" Click="CPEAP_Click"/>
+                <MenuItem  x:Name="GPSMenu" Header="_GPS Management" Click="GPS_Click"/>
+                <MenuItem  x:Name="siteMenu" Header="_Site/Location Management" Click="Site_Click"/>
+                <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet" Click="Vector_Click"/>
+                <MenuItem  x:Name="channelMenu" Header="_Channels Management" Click="Channel_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="winMenu" Header="_Coverage Measure" Click="menu_Click">
+                <MenuItem Header="_Local Project Configuration" Click="ProjectConf_Click"/>
+                <MenuItem Header="_Datalogger Configuration" Click="DataloggerConf_Click"/>
+                <MenuItem Header="_Local Project Capture" Click="LocalCapture_Click"/>
+                <MenuItem Header="_Datalogger Export" Click="DataloggerEx_Click"/>
+                <MenuItem x:Name="converMenu" Header="_Conversion">
+                    <MenuItem Header="_Project to KML" Click="KML_Click"/>
+                    <MenuItem Header="_Project to XMS" Click="XLS_Click"/>
+                    <MenuItem Header="_XLS->KML / KML->XLS" Click="XSLKML_Click"/>
+                </MenuItem>
+                <MenuItem Header="_Sharing">
+                    <MenuItem Header="_Project Configuration" Click="Share_Click"/>
+                    <MenuItem Header="_Project Result" Click="Share_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="vectorMenu2"  Header="Vector asignation" Click="Vector2_Click"/>
+                <MenuItem x:Name="compaMenu"  Header="Project comparison" Click="Project_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="helpMenu" Header="_Help"  Click="menu_Click">
+                <MenuItem Header="_Help and troubleshooting"/>
+                <MenuItem Header="_Tickets and support"/>
+                <MenuItem Header="_Hardware validation"/>
+                <MenuItem Header="_License"/>
+                <MenuItem Header="_Feedback"/>
+            </MenuItem>
+        </Menu>
+
+
+        <Image x:Name="imageMain2" Canvas.Top="5" Canvas.Left="530" Height="33" Margin="0,58,22,0" Width="208" RenderTransformOrigin="1.5,0.5" Source="/logoGeyser.JPG">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="logoGeyser.JPG"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imageMain" Canvas.Top="5" Canvas.Left="200"  Height="60" Width="406" RenderTransformOrigin="1.5,0.5" Source="/logoGeyser.JPG" Margin="0,157,0,0">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="logoGeyser.JPG"/>
+            </Image.OpacityMask>
+        </Image>
+        <Frame x:Name="Main" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
+        <Label x:Name="labelText" Content="Welcome XXXX " Margin="0,281,0,0" FontSize="20" FontFamily="Arial" Canvas.Top="5" Canvas.Left="320"/>
+        <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" Click="LocalCapture_Click"/>
+        <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610" Click="ProjectConf_Click"/>
+        <Button x:Name="button3" Content="Datalogger Extraction" Canvas.Top="350" Canvas.Left="610" Click="DataloggerEx_Click"/>
+    </Canvas>
+</Window>

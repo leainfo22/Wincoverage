@@ -92,7 +92,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
             buttonEdit.IsEnabled = true;
         }
 
-        private void buttonDelete_Click(object sender, RoutedEventArgs e)
+        private async void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
             bool APflag = false;
@@ -112,7 +112,7 @@ namespace WpfWincoverage.Views.Configuration.GPS
             {
                 Database.DatabaseController.deleteCPEAP(user.Code);
                 if (APflag)
-                    dataAP.ItemsSource = Database.DatabaseController.getUserList();
+                    dataAP.ItemsSource = await Database.DatabaseController.getUserList();
 
 
                 var w = Application.Current.Windows;

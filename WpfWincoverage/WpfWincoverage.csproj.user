@@ -101,6 +101,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Resources\Dictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Configuration\Channel\channelEditAdd.xaml">
       <SubType>Designer</SubType>
     </Page>

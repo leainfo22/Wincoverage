@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Data.SQLite;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using TpcBinding.Contracts;
 using WpfWincoverage.Models;
+using TcpBinding.Client;
+
+
 
 namespace WpfWincoverage.Database
 {
@@ -12,94 +19,98 @@ namespace WpfWincoverage.Database
     {
         private static  string stringConnection = "Data Source=database.db";
 
-        public static List<UserModel> getUserList()
+        public static async Task<List<UserModel>> getUserList()
         {
             List<UserModel> listProfiel = new List<UserModel>();
             try
             {
-                using (var connection = new SQLiteConnection(stringConnection))
+                BasicHttpBinding binding = new BasicHttpBinding();
+                //Specify the address to be used for the client.
+                EndpointAddress address = new EndpointAddress("http://wincoveragesoap.azurewebsites.net/UserService.svc");
+                //UserService.UserServiceClient oCliente = new UserService.UserServiceClient(binding, address);
+
+                UserService2.UserServiceClient oCliente2 = new UserService2.UserServiceClient(binding, address);
+
+                //var usersList = await oCliente.getAllUsersAsync();
+                var usersList2 = oCliente2.getAllUsers();
+
+                foreach (string[] list in usersList2) 
                 {
-                    connection.Open();
-                    var command = connection.CreateCommand();
-
-                    command.CommandText = "select * from user";
-
-                    using (var reader = command.ExecuteReader())
-                    {
-                        if (reader.HasRows)
-                        {
-                            while (reader.Read())
-                            {
-                                UserModel userModer = new UserModel();
-                                userModer.Name = reader.GetString(1);
-                                userModer.User = reader.GetString(2);
-                                userModer.Email = reader.GetString(3);
-                                userModer.Phone = reader.GetString(4);
-                                userModer.Charge = reader.GetString(5);
-                                userModer.Rol = reader.GetString(6);
-                                listProfiel.Add(userModer);
-                            }
-                        }
-                    }
-                }
+                    UserModel userModer = new UserModel();
+                    userModer.Name = list[1];
+                    userModer.User = list[2];
+                    userModer.Email = list[3];
+                    userModer.Phone = list[4];
+                    userModer.Charge = list[5];
+                    userModer.Rol = list[6];
+                    listProfiel.Add(userModer);
+                }                
             }
             catch(Exception ex) 
             {
                 Console.WriteLine(ex.Message);
             }
-           
             return listProfiel;
         }
 
-        public static void deleteUser(string user, string name)
+        public static List<UserModel> getUserList2()
+        {
+            List<UserModel> listProfiel = new List<UserModel>();
+            try
+            {
+                var usersList2 = TcpBinding.Client.Program.GetUsuarios();
+                foreach (List<string> list in usersList2)
+                {
+                    UserModel userModer = new UserModel();
+                    userModer.Name = list[1];
+                    userModer.User = list[2];
+                    userModer.Email = list[3];
+                    userModer.Phone = list[4];
+                    userModer.Charge = list[5];
+                    userModer.Rol = list[6];
+                    listProfiel.Add(userModer);
+                }
+            }
+            catch (Exception ex)
+             {
+                Console.WriteLine(ex.Message);
+            }
+            return listProfiel;
+        }
+
+        public static async Task deleteUser(string user, string name)
         {
             try
             {
-                using (var connection = new SQLiteConnection(stringConnection))
-                {
-                    connection.Open();
-                    var command = connection.CreateCommand();
-                    command.CommandText = string.Format("delete FROM user where user ='{0}' and name='{1}'",user,name);
-                    command.ExecuteNonQuery();
-                }
+                /*AzureUserService.UserServiceClient oCliente = new AzureUserService.UserServiceClient();
+                await oCliente.deleteUserAsync(user,name);      */          
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }           
+        }
+
+        public static async Task addUser(UserModel user) 
+        {
+
+            try
+            {
+                /*AzureUserService.UserServiceClient oCliente = new AzureUserService.UserServiceClient();
+                await oCliente.addUserAsync(user.User, user.Name, user.Email, user.Phone, user.Charge, user.Rol);*/
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-
         }
 
-        public static void addUser(UserModel user) 
+        public static async Task updateUser(UserModel user,string userMain,string nameMain, string emailMain)
         {
             try
             {
-                using (var connection = new SQLiteConnection(stringConnection))
-                {
-                    connection.Open();
-                    var command = connection.CreateCommand();
-                    string query =  string.Format("INSERT INTO USER (USER,NAME,EMAIL,PHONE,CHARGE,ROL) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}')", user.User, user.Name, user.Email, user.Phone, user.Charge, user.Rol);
-                    command.CommandText = query;
-                    command.ExecuteNonQuery();
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        public static void updateUser(UserModel user,string userMain,string nameMain, string emailMain)
-        {
-            try
-            {
-                using (var connection = new SQLiteConnection(stringConnection))
-                {
-                    connection.Open();
-                    var command = connection.CreateCommand();
-                    command.CommandText = string.Format("UPDATE USER SET USER = '{0}',NAME='{1}',EMAIL='{2}',PHONE='{3}',CHARGE='{4}',ROL='{5}' WHERE USER='{6}' AND NAME='{7}' AND EMAIL='{8}'", user.User, user.Name, user.Email, user.Phone, user.Charge, user.Rol,userMain,nameMain,emailMain);
-                    command.ExecuteNonQuery();
-                }
+                /*AzureUserService.UserServiceClient oCliente = new AzureUserService.UserServiceClient();
+                await oCliente.updateUserAsync(user.User, user.Name, user.Email, user.Phone, user.Charge, user.Rol, userMain, nameMain, emailMain);*/
             }
             catch (Exception ex)
             {
@@ -201,7 +212,6 @@ namespace WpfWincoverage.Database
 
             return coutAP;
         }
-
 
         public static int getCoutSite()
         {
@@ -687,8 +697,7 @@ namespace WpfWincoverage.Database
             }
 
             return coutCPE;
-        }
-
+        }           
 
     }
 }

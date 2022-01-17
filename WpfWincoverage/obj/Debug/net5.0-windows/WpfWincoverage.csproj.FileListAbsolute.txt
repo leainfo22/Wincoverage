@@ -170,3 +170,11 @@ C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Conversion\XLSKML.baml
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Share\Share.g.cs
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Views\Coverage\Share\Share.baml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\Resources\Dictionary.baml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\obj\Debug\net5.0-windows\App.baml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

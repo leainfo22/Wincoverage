@@ -98,7 +98,7 @@ namespace WpfWincoverage.Views.Configuration
             buttonDelete.IsEnabled = true;
             buttonEdit.IsEnabled = true;
         }
-        private void buttonDelete_Click(object sender, RoutedEventArgs e)
+        private async void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
             Models.CPEAModel user = new Models.CPEAModel();
             bool APflag = false;
@@ -123,9 +123,9 @@ namespace WpfWincoverage.Views.Configuration
             {
                 Database.DatabaseController.deleteCPEAP(user.Code);
                 if(APflag)
-                    dataAP.ItemsSource = Database.DatabaseController.getUserList();
+                    dataAP.ItemsSource = await Database.DatabaseController.getUserList();
                 if(CPEflag)
-                    dataCPE.ItemsSource = Database.DatabaseController.getUserList();
+                    dataCPE.ItemsSource = await Database.DatabaseController.getUserList();
 
                 var w = Application.Current.Windows;
                 WelcomeProfile welcomeProfile = new WelcomeProfile();

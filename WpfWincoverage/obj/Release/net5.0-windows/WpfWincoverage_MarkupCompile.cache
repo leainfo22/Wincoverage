@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage\App.xaml
-231330993153
+31757017714
 
-34-259601561
+431209414024
 194392451143
-MainWindow.xaml;Views\Configuration\Channel\channelEditAdd.xaml;Views\Configuration\Channel\channelManagement.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\GPS\gpsEditAdd.xaml;Views\Configuration\GPS\gpsManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\Site\siteEditAdd.xaml;Views\Configuration\Site\siteManagement.xaml;Views\Configuration\UserManagement.xaml;Views\Configuration\Vector\vectorPage.xaml;Views\Coverage\DataLoggerEx\DataLoggerEx.xaml;Views\Coverage\LocalCapture\LocalCapture.xaml;Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml;Views\Coverage\LocalProjectConf\NewProject.xaml;Views\Coverage\Project\Project.xaml;Views\Coverage\Vector\Vector.xaml;Views\Login\ChangePass.xaml;Views\Login\ForgotPassView.xaml;Views\Login\HomeView.xaml;Views\Login\LoginView.xaml;WelcomeProfile.xaml;
+MainWindow.xaml;Views\Configuration\Channel\channelEditAdd.xaml;Views\Configuration\Channel\channelManagement.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\GPS\gpsEditAdd.xaml;Views\Configuration\GPS\gpsManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\Site\siteEditAdd.xaml;Views\Configuration\Site\siteManagement.xaml;Views\Configuration\UserManagement.xaml;Views\Configuration\Vector\vectorPage.xaml;Views\Coverage\Conversion\KML.xaml;Views\Coverage\Conversion\KMLEdition.xaml;Views\Coverage\Conversion\XLS.xaml;Views\Coverage\Conversion\XLSKML.xaml;Views\Coverage\DataLoggerConfig\DataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\NewDataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\ProjectoConfigInDatalogger.xaml;Views\Coverage\DataLoggerEx\DataLoggerEx.xaml;Views\Coverage\LocalCapture\LocalCapture.xaml;Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml;Views\Coverage\LocalProjectConf\NewProject.xaml;Views\Coverage\Project\Project.xaml;Views\Coverage\Share\Share.xaml;Views\Coverage\Vector\Vector.xaml;Views\Login\ChangePass.xaml;Views\Login\ForgotPassView.xaml;Views\Login\HomeView.xaml;Views\Login\LoginView.xaml;WelcomeProfile.xaml;
 
 False
 

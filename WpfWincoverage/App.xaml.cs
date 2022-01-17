@@ -19,6 +19,7 @@ namespace WpfWincoverage
         System.Windows.Markup.XamlReader reader = new System.Windows.Markup.XamlReader();
         ResourceDictionary myResourceDictionary = (ResourceDictionary)reader.LoadAsync(info.Stream);
         Application.Current.Resources.MergedDictionaries.Add(myResourceDictionary);*/
+        
     }
 
    

@@ -22,7 +22,13 @@ namespace WpfWincoverage.Login
     {
         public HomeView()
         {
+            var t = Database.DatabaseController.getUserList2();
             InitializeComponent();
+            if (MainWindow.globalLanguage == "spanish")
+            {
+                Style style = this.FindResource("labelWelcomeSpanish") as Style;
+                labelWelcome.Style = style;
+            }/**/
         }
 
         private void Login_Click(object sender, RoutedEventArgs e)

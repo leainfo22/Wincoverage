@@ -63,6 +63,8 @@ namespace WpfWincoverage
                 globalLanguage = "english";
             else
                 globalLanguage = language;
+
+            globalLanguage = "spanish";
             InitializeComponent();
             Main.Content = new Login.HomeView();
         }

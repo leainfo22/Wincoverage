@@ -2,9 +2,20 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Connected Services\ServiceReference1\**" />
+    <Compile Remove="Connected Services\UserService\**" />
+    <EmbeddedResource Remove="Connected Services\ServiceReference1\**" />
+    <EmbeddedResource Remove="Connected Services\UserService\**" />
+    <None Remove="Connected Services\ServiceReference1\**" />
+    <None Remove="Connected Services\UserService\**" />
+    <Page Remove="Connected Services\ServiceReference1\**" />
+    <Page Remove="Connected Services\UserService\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Views\Configuration\Channel\logoGeyser.JPG" />
@@ -22,7 +33,32 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Connected Services\UserService\Reference.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Connected Services\UserService\ConnectedService.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.114.3" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.*" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.9.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TcpBinding.Client\TcpBinding.Client.csproj" />
+    <ProjectReference Include="..\TpcBinding.Contracts\TpcBinding.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WincoverageSOAP">
+      <HintPath>..\..\WincoverageSOAP\WincoverageSOAP\bin\WincoverageSOAP.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +74,10 @@
     <Resource Include="Views\Coverage\Vector\logoGeyser.JPG" />
     <Resource Include="Views\Login\logoGeyser.JPG" />
     <Resource Include="logoGeyser.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
