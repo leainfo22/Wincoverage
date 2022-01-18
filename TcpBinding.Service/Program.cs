@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TpcBinding.Contracts;
 using System.ServiceModel;
-using System.Runtime.InteropServices;
 
 namespace TcpBinding.Service
 {
@@ -24,8 +23,8 @@ namespace TcpBinding.Service
         static void Main(string[] args)
         {
            // var handle = GetConsoleWindow();
-            // Hide
-            //ShowWindow(handle, SW_HIDE);
+           // Hide
+           //ShowWindow(handle, SW_HIDE);
 
             var uris = new Uri[1];
             string addr = "net.tcp://localhost:4073/ServicioUsuario";

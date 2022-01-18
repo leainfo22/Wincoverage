@@ -27,7 +27,7 @@ namespace TcpBinding.Client
             //var handle = GetConsoleWindow();
             // Hide
             //ShowWindow(handle, SW_HIDE);
-           
+            
             Console.ReadLine();
         }
         public static List<List<string>> GetUsuarios() 
