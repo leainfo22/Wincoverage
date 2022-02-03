@@ -14,11 +14,13 @@
                 <ImageBrush ImageSource="logoGeyser.JPG"/>
             </Image.OpacityMask>
         </Image>
-        <Button x:Name="buttonEdit" Content="Edit" RenderTransformOrigin="-1.054,0.536" Height="41" Width="60"  Canvas.Left="261" Canvas.Top="314"/>
-        <Button x:Name="buttonStop" Content="Stop" RenderTransformOrigin="-1.054,0.536" Height="41" Width="60"  Canvas.Left="544" Canvas.Top="314"/>
-        <Button x:Name="buttonPuse" Content="Pause" RenderTransformOrigin="-1.054,0.536" Width="61" Height="41"  Canvas.Left="348" Canvas.Top="314"/>
-        <Button x:Name="buttonStart" Content="Start" RenderTransformOrigin="0.348,-0.414" Width="63" Height="41"  Canvas.Left="437" Canvas.Top="314"/>
-        <Button x:Name="buttonTest" Content="Test" RenderTransformOrigin="2.659,0.495" Width="64" Height="41"  Canvas.Top="314" Canvas.Left="157"/>
+        <Button x:Name="buttonEdit" Content="Edit" RenderTransformOrigin="-1.054,0.536" Height="35" Width="60"  Canvas.Left="226" Canvas.Top="314"/>
+        <Button x:Name="buttonStop" Content="Stop" RenderTransformOrigin="-1.054,0.536" Height="35" Width="60"  Canvas.Left="425" Canvas.Top="314"/>
+        <Button x:Name="buttonPuse" Content="Pause" RenderTransformOrigin="-1.054,0.536" Width="61" Height="35"  Canvas.Left="291" Canvas.Top="314"/>
+        <Button x:Name="buttonStart" Content="Start" RenderTransformOrigin="0.348,-0.414" Width="63" Height="35"  Canvas.Left="357" Canvas.Top="314"/>
+        <Button x:Name="buttonTest" Content="Test" RenderTransformOrigin="2.659,0.495" Width="64" Height="35"  Canvas.Top="314" Canvas.Left="157"/>
+        <Button x:Name="button" Content="Back" Canvas.Left="538" Canvas.Top="314" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
+
         <DataGrid x:Name="dataGrid" Height="177" Width="447" Canvas.Left="157" Canvas.Top="122">
             <DataGrid.Columns>
 

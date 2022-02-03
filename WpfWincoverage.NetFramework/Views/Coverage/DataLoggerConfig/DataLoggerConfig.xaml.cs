@@ -119,6 +119,14 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
             userFrame.Content = new ProjectoConfigInDatalogger(this.MainWin);
         }
 
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+        }
+
     }
 
 }

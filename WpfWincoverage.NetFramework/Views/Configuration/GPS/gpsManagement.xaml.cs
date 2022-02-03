@@ -218,5 +218,12 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.GPS
                 Console.WriteLine(ex.Message);
             }
         }
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+        }
     }
 }

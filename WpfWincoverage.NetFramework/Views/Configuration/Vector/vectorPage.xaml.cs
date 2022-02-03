@@ -58,6 +58,13 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Vector
             if (openFileDialog.ShowDialog() == true)
                 path = File.ReadAllText(openFileDialog.FileName);
         }
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+        }
 
     }
 }

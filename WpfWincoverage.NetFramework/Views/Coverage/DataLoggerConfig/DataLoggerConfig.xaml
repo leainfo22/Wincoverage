@@ -22,6 +22,7 @@
         <Button x:Name="buttonImport" Content="Import" RenderTransformOrigin="0.527,0.56" Width="64" Height="40" Canvas.Left="321" Canvas.Top="267" Click="buttonImport_Click"/>
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
         <Button x:Name="buttonConf" Content="Datalogger&#xD;&#xA;Configuration" RenderTransformOrigin="0.348,-0.414" Width="78" Height="40"  Canvas.Left="497" Canvas.Top="267" Click="buttonConfig_Click" />
+        <Button x:Name="button" Content="Back" Canvas.Left="652" Canvas.Top="267" Height="40" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
 
     </Canvas>
 </Page>

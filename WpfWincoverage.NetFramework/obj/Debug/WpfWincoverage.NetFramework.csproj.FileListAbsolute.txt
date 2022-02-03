@@ -94,3 +94,14 @@ C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\Wp
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\WpfWincoverage.NetFramework.csproj.CopyComplete
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\WpfWincoverage.NetFramework.exe
 C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\WpfWincoverage.NetFramework.pdb
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\ControlzEx.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\MahApps.Metro.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\ControlzEx.pdb
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\ControlzEx.xml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\MahApps.Metro.pdb
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\MahApps.Metro.xml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\App.baml

@@ -27,9 +27,10 @@
         <TextBox x:Name="textBox1_Copy1" Canvas.Left="494" Canvas.Top="235" Text="" TextWrapping="Wrap" Width="91"/>
         <TextBox x:Name="textBox1_Copy2" Canvas.Left="352" Canvas.Top="266" Text="" TextWrapping="Wrap" Width="91"/>
         <TextBox x:Name="textBox1_Copy3" Canvas.Left="496" Canvas.Top="266" Text="" TextWrapping="Wrap" Width="91"/>
-        <Button x:Name="buttonEdit" Content="Find" RenderTransformOrigin="0.545,0.502" Height="41" Width="60"  Canvas.Left="217" Canvas.Top="311"/>
-        <Button x:Name="buttonPuse" Content="Download" RenderTransformOrigin="-1.054,0.536" Width="60" Height="41"  Canvas.Left="373" Canvas.Top="311"/>
-        <Button x:Name="buttonStart" Content="Delete" RenderTransformOrigin="0.348,-0.414" Width="63" Height="41"  Canvas.Left="524" Canvas.Top="311"/>
+        <Button x:Name="buttonEdit" Content="Find" RenderTransformOrigin="0.545,0.502" Height="35" Width="60"  Canvas.Left="217" Canvas.Top="311"/>
+        <Button x:Name="buttonPuse" Content="Download" RenderTransformOrigin="-1.054,0.536" Width="60" Height="35"  Canvas.Left="373" Canvas.Top="311"/>
+        <Button x:Name="buttonStart" Content="Delete" RenderTransformOrigin="0.348,-0.414" Width="63" Height="35"  Canvas.Left="524" Canvas.Top="311"/>
+        <Button x:Name="button" Content="Back" Canvas.Left="654" Canvas.Top="317" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
 
     </Canvas>
 </Page>

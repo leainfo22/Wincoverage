@@ -23,8 +23,9 @@
         <TextBox x:Name="textBox1" Canvas.Left="317" Canvas.Top="228" Text="" TextWrapping="Wrap" Width="219"/>
         <Button x:Name="load1" Content="Browse" Canvas.Left="578" Canvas.Top="165"/>
         <Button x:Name="load2" Content="Browse" Canvas.Left="578" Canvas.Top="227" RenderTransformOrigin="0.498,0.551"/>
-        <Button x:Name="buttonCancel" Content="Cancel" RenderTransformOrigin="0.517,0.537" Height="41" Width="60" Canvas.Left="476" Canvas.Top="300"  />
-        <Button x:Name="buttonCompare" Content="Compare" RenderTransformOrigin="0.562,0.488" Width="64" Height="41" Canvas.Left="317" Canvas.Top="300"  />
+        <Button x:Name="buttonCancel" Content="Cancel" RenderTransformOrigin="0.517,0.537" Height="35" Width="60" Canvas.Left="386" Canvas.Top="300"  />
+        <Button x:Name="buttonCompare" Content="Compare" RenderTransformOrigin="0.562,0.488" Width="64" Height="35" Canvas.Left="317" Canvas.Top="300"  />
+        <Button x:Name="button" Content="Back" Canvas.Left="470" Canvas.Top="300" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
 
 
     </Canvas>

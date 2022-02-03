@@ -9,17 +9,18 @@
       Title="UserManagement">
 
     <Canvas SizeChanged="Canvas_SizeChanged">
-        <Image x:Name="imageLogo" Canvas.Top="5" Canvas.Left="530" Height="33" Margin="0,58,22,0" Width="208" RenderTransformOrigin="1.5,0.5" Source="logoGeyser.JPG">
+        <Image x:Name="imageLogo" Canvas.Top="32" Canvas.Left="446" Height="33" Width="208" RenderTransformOrigin="1.5,0.5" Source="logoGeyser.JPG">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="logoGeyser.JPG"/>
             </Image.OpacityMask>
         </Image>
-        <DataGrid x:Name="grid" Height="200" Width="457" Canvas.Left="194" Canvas.Top="125" RenderTransformOrigin="0.491,0.53" SelectionChanged	="grid_Selected" />
+        <DataGrid x:Name="grid" Height="200" Width="457" Canvas.Left="164" Canvas.Top="94" RenderTransformOrigin="0.491,0.53" SelectionChanged	="grid_Selected" />
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
-        <Button x:Name="buttonEdit" Content="Edit" Canvas.Left="400" Canvas.Top="353" Height="35" Width="66" RenderTransformOrigin="0.468,-0.968" Click="buttonEdit_Click"/>
-        <Button x:Name="buttonDelete" Content="Delete" Canvas.Left="586" Canvas.Top="353" Width="65" Height="35" Click="buttonDelete_Click"/>
-        <Button x:Name="buttonNew" Content="New" Canvas.Left="52" Canvas.Top="171" Height="35" Width="66" Click="Button_Click"/>
-        <Label  x:Name="labelUser" Content="User Managemente" Canvas.Left="194" Canvas.Top="54" FontSize="36" FontFamily="Arial"/>
+        <Button x:Name="buttonEdit" Content="Edit" Canvas.Left="164" Canvas.Top="322" Height="35" Width="66" RenderTransformOrigin="0.468,-0.968" Click="buttonEdit_Click"/>
+        <Button x:Name="buttonDelete" Content="Delete" Canvas.Left="371" Canvas.Top="322" Width="65" Height="35" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonNew" Content="New" Canvas.Left="22" Canvas.Top="140" Height="35" Width="66" Click="Button_Click"/>
+        <Label  x:Name="labelUser" Content="User Managemente" Canvas.Left="110" Canvas.Top="23" FontSize="36" FontFamily="Arial"/>
+        <Button x:Name="button" Content="Back" Canvas.Left="555" Canvas.Top="322" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
     </Canvas>
 
 </Page>

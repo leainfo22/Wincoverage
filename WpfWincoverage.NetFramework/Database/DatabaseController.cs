@@ -51,7 +51,8 @@ namespace WpfWincoverage.NetFramework.Database
             List<UserModel> listProfiel = new List<UserModel>();
             try
             {
-                var usersList2 = TcpBinding.Client.Program.GetUsuarios();
+                List<List<string>> usersList2 = new List<List<string>>();
+                usersList2 = TcpBinding.Client.Program.GetUsuarios();
                 foreach (List<string> list in usersList2)
                 {
                     UserModel userModer = new UserModel();
@@ -270,7 +271,6 @@ namespace WpfWincoverage.NetFramework.Database
             return coutAP;
         }
 
-
         public static List<CPEAModel> getAPList(int limit, int offset)
         {
             List<CPEAModel> listProfiel = new List<CPEAModel>();
@@ -470,7 +470,6 @@ namespace WpfWincoverage.NetFramework.Database
 
             return listProfiel;
         }
-
 
         public static void addAP(string code, string brand, string model, string firmware)
         {

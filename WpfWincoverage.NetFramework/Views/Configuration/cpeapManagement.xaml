@@ -10,33 +10,35 @@
 
     <Canvas SizeChanged="Canvas_SizeChanged">
 
-        <Image x:Name="imageMain2" Height="33" Margin="582,62,10,355" Width="208" RenderTransformOrigin="0.497,0.586" Source="/logoGeyser.JPG" Canvas.Left="-22" Canvas.Top="19">
+        <Image x:Name="imageMain2" Height="33" Width="208" RenderTransformOrigin="0.497,0.586" Source="/logoGeyser.JPG" Canvas.Left="558" Canvas.Top="66">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="logoGeyser.JPG"/>
             </Image.OpacityMask>
         </Image>
 
         <Label x:Name="labelMnj" Content="CPE / AP Management"  FontSize="36" FontFamily="Arial" Margin="218,10,218,392" RenderTransformOrigin="0.409,0.594"/>
-        <DataGrid x:Name="dataAP" Margin="104,116,104,248"  SelectionChanged="grid_Selected"/>
-        <DataGrid x:Name="dataCPE" Margin="104,225,104,139"  SelectionChanged="grid_Selected" />
-        <Label  x:Name="labelListAP" Content="AP List" HorizontalAlignment="Left" Margin="40,141,0,0" VerticalAlignment="Top"/>
-        <Label  x:Name="labelListCPE" Content="CPE List" HorizontalAlignment="Left" Margin="40,242,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="buttonADDAP" Content="ADD AP" HorizontalAlignment="Left" Margin="104,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.054,0.536" Height="41" Width="60" Click="buttonAddAP_Click"/>
-        <Button x:Name="buttonADDCPE" Content="ADD CPE" HorizontalAlignment="Left" Margin="191,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.054,0.536" Width="61" Height="41" Click="buttonAddCPE_Click"/>
-        <Button x:Name="buttonEdit" Content="Edit" HorizontalAlignment="Left" Margin="280,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="63" Height="41" Click="buttonEdit_Click"/>
-        <Button x:Name="buttonDelete" Content="Remove" HorizontalAlignment="Center" Margin="0,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="41" Click="buttonDelete_Click"/>
-        <Button x:Name="buttonImport" Content="Import" HorizontalAlignment="Left" Margin="539,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="41" Click="buttonImport_Click"/>
-        <Button x:Name="buttonViz" Content="Visualize" HorizontalAlignment="Left" Margin="632,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="41" Click="buttonEdit_Click"/>
-        <Label  x:Name="labelAP" Content="" Canvas.Left="679" Canvas.Top="167"/>
-        <Label  x:Name="labelDeAP" Content="de" Canvas.Left="626" Canvas.Top="167"/>
-        <Button x:Name="bottonAPNext" Content="Next" Canvas.Left="728" Canvas.Top="170" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
-        <Button x:Name="bottonAPBefore" Content="Before" Canvas.Left="526" Canvas.Top="170" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
-        <Label  x:Name="labelCPE" Content="" Canvas.Left="679" Canvas.Top="245"/>
-        <Label  x:Name="labelDeCPE" Content="de" Canvas.Left="626" Canvas.Top="245"/>
-        <Button x:Name="bottonCPENext" Content="Next" Canvas.Left="728" Canvas.Top="248" RenderTransformOrigin="0.038,-0.087" Click="Button_NextCPE"/>
-        <Button x:Name="bottonCPEBefore" Content="Before" Canvas.Left="526" Canvas.Top="248" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeCPE"/>
-        <TextBox x:Name="boxAP" Canvas.Left="586" Canvas.Top="173" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
-        <TextBox x:Name="boxCPE" Canvas.Left="586" Canvas.Top="251" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
+        <DataGrid x:Name="dataAP"  SelectionChanged="grid_Selected" Canvas.Left="102" Canvas.Top="101"/>
+        <DataGrid x:Name="dataCPE"  SelectionChanged="grid_Selected" Canvas.Left="102" Canvas.Top="210" />
+        <Label  x:Name="labelListAP" Content="AP List" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="38" Canvas.Top="126"/>
+        <Label  x:Name="labelListCPE" Content="CPE List" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="38" Canvas.Top="227"/>
+        <Button x:Name="buttonADDAP" Content="ADD AP" HorizontalAlignment="Left" Margin="104,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.054,0.536" Height="35" Width="60" Click="buttonAddAP_Click"/>
+        <Button x:Name="buttonADDCPE" Content="ADD CPE" HorizontalAlignment="Left" Margin="191,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.054,0.536" Width="61" Height="35" Click="buttonAddCPE_Click"/>
+        <Button x:Name="buttonEdit" Content="Edit" HorizontalAlignment="Left" Margin="280,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="63" Height="35" Click="buttonEdit_Click"/>
+        <Button x:Name="buttonDelete" Content="Remove" HorizontalAlignment="Center" Margin="0,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonImport" Content="Import" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonImport_Click" Canvas.Left="500" Canvas.Top="339"/>
+        <Button x:Name="buttonViz" Content="Visualize" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="598" Canvas.Top="339"/>
+        <Button x:Name="button" Content="Back" Canvas.Left="691" Canvas.Top="339" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
+
+        <Label  x:Name="labelAP" Content="" Canvas.Left="677" Canvas.Top="152"/>
+        <Label  x:Name="labelDeAP" Content="de" Canvas.Left="624" Canvas.Top="152"/>
+        <Button x:Name="bottonAPNext" Content="Next" Canvas.Left="726" Canvas.Top="155" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
+        <Button x:Name="bottonAPBefore" Content="Before" Canvas.Left="524" Canvas.Top="155" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
+        <Label  x:Name="labelCPE" Content="" Canvas.Left="677" Canvas.Top="230"/>
+        <Label  x:Name="labelDeCPE" Content="de" Canvas.Left="624" Canvas.Top="230"/>
+        <Button x:Name="bottonCPENext" Content="Next" Canvas.Left="726" Canvas.Top="233" RenderTransformOrigin="0.038,-0.087" Click="Button_NextCPE"/>
+        <Button x:Name="bottonCPEBefore" Content="Before" Canvas.Left="524" Canvas.Top="233" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeCPE"/>
+        <TextBox x:Name="boxAP" Canvas.Left="584" Canvas.Top="158" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
+        <TextBox x:Name="boxCPE" Canvas.Left="584" Canvas.Top="236" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
 
     </Canvas>

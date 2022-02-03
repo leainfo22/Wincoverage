@@ -28,9 +28,10 @@
         <Button x:Name="buttonXMLbrow" Content="Browse" Canvas.Left="439" Canvas.Top="244" Height="22" Width="59"  Click="buttonImport_Click"/>
         <Button x:Name="buttonImport" Content="Import" Canvas.Left="523" Canvas.Top="244" Height="22" Width="59"/>
         <Button x:Name="buttonExport" Content="Export" Canvas.Left="605" Canvas.Top="244" Height="22" Width="59" RenderTransformOrigin="0.545,0.857"/>
-        <Button x:Name="buttonOk" Content="Ok" Canvas.Left="439" Canvas.Top="350" Height="22" Width="59"/>
-        <Button x:Name="buttonCancel" Content="Cancel" Canvas.Left="523" Canvas.Top="350" Height="22" Width="59"/>
-        <Button x:Name="buttonApply" Content="Apply" Canvas.Left="605" Canvas.Top="350" Height="22" Width="59" RenderTransformOrigin="0.545,0.857"/>
+        <Button x:Name="buttonOk" Content="Ok" Canvas.Left="350" Canvas.Top="338" Height="35" Width="64"/>
+        <Button x:Name="buttonCancel" Content="Cancel" Canvas.Left="434" Canvas.Top="338" Height="35" Width="64"/>
+        <Button x:Name="buttonApply" Content="Apply" Canvas.Left="516" Canvas.Top="338" Height="35" Width="64" RenderTransformOrigin="0.545,0.857"/>
+        <Button x:Name="button" Content="Back" Canvas.Left="598" Canvas.Top="338" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
 
     </Canvas>
 </Page>

@@ -70,7 +70,13 @@ namespace WpfWincoverage.NetFramework.Views.Configuration
             userFrame.Content = new NewUser(this.MainWin, false, user);
         }
 
-
+        private void backButton_Click(object sender, RoutedEventArgs e) 
+        {
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+        }
         private void grid_Selected(object sender, RoutedEventArgs e)
         {
             buttonDelete.IsEnabled = true;
@@ -88,7 +94,6 @@ namespace WpfWincoverage.NetFramework.Views.Configuration
             {
                 Database.DatabaseController.deleteUser(user.User, user.Name);
                 grid.ItemsSource = Database.DatabaseController.getUserList();
-
             }
         }
 

@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="WpfWincoverage.NetFramework.exe.manifest" size="9117">
+    <dependentAssembly dependencyType="install" codebase="WpfWincoverage.NetFramework.exe.manifest" size="11867">
       <assemblyIdentity name="WpfWincoverage.NetFramework.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>paEmtnl1xVMYf5cuiGkeANYf3iuBiRvjTk/6cQeuNVQ=</dsig:DigestValue>
+        <dsig:DigestValue>hhL1xE4KuaBXG2R0yX6wREg7c2iecHDxgHi8jR9y3cQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -51,5 +51,13 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.LocalCapture
             }
         }
 
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+        }
+
     }
 }

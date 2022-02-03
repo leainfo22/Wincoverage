@@ -20,10 +20,10 @@
         <Label x:Name="labelMnj" Content="Channel Management"  FontSize="36" FontFamily="Arial" Margin="218,10,218,392" RenderTransformOrigin="0.409,0.594"/>
         <DataGrid x:Name="dataAP" Margin="104,116,104,248"  SelectionChanged="grid_Selected"/>
         <Label  x:Name="labelListAP" Content="Channel List" Canvas.Left="21" Canvas.Top="164" />
-        <Button x:Name="buttonADDAP" Content="ADD" Click="buttonAddAP_Click" Canvas.Left="167" Canvas.Top="339"  Width="64" Height="41"/>
-        <Button x:Name="buttonEdit" Content="Edit" Click="buttonEdit_Click" Width="64" Height="41" RenderTransformOrigin="0.491,0.536" Canvas.Left="264" Canvas.Top="339"/>
-        <Button x:Name="buttonImport" Content="Import" HorizontalAlignment="Left" Margin="539,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="41" Click="buttonImport_Click"/>
-        <Button x:Name="buttonViz" Content="Visualize" HorizontalAlignment="Left" Margin="632,339,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="41" Click="buttonEdit_Click"/>
+        <Button x:Name="buttonADDAP" Content="ADD" Click="buttonAddAP_Click" Canvas.Left="167" Canvas.Top="339"  Width="64" Height="35"/>
+        <Button x:Name="buttonEdit" Content="Edit" Click="buttonEdit_Click" Width="64" Height="35" RenderTransformOrigin="0.491,0.536" Canvas.Left="264" Canvas.Top="339"/>
+        <Button x:Name="buttonImport" Content="Import" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonImport_Click" Canvas.Left="500" Canvas.Top="339"/>
+        <Button x:Name="buttonViz" Content="Visualize" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="586" Canvas.Top="339"/>
         <Label  x:Name="labelAP" Content="" Canvas.Left="679" Canvas.Top="167"/>
         <Label  x:Name="labelDeAP" Content="de" Canvas.Left="626" Canvas.Top="167"/>
         <Button x:Name="bottonAPNext" Content="Next" Canvas.Left="728" Canvas.Top="170" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
@@ -31,6 +31,7 @@
         <TextBox x:Name="boxAP" Canvas.Left="586" Canvas.Top="173" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
         <Button x:Name="buttonDelete" Content="Remove" Width="64" Height="41" Click="buttonDelete_Click" Canvas.Left="63" Canvas.Top="339" RenderTransformOrigin="0.589,0.685" />
+        <Button x:Name="button" Content="Back" Canvas.Left="679" Canvas.Top="341" Height="35" Width="66" RenderTransformOrigin="0.598,0.329"/>
 
     </Canvas>
 
