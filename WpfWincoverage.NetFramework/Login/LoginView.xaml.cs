@@ -62,15 +62,29 @@ namespace WpfWincoverage.NetFramework.Login
                 MessageBox.Show("Complete password information", "Information");
             else
             {
-                if (userBox.Text == "admin")
+                if (userBox.Text == "admin") 
+                {
+                    UserCurrentModel.name = userBox.Text;
                     UserCurrentModel.rol = userBox.Text;
-                if (userBox.Text == "terre")
-                    UserCurrentModel.rol = userBox.Text;
+
+                }
+                if (userBox.Text == "terre") 
+                {
+                    UserCurrentModel.name = userBox.Text;
+                    UserCurrentModel.rol = "Terreno";
+                }
                 if (userBox.Text == "inge")
-                    UserCurrentModel.rol = userBox.Text;
+                {
+                    UserCurrentModel.rol = "Ingeniero";
+                    UserCurrentModel.name = userBox.Text;
+
+                }
                 //cambiar para sacar los privilegios a cualquiera **lvasquez
-                else
-                    UserCurrentModel.rol = userBox.Text;
+                else 
+                {
+                    UserCurrentModel.name = userBox.Text;
+                    UserCurrentModel.rol = "Administrador";
+                }
 
                 var w = Application.Current.Windows;
                 WelcomeProfile welcomeProfile = new WelcomeProfile();

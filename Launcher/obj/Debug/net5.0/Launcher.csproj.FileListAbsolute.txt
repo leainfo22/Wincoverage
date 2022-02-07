@@ -14,19 +14,3 @@ C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\ref\Launcher.d
 C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.pdb
 C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.genruntimeconfig.cache
 C:\Users\leand\source\repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.csproj.AssemblyReference.cache
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.exe
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.deps.json
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.runtimeconfig.json
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.runtimeconfig.dev.json
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.dll
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\ref\Launcher.dll
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\bin\Debug\net5.0\Launcher.pdb
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.csproj.AssemblyReference.cache
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.AssemblyInfoInputs.cache
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.AssemblyInfo.cs
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.csproj.CoreCompileInputs.cache
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.dll
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\ref\Launcher.dll
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.pdb
-C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\Launcher\obj\Debug\net5.0\Launcher.genruntimeconfig.cache

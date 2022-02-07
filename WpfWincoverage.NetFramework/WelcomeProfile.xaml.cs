@@ -23,6 +23,7 @@ namespace WpfWincoverage.NetFramework
             dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
             //dispatcherTimer.Start();
             InitializeComponent();
+            activeUserMenu.Header = "Usuario: " + UserCurrentModel.name + "  Rol: " + UserCurrentModel.rol;
 
             if (UserCurrentModel.rol == "inge")
             {
@@ -40,7 +41,9 @@ namespace WpfWincoverage.NetFramework
                 configMenu.Items.Remove(channelMenu);
                 winMenu.Items.Remove(converMenu);
                 winMenu.Items.Remove(compaMenu);
+
             }
+
         }
         private void timerSession_Tick(object sender, EventArgs e)
         {

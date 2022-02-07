@@ -181,19 +181,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZrSV0hDQepUIB+8aMZ707jiawsbVz2fhhCblpQVGVr0=</dsig:DigestValue>
+        <dsig:DigestValue>GyVaYcund9Qj0HfHDFBC6zq/XslywX506cGv5d4yN80=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfWincoverage.NetFramework.exe" size="462304">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfWincoverage.NetFramework.exe" size="462816">
       <assemblyIdentity name="WpfWincoverage.NetFramework" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y9cVXXy/+caeAEvIr/oSDA0J5UtoDCYblJKsQFFviBs=</dsig:DigestValue>
+        <dsig:DigestValue>Wl7OkPin6jiC2BBkZmyZcjAaZkHy3ebto/RpZUh11+E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
