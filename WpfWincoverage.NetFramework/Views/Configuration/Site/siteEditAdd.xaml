@@ -9,22 +9,18 @@
       Title="siteEditAdd">
 
     <Canvas SizeChanged="Canvas_SizeChanged">
-        <Image Canvas.Top="5" Canvas.Left="530" Height="33" Margin="0,58,22,0" Width="208" RenderTransformOrigin="1.5,0.5" Source="/Views/Configuration/Site/logoGeyser.JPG">
-            <Image.OpacityMask>
-                <ImageBrush ImageSource="logoGeyser.JPG"/>
-            </Image.OpacityMask>
-        </Image>
-        <Label x:Name="labelMnj" Content="Site Location"  FontSize="36" FontFamily="Arial" Canvas.Left="291" Canvas.Top="41"/>
-        <Button x:Name="saveNew" Content="Save and new" Canvas.Left="396" Canvas.Top="367" Height="35" Width="92" RenderTransformOrigin="0.468,-0.968" Click="Button_Click_1"/>
-        <Button Content="Save and close" Canvas.Left="582" Canvas.Top="367" Width="104" Height="35" Click="Button_Click"/>
-        <Label Content="Name" Canvas.Left="118" Canvas.Top="143"/>
-        <Label Content="Area" Canvas.Left="118" Canvas.Top="199" RenderTransformOrigin="0.585,0.172"/>
-        <Label Content="Longitud" Canvas.Left="118" Canvas.Top="249"/>
-        <TextBox x:Name="texboxName" Canvas.Left="194" Canvas.Top="151" TextWrapping="Wrap" Width="120"/>
-        <TextBox x:Name="texboxArea" Canvas.Left="194" Canvas.Top="203" TextWrapping="Wrap" Width="120" RenderTransformOrigin="0.497,0.764"/>
-        <TextBox x:Name="texboxLongitud" Canvas.Left="194" Canvas.Top="253" TextWrapping="Wrap" Width="120"/>
-        <Label Content="Latitud" Canvas.Left="118" Canvas.Top="296"/>
-        <TextBox x:Name="texboxLatitud" Canvas.Left="194" Canvas.Top="300" TextWrapping="Wrap" Width="120"/>
+
+        <Label x:Name="labelMnj" Content="Site Location"  FontSize="36" FontFamily="Arial" Canvas.Left="120" Canvas.Top="41"/>
+        <Button x:Name="saveNew" Content="Save and new" Canvas.Left="400" Canvas.Top="314" Height="35" Width="92" Click="Button_Click_1"/>
+        <Button x:Name="saveClose" Content="Save and close" Canvas.Left="570" Canvas.Top="314" Width="104" Height="35" Click="Button_Click"/>
+        <Label Content="Name" Canvas.Left="117" Canvas.Top="113"/>
+        <Label Content="Area" Canvas.Left="117" Canvas.Top="169" RenderTransformOrigin="0.585,0.172"/>
+        <Label Content="Longitud" Canvas.Left="117" Canvas.Top="219"/>
+        <TextBox x:Name="texboxName" Canvas.Left="193" Canvas.Top="121" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="texboxArea" Canvas.Left="193" Canvas.Top="173" TextWrapping="Wrap" Width="120" RenderTransformOrigin="0.497,0.764"/>
+        <TextBox x:Name="texboxLongitud" Canvas.Left="193" Canvas.Top="223" TextWrapping="Wrap" Width="120"/>
+        <Label Content="Latitud" Canvas.Left="117" Canvas.Top="266"/>
+        <TextBox x:Name="texboxLatitud" Canvas.Left="193" Canvas.Top="270" TextWrapping="Wrap" Width="120"/>
 
     </Canvas>
 

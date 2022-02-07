@@ -34,6 +34,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Site
             this.type = "";
             this.MainWin = MainWin;
             buttonEdit.IsEnabled = false;
+            buttonViz.IsEnabled = false;
             coutAP = Database.DatabaseController.getCoutSite();
             try
             {
@@ -88,13 +89,12 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Site
         private void grid_Selected(object sender, RoutedEventArgs e)
         {
             buttonEdit.IsEnabled = true;
+            buttonViz.IsEnabled = true;
         }
 
         private void buttonEdit_Click(object sender, RoutedEventArgs e)
         {
             Models.SiteModel user = new Models.SiteModel();
-
-
             labelMnj.Visibility = Visibility.Hidden;
             dataAP.Visibility = Visibility.Hidden;
             labelListAP.Visibility = Visibility.Hidden;
@@ -106,7 +106,9 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Site
             labelDeAP.Visibility = Visibility.Hidden;
             bottonAPNext.Visibility = Visibility.Hidden;
             bottonAPBefore.Visibility = Visibility.Hidden;
-            boxAP.Visibility = Visibility.Hidden;
+            boxAP.Visibility = Visibility.Hidden; 
+            button.Visibility = Visibility.Hidden;
+
             userFrame.Content = new siteEditAdd(this.MainWin, true, user);
         }
 
@@ -127,6 +129,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Site
             labelDeAP.Visibility = Visibility.Hidden;
             bottonAPNext.Visibility = Visibility.Hidden;
             bottonAPBefore.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
 
             boxAP.Visibility = Visibility.Hidden;
 

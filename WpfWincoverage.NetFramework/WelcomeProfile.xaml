@@ -21,7 +21,8 @@
                     <MenuItem Header="Spanish" IsEnabled="False"/>
                     <MenuItem Header="English" />
                 </MenuItem>
-                <MenuItem  x:Name="CPEMenu" Header="_CPE/AP Management" Click="CPEAP_Click"/>
+                <MenuItem  x:Name="APMenu" Header="_AP Management" Click="AP_Click"/>
+                <MenuItem  x:Name="CPEMenu" Header="_CPE Management" Click="CPE_Click"/>
                 <MenuItem  x:Name="GPSMenu" Header="_GPS Management" Click="GPS_Click"/>
                 <MenuItem  x:Name="siteMenu" Header="_Site/Location Management" Click="Site_Click"/>
                 <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet" Click="Vector_Click"/>

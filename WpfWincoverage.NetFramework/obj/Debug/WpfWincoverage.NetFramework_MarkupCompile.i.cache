@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\
 WpfWincoverage.NetFramework
 none
 false
 DEBUG;TRACE
-C:\Users\leand\source\repos\Wincoverage\WpfWincoverage.NetFramework\App.xaml
-31-305288295
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\WpfWincoverage.NetFramework\App.xaml
+35-1908961552
 
-46984088247
-1321924997678
-Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;Views\Configuration\Channel\channelEditAdd.xaml;Views\Configuration\Channel\channelManagement.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\GPS\gpsEditAdd.xaml;Views\Configuration\GPS\gpsManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\Site\siteEditAdd.xaml;Views\Configuration\Site\siteManagement.xaml;Views\Configuration\UserManagement.xaml;Views\Configuration\Vector\vectorPage.xaml;Views\Coverage\Conversion\KML.xaml;Views\Coverage\Conversion\KMLEdition.xaml;Views\Coverage\Conversion\XLS.xaml;Views\Coverage\Conversion\XLSKML.xaml;Views\Coverage\DataLoggerConfig\DataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\NewDataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\ProjectoConfigInDatalogger.xaml;Views\Coverage\DataLoggerEx\DataLoggerEx.xaml;Views\Coverage\LocalCapture\LocalCapture.xaml;Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml;Views\Coverage\LocalProjectConf\NewProject.xaml;Views\Coverage\Project\Project.xaml;Views\Coverage\Share\Share.xaml;Views\Coverage\Vector\Vector.xaml;WelcomeProfile.xaml;
+501676301057
+132663607360
+Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;Views\Configuration\AP\ApEditAdd.xaml;Views\Configuration\AP\ApManagement.xaml;Views\Configuration\Channel\channelEditAdd.xaml;Views\Configuration\Channel\channelManagement.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\CPE\CpeEditAdd.xaml;Views\Configuration\CPE\CpeManagement.xaml;Views\Configuration\GPS\gpsEditAdd.xaml;Views\Configuration\GPS\gpsManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\Site\siteEditAdd.xaml;Views\Configuration\Site\siteManagement.xaml;Views\Configuration\UserManagement.xaml;Views\Configuration\Vector\vectorPage.xaml;Views\Coverage\Conversion\KML.xaml;Views\Coverage\Conversion\KMLEdition.xaml;Views\Coverage\Conversion\XLS.xaml;Views\Coverage\Conversion\XLSKML.xaml;Views\Coverage\DataLoggerConfig\DataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\NewDataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\ProjectoConfigInDatalogger.xaml;Views\Coverage\DataLoggerEx\DataLoggerEx.xaml;Views\Coverage\LocalCapture\LocalCapture.xaml;Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml;Views\Coverage\LocalProjectConf\NewProject.xaml;Views\Coverage\Project\Project.xaml;Views\Coverage\Share\Share.xaml;Views\Coverage\Vector\Vector.xaml;WelcomeProfile.xaml;
 
-True
+False
 

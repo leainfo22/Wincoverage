@@ -12,3 +12,18 @@ C:\Users\leand\source\repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.
 C:\Users\leand\source\repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.CopyComplete
 C:\Users\leand\source\repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.exe
 C:\Users\leand\source\repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.pdb
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.exe.config
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.exe.manifest
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.application
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.exe
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.pdb
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TpcBinding.Contracts.dll
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\bin\Debug\TpcBinding.Contracts.pdb
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.AssemblyReference.cache
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.CoreCompileInputs.cache
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.exe.manifest
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.application
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.CopyComplete
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.exe
+C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.pdb

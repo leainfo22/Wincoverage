@@ -37,7 +37,8 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Site
                 texboxLongitud.Text = user.Latitud;
                 texboxLatitud.Text = user.Longitud;
                 labelMnj.Content = "Edit Site-Location";
-                saveNew.Visibility = Visibility.Hidden;
+                saveNew.Visibility = Visibility.Hidden; 
+
             }
         }
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)

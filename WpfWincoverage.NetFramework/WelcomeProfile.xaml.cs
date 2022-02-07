@@ -33,6 +33,7 @@ namespace WpfWincoverage.NetFramework
             {
                 configMenu.Items.Remove(userMenu);
                 configMenu.Items.Remove(CPEMenu);
+                configMenu.Items.Remove(APMenu);
                 configMenu.Items.Remove(GPSMenu);
                 configMenu.Items.Remove(siteMenu);
                 configMenu.Items.Remove(vectorMenu);
@@ -74,6 +75,27 @@ namespace WpfWincoverage.NetFramework
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
             Main.Content = new Views.Configuration.cpeapManagement(Main);
+        }
+        private void CPE_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Configuration.CPE.CpeManagement(Main);
+        }
+
+        private void AP_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            Main.Content = new Views.Configuration.AP.ApManagement(Main);
         }
 
         private void Vector_Click(object sender, RoutedEventArgs e)

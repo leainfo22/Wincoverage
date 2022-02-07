@@ -27,13 +27,13 @@
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
         <Button x:Name="buttonClose" Content="Save" Canvas.Left="571" Canvas.Top="306" Width="64" Height="40" Click="Exit_Click"/>
         <Button x:Name="buttonExit" Content="Exit" Canvas.Left="675" Canvas.Top="306" Width="64" Height="40" Click="Exit_Click"/>
-        <Label   x:Name="labelPing" Content="Ping" Canvas.Left="584" Canvas.Top="86"/>
-        <Label   x:Name="labelLoad" Content="Load" Canvas.Left="584" Canvas.Top="133"/>
-        <Label   x:Name="labelChannel" Content="Channel" Canvas.Left="584" Canvas.Top="178"/>
-        <Label   x:Name="labelPassword" Content="Password" Canvas.Left="584" Canvas.Top="225"/>
-        <TextBox x:Name="textBoxPing" Canvas.Left="656" Canvas.Top="90" Text="" TextWrapping="Wrap" Width="120"/>
-        <TextBox x:Name="textBoxLoad" Canvas.Left="656" Canvas.Top="137" Text="" TextWrapping="Wrap" Width="120"/>
-        <TextBox x:Name="textBoxChannel" Canvas.Left="656" Canvas.Top="182" Text="" TextWrapping="Wrap" Width="120"/>
-        <TextBox x:Name="textBoxPass" Canvas.Left="656" Canvas.Top="229" Text="" TextWrapping="Wrap" Width="120"/>
+        <Label   x:Name="labelPing" Content="Ping" Canvas.Left="570" Canvas.Top="86"/>
+        <Label   x:Name="labelLoad" Content="Load" Canvas.Left="570" Canvas.Top="133"/>
+        <Label   x:Name="labelChannel" Content="Channel" Canvas.Left="570" Canvas.Top="178"/>
+        <Label   x:Name="labelPassword" Content="Password" Canvas.Left="570" Canvas.Top="225"/>
+        <TextBox x:Name="textBoxPing" Canvas.Left="630" Canvas.Top="90" Text="" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="textBoxLoad" Canvas.Left="630" Canvas.Top="137" Text="" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="textBoxChannel" Canvas.Left="630" Canvas.Top="182" Text="" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="textBoxPass" Canvas.Left="630" Canvas.Top="229" Text="" TextWrapping="Wrap" Width="120"/>
     </Canvas>
 </Page>

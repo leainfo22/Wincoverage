@@ -15,7 +15,7 @@
             </Image.OpacityMask>
         </Image>
         <Label  x:Name="labelMnj" Content="Project Conversion"  FontSize="36" FontFamily="Arial" RenderTransformOrigin="0.503,0.565" Canvas.Left="177" Canvas.Top="6"/>
-        <Button x:Name="buttonClose" Content="Cancel" Canvas.Left="338" Canvas.Top="299" Width="64" Height="40" />
+        <Button x:Name="buttonClose" Content="Cancel" Canvas.Left="338" Canvas.Top="299" Width="64" Height="40" Click="backButton_Click"/>
         <Button x:Name="buttonExit" Content="Export" Canvas.Left="486" Canvas.Top="299" Width="64" Height="40" />
         <Label   x:Name="labelChannel" Content="Project File" Canvas.Left="62" Canvas.Top="133"/>
         <Label   x:Name="labelPassword" Content="File Name datalogger" Canvas.Left="62" Canvas.Top="180"/>

@@ -12,7 +12,7 @@ namespace WpfWincoverage.NetFramework.Models
         public string User { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public string Charge { get; set; }
+        public string Position { get; set; }
         public string Rol { get; set; }
 
     }

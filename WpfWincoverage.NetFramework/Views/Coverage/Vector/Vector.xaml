@@ -22,15 +22,15 @@
             <Label x:Name="project2" Content="XSL file " Canvas.Left="194" Canvas.Top="175"/>
             <TextBox x:Name="textBox" Canvas.Left="315" Canvas.Top="138" Text="" TextWrapping="Wrap" Width="219"/>
             <TextBox x:Name="textBox1" Canvas.Left="315" Canvas.Top="179" Text="" TextWrapping="Wrap" Width="219"/>
-            <Button x:Name="load1" Content="Browse" Canvas.Left="576" Canvas.Top="137"/>
-            <Button x:Name="load2" Content="Browse" Canvas.Left="576" Canvas.Top="177" RenderTransformOrigin="0.498,0.551"/>
+            <Button x:Name="load1" Content="Browse" Canvas.Left="576" Canvas.Top="137" Click="buttonProject_Click"/>
+            <Button x:Name="load2" Content="Browse" Canvas.Left="576" Canvas.Top="177" RenderTransformOrigin="0.498,0.551" Click="buttonXLS_Click"/>
             <Button x:Name="buttonCancel" Content="Cancel" RenderTransformOrigin="0.517,0.537" Height="41" Width="60" Canvas.Left="474" Canvas.Top="303"  />
             <Button x:Name="buttonCompare" Content="Assign" RenderTransformOrigin="0.562,0.488" Width="64" Height="42" Canvas.Left="315" Canvas.Top="307"  />
             <Label x:Name="project2_Copy" Content="Vector file" Canvas.Left="194" Canvas.Top="215"/>
-            <TextBox x:Name="textBox1_Copy" Canvas.Left="315" Canvas.Top="219" Text="" TextWrapping="Wrap" Width="219"/>
-            <Button x:Name="load2_Copy" Content="Browse" Canvas.Left="576" Canvas.Top="218" RenderTransformOrigin="0.498,0.551"/>
+            <TextBox x:Name="textBox1_Copy" Canvas.Left="315" Canvas.Top="219" Text="" TextWrapping="Wrap" Width="219" />
+            <Button x:Name="load2_Copy" Content="Browse" Canvas.Left="576" Canvas.Top="218" RenderTransformOrigin="0.498,0.551" Click="buttonVector_Click"/>
             <Label x:Name="project1_Copy" Content="File name XSL" Canvas.Left="194" Canvas.Top="261"/>
-            <TextBox x:Name="textBox1_Copy1" Canvas.Left="315" Canvas.Top="261" Text="File Name" TextWrapping="Wrap" Width="219"/>
+            <TextBox x:Name="textBox1_Copy1" Canvas.Left="315" Canvas.Top="261" Text="" TextWrapping="Wrap" Width="219"/>
 
 
         </Canvas>

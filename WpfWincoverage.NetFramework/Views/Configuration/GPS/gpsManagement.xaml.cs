@@ -139,7 +139,9 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.GPS
             labelDeAP.Visibility = Visibility.Hidden;
             bottonAPNext.Visibility = Visibility.Hidden;
             bottonAPBefore.Visibility = Visibility.Hidden;
-            boxAP.Visibility = Visibility.Hidden;
+            boxAP.Visibility = Visibility.Hidden; 
+            button.Visibility = Visibility.Hidden;
+
             userFrame.Content = new gpsEditAdd(this.MainWin, true, user, "GPS");
         }
 
@@ -148,6 +150,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.GPS
             Models.CPEAModel user = new Models.CPEAModel();
 
             type = "AP";
+            button.Visibility = Visibility.Hidden;
 
             labelMnj.Visibility = Visibility.Hidden;
             dataAP.Visibility = Visibility.Hidden;

@@ -22,8 +22,8 @@
         <Button x:Name="button" Content="Browse" Canvas.Left="276" Canvas.Top="291" RenderTransformOrigin="0.555,0.033" Width="48"/>
         <Label   x:Name="labelChannel" Content="Datalogger IP" Canvas.Left="62" Canvas.Top="133"/>
         <Label   x:Name="labelPassword" Content="Password datalogger" Canvas.Left="62" Canvas.Top="180"/>
-        <TextBox x:Name="textBoxChannel" Canvas.Left="134" Canvas.Top="137" Text="" TextWrapping="Wrap" Width="120"/>
-        <TextBox x:Name="textBoxPass" Canvas.Left="134" Canvas.Top="184" Text="" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="textBoxChannel" Canvas.Left="190" Canvas.Top="137" Text="" TextWrapping="Wrap" Width="120"/>
+        <TextBox x:Name="textBoxPass" Canvas.Left="190" Canvas.Top="184" Text="" TextWrapping="Wrap" Width="120"/>
 
     </Canvas>
 </Page>

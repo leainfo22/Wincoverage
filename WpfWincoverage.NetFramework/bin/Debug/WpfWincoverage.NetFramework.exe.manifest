@@ -169,7 +169,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Pa6KL1ei/BfYKTki6uUgiCJN6CRARxRqZMviHvQGTfE=</dsig:DigestValue>
+        <dsig:DigestValue>GPcFE/2GZhiUIPtgEYujUZfCVgRDLMZ3xHHU+6HkseQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -181,19 +181,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q+Qgae9CG6iuHrCqE8/+bliCYvWl2dJzmJb0oC+IRBA=</dsig:DigestValue>
+        <dsig:DigestValue>ZrSV0hDQepUIB+8aMZ707jiawsbVz2fhhCblpQVGVr0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfWincoverage.NetFramework.exe" size="408032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfWincoverage.NetFramework.exe" size="462304">
       <assemblyIdentity name="WpfWincoverage.NetFramework" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>15VwB4N6L+9fmO/hHrG+3DHT9A1HyD6XJFGHutQD6PQ=</dsig:DigestValue>
+        <dsig:DigestValue>Y9cVXXy/+caeAEvIr/oSDA0J5UtoDCYblJKsQFFviBs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

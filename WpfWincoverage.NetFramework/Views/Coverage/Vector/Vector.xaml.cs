@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,27 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.Vector
             WelcomeProfile welcomeProfile = new WelcomeProfile();
             welcomeProfile.Show();
             foreach (Window ww in w) ww.Close();
+        }
+        private void buttonVector_Click(object sender, RoutedEventArgs e)
+        {
+            string path = "";
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                path = File.ReadAllText(openFileDialog.FileName);
+        }
+        private void buttonXLS_Click(object sender, RoutedEventArgs e)
+        {
+            string path = "";
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                path = File.ReadAllText(openFileDialog.FileName);
+        }
+        private void buttonProject_Click(object sender, RoutedEventArgs e)
+        {
+            string path = "";
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                path = File.ReadAllText(openFileDialog.FileName);
         }
     }
 }

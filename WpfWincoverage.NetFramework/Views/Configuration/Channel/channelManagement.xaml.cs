@@ -31,6 +31,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Channel
             InitializeComponent();
             this.MainWin = MainWin;
             buttonEdit.IsEnabled = false;
+            buttonViz.IsEnabled = false;
             coutAP = Database.DatabaseController.getCoutChannel();
             try
             {
@@ -84,6 +85,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Channel
         private void grid_Selected(object sender, RoutedEventArgs e)
         {
             buttonEdit.IsEnabled = true;
+            buttonViz.IsEnabled = true;
         }
         private void buttonEdit_Click(object sender, RoutedEventArgs e)
         {
@@ -103,6 +105,8 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Channel
             bottonAPBefore.Visibility = Visibility.Hidden;
             boxAP.Visibility = Visibility.Hidden;
             buttonDelete.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
+
             userFrame.Content = new channelEditAdd(this.MainWin, true, user);
         }
         private void buttonAddAP_Click(object sender, RoutedEventArgs e)
@@ -123,8 +127,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Channel
             bottonAPNext.Visibility = Visibility.Hidden;
             bottonAPBefore.Visibility = Visibility.Hidden;
             buttonDelete.Visibility = Visibility.Hidden;
-
-
+            button.Visibility = Visibility.Hidden;
             boxAP.Visibility = Visibility.Hidden;
 
             userFrame.Content = new channelEditAdd(this.MainWin, false, user);

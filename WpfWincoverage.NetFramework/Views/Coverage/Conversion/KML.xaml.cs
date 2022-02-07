@@ -70,6 +70,12 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.Conversion
 
             Main.Content = new Views.Coverage.Conversion.KMLEdition(Main);
         }
-
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+        }
     }
 }

@@ -60,7 +60,7 @@ namespace WpfWincoverage.NetFramework.Database
                     userModer.User = list[2];
                     userModer.Email = list[3];
                     userModer.Phone = list[4];
-                    userModer.Charge = list[5];
+                    userModer.Position = list[5];
                     userModer.Rol = list[6];
                     listProfiel.Add(userModer);
                 }

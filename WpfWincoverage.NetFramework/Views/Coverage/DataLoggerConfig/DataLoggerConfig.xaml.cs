@@ -63,6 +63,9 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
             buttonImport.Visibility = Visibility.Hidden;
             labelMnj.Visibility = Visibility.Hidden;
             imageMain2.Visibility = Visibility.Hidden;
+            buttonConf.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
+
             userFrame.Content = new NewDataLoggerConfig(this.MainWin, true);
         }
 
@@ -75,6 +78,8 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
             buttonImport.Visibility = Visibility.Hidden;
             labelMnj.Visibility = Visibility.Hidden;
             imageMain2.Visibility = Visibility.Hidden;
+            buttonConf.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
             userFrame.Content = new NewDataLoggerConfig(this.MainWin, false);
         }
 
@@ -116,6 +121,8 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
             buttonImport.Visibility = Visibility.Hidden;
             labelMnj.Visibility = Visibility.Hidden;
             imageMain2.Visibility = Visibility.Hidden;
+            buttonConf.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
             userFrame.Content = new ProjectoConfigInDatalogger(this.MainWin);
         }
 

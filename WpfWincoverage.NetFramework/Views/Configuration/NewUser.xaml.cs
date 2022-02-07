@@ -35,7 +35,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration
                 texboxUser.Text = user.User;
                 texboxName.Text = user.Name;
                 texboxPhone.Text = user.Phone;
-                texboxCharge.Text = user.Charge;
+                texboxCharge.Text = user.Position;
                 texboxEmail.Text = user.Email;
                 comboBox.Text = user.Rol;
                 labelMnj.Content = "Edit User";
@@ -76,7 +76,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration
             user.User = texboxUser.Text;
             user.Name = texboxName.Text;
             user.Phone = texboxPhone.Text;
-            user.Charge = texboxCharge.Text;
+            user.Position = texboxCharge.Text;
             user.Email = texboxEmail.Text;
             user.Rol = comboBox.Text;
 

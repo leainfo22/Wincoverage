@@ -336,9 +336,6 @@ namespace WpfWincoverage.NetFramework.Views.Configuration
             foreach (Window ww in w) ww.Close();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }

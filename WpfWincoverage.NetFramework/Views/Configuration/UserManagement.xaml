@@ -19,7 +19,7 @@
         <Button x:Name="buttonEdit" Content="Edit" Canvas.Left="164" Canvas.Top="322" Height="35" Width="66" RenderTransformOrigin="0.468,-0.968" Click="buttonEdit_Click"/>
         <Button x:Name="buttonDelete" Content="Delete" Canvas.Left="371" Canvas.Top="322" Width="65" Height="35" Click="buttonDelete_Click"/>
         <Button x:Name="buttonNew" Content="New" Canvas.Left="22" Canvas.Top="140" Height="35" Width="66" Click="Button_Click"/>
-        <Label  x:Name="labelUser" Content="User Managemente" Canvas.Left="110" Canvas.Top="23" FontSize="36" FontFamily="Arial"/>
+        <Label  x:Name="labelUser" Content="User Management" Canvas.Left="110" Canvas.Top="23" FontSize="36" FontFamily="Arial"/>
         <Button x:Name="button" Content="Back" Canvas.Left="555" Canvas.Top="322" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
     </Canvas>
 
