@@ -25,12 +25,12 @@ namespace WpfWincoverage.NetFramework
             InitializeComponent();
             activeUserMenu.Header = "Usuario: " + UserCurrentModel.name + "  Rol: " + UserCurrentModel.rol;
 
-            if (UserCurrentModel.rol == "inge")
+            if (UserCurrentModel.rol == "Ingeniero")
             {
                 configMenu.Items.Remove(userMenu);
 
             }
-            if (UserCurrentModel.rol == "terre")
+            if (UserCurrentModel.rol == "Terreno")
             {
                 configMenu.Items.Remove(userMenu);
                 configMenu.Items.Remove(CPEMenu);

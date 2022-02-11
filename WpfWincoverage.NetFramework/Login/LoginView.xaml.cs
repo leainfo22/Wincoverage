@@ -68,12 +68,12 @@ namespace WpfWincoverage.NetFramework.Login
                     UserCurrentModel.rol = userBox.Text;
 
                 }
-                if (userBox.Text == "terre") 
+                else if (userBox.Text == "terre") 
                 {
                     UserCurrentModel.name = userBox.Text;
                     UserCurrentModel.rol = "Terreno";
                 }
-                if (userBox.Text == "inge")
+                else if (userBox.Text == "inge")
                 {
                     UserCurrentModel.rol = "Ingeniero";
                     UserCurrentModel.name = userBox.Text;

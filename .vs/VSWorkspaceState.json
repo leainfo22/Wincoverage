@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WpfWincoverage.NetFramework"
   ],
-  "SelectedNode": "\\WpfWincoverage.sln",
+  "SelectedNode": "\\WpfWincoverage.NetFramework\\WelcomeProfile.xaml",
   "PreviewInSolutionExplorer": false
 }

@@ -35,7 +35,7 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
                 textBoxLoad.Visibility = Visibility.Hidden;
                 textBoxChannel.Visibility = Visibility.Hidden;
                 textBoxPass.Visibility = Visibility.Hidden;
-                
+                button.Visibility = Visibility.Hidden;
             }
 
             List<ProjectCpeApModel> list = new List<ProjectCpeApModel>();

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c5ba416f-22bf-4556-88f3-09b90c6628e2": {
+      "ProjectGuid": "c5ba416f-22bf-4556-88f3-09b90c6628e2",
+      "DisplayName": "WpfWincoverage.NetFramework",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "b2b02469-2793-47bd-8210-483718acddbf": {
+      "ProjectGuid": "b2b02469-2793-47bd-8210-483718acddbf",
+      "DisplayName": "Launcher",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
