@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                     
+                    xmlns:system1="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+
+    <System:String x:Key="StrLogin">Iniciar Sesión</System:String>
+    <System:String x:Key="StrLogout">Cerrar Sesión</System:String>
+    <System:String x:Key="StrExit">Salir</System:String>
+
+    <System:String x:Key="StrConfig">Configuración</System:String>
+    <System:String x:Key="StrUser">Mantenedor de usuarios</System:String>
+    <System:String x:Key="StrLanguage">Lenguaje</System:String>
+    <System:String x:Key="StrSpanish">Español</System:String>
+    <System:String x:Key="StrEnglish">Ingles</System:String>
+    <System:String x:Key="StrPortugues">Portugues</System:String>
+
+
+    <System:String x:Key="StrAPManagement">Mantenedor AP</System:String>
+    <System:String x:Key="StrCPEManagement">Mantenedor CPE</System:String>
+    <System:String x:Key="StrGPSManagement">Mantenedor GPS</System:String>
+    <System:String x:Key="StrLocationManagement">Mantenedor de ubicación</System:String>
+    <System:String x:Key="StrVectorManagemet">Mantenedor de Vector</System:String>
+    <System:String x:Key="StrChannelsManagement">Mantenedor de Canales</System:String>
+
+    <System:String x:Key="StrCoverageMeasure">Medición de coverturas</System:String>
+    <System:String x:Key="StrLocalProjectConfiguration">Configuración de proyectos</System:String>
+    <System:String x:Key="StrDataloggerConfiguration">Configuración de Datos</System:String>
+    <System:String x:Key="StrLocalProjectCapture">Crear Proyectos</System:String>
+    <System:String x:Key="StrDataloggerExport">Exportar Datos</System:String>
+
+    <System:String x:Key="StrConversion">Conversión</System:String>
+    <System:String x:Key="StrProjecttoKML">Proyecto a KML</System:String>
+    <System:String x:Key="StrProjecttoXMS">Proyecto a XMS</System:String>
+    <System:String x:Key="StrXLSKML">_XLS->KML / KML->XLS</System:String>
+
+    <System:String x:Key="StrSharing">Compartir</System:String>
+    <System:String x:Key="StrProjectConfiguration">Configuración de Proyectos</System:String>
+    <System:String x:Key="StrProjectResult">Resultado de Proyectos</System:String>
+
+    <System:String x:Key="StrVectorAignation">Asignar Vectores</System:String>
+    <System:String x:Key="StrProjectComparison">Comparación de Proyectos</System:String>
+    <System:String x:Key="StrHelp">Ayuda</System:String>
+    <System:String x:Key="StrHelpAndTroubleshooting">Ayuda y solución de problemas</System:String>
+    <System:String x:Key="StrTicketsAndSupport">Tickets y ayuda</System:String>
+    <System:String x:Key="StrHardwareValidation">Validación de hardward</System:String>
+    <System:String x:Key="StrLicense">Licencia</System:String>
+    <System:String x:Key="StrFeedback">Comentarios</System:String>
+
+
+</ResourceDictionary>

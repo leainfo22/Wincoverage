@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data.SQLite;
 using System.Diagnostics;
+using System.IO;
 using System.Timers;
 using System.Windows;
 
@@ -14,17 +16,17 @@ namespace WpfWincoverage.NetFramework
         public static string isLogin = "NO";
         public static Timer timerSession = new Timer();
         public static Timer timerSession2 = new Timer();
+        public static ResourceDictionary dictionary = new ResourceDictionary();
+
         public Action CloseAction { get; set; }
 
         public MainWindow()
-        {
-            
+        {            
             //InitializeComponent();
-            /* string language = "";
+             string language = "";
              try
              {
-
-                 using (var connection = new SqliteConnection("Data Source=databaseLocal.db"))
+                 using (var connection = new SQLiteConnection("Data Source=databaseLocal.db"))
                  {
                      connection.Open();
                      var command = connection.CreateCommand();
@@ -47,12 +49,13 @@ namespace WpfWincoverage.NetFramework
              {
                  Console.WriteLine(ex.Message);
              }
-             if (language != "english" && language != "español")
-                 globalLanguage = "english";
+             if (language != "English" && language != "Español" && language != "Portugues")
+                 globalLanguage = "English";
              else
-                 globalLanguage = language;*/
+                 globalLanguage = language;
 
-            globalLanguage = "spanish";
+            SwitchLanguage(globalLanguage);
+            
             InitializeComponent();
             Main.Content = new Login.HomeView();
         }
@@ -76,6 +79,40 @@ namespace WpfWincoverage.NetFramework
             Close();
 
             //userBox.Visibility = Visibility.Visible;
+        }
+            
+        public void SwitchLanguage(string language)
+        {   
+            Resources.MergedDictionaries.Clear();
+            try
+            {
+                switch (language)
+                {
+                    case "English":
+                        dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.en.xaml", UriKind.Absolute);
+                        break;
+
+                    case "Español":
+                        dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.es.xaml", UriKind.Absolute);
+
+                        break;
+
+                    case "Portugues":
+                        dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.po.xaml", UriKind.Absolute);
+
+                        break;
+
+                    default:
+                        dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.en.xaml", UriKind.Absolute);
+                        break;
+                }
+                Resources.MergedDictionaries.Add(dictionary);
+            }
+            catch (Exception ex) 
+            {
+                var message = ex.Message;
+            }
+            
         }
     }
 }

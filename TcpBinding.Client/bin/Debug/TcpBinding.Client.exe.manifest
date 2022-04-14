@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpBinding.Client.exe" size="5600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TcpBinding.Client.exe" size="6112">
       <assemblyIdentity name="TcpBinding.Client" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AE9XgMz+k6R56U38pNTLy3XpEeg/h3vyxs1XRKAhCBI=</dsig:DigestValue>
+        <dsig:DigestValue>Vn2VeW4bDJm545B858BQx/y2DrNeqxYf6R79PeN8+Bw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GyVaYcund9Qj0HfHDFBC6zq/XslywX506cGv5d4yN80=</dsig:DigestValue>
+        <dsig:DigestValue>28tOi55dn5f8BWtpYb3DnLBrCmpvWKpu98su/9Rc/TM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

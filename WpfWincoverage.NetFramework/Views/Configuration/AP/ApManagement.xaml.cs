@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfWincoverage.NetFramework.Models;
 
 namespace WpfWincoverage.NetFramework.Views.Configuration.AP
 {
@@ -33,7 +35,6 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.AP
             this.type = "";
             this.MainWin = MainWin;
             buttonEdit.IsEnabled = false;
-            coutCPE = Database.DatabaseController.getCoutCPE();
             coutAP = Database.DatabaseController.getCoutAP();
             try
             {
@@ -55,6 +56,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.AP
                 Console.WriteLine(ex.Message);
             }
         }
+
 
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
         {

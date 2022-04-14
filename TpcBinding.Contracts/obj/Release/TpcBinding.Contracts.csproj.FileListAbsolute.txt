@@ -8,3 +8,13 @@ C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBind
 C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.csproj.CopyComplete
 C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.dll
 C:\Users\leand\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\bin\Release\TpcBinding.Contracts.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\bin\Release\TpcBinding.Contracts.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\bin\Release\Microsoft.Analytics.Interfaces.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\bin\Release\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\bin\Release\Microsoft.Analytics.Types.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.csproj.AssemblyReference.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.csproj.CopyComplete
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TpcBinding.Contracts\obj\Release\TpcBinding.Contracts.pdb

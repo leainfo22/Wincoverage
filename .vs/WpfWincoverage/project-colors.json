@@ -15,7 +15,22 @@
       "ProjectGuid": "b2b02469-2793-47bd-8210-483718acddbf",
       "DisplayName": "Launcher",
       "ColorIndex": 1
+    },
+    "744a0762-48f1-465c-bd61-4e6c7f12b4f7": {
+      "ProjectGuid": "744a0762-48f1-465c-bd61-4e6c7f12b4f7",
+      "DisplayName": "TcpBinding.Service",
+      "ColorIndex": 2
+    },
+    "e5e37746-204d-492a-9d71-ca4a5ed3784c": {
+      "ProjectGuid": "e5e37746-204d-492a-9d71-ca4a5ed3784c",
+      "DisplayName": "TpcBinding.Contracts",
+      "ColorIndex": 3
+    },
+    "458cda93-3827-4262-a36e-94ce08b06259": {
+      "ProjectGuid": "458cda93-3827-4262-a36e-94ce08b06259",
+      "DisplayName": "TcpBinding.Client",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 5
 }

@@ -1,0 +1,16 @@
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\Launcher.exe
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\Launcher.deps.json
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\Launcher.runtimeconfig.json
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\Launcher.runtimeconfig.dev.json
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\Launcher.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\ref\Launcher.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\bin\Release\net5.0\Launcher.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.csproj.AssemblyReference.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.AssemblyInfoInputs.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.AssemblyInfo.cs
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\ref\Launcher.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\Launcher\obj\Release\net5.0\Launcher.genruntimeconfig.cache

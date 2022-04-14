@@ -24,11 +24,11 @@
         <Button x:Name="buttonImport" Content="Import" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonImport_Click" Canvas.Left="479" Canvas.Top="300"/>
         <Button x:Name="buttonViz" Content="Visualize" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="572" Canvas.Top="300"/>
         <Button x:Name="button" Content="Back" Canvas.Left="674" Canvas.Top="300" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
-        <Label  x:Name="labelAP" Content="" Canvas.Left="677" Canvas.Top="152"/>
-        <Label  x:Name="labelDeAP" Content="de" Canvas.Left="624" Canvas.Top="152"/>
-        <Button x:Name="bottonAPNext" Content="Next" Canvas.Left="726" Canvas.Top="155" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
-        <Button x:Name="bottonAPBefore" Content="Before" Canvas.Left="524" Canvas.Top="155" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
-        <TextBox x:Name="boxAP" Canvas.Left="584" Canvas.Top="158" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
+        <Label  x:Name="labelAP" Content="" Canvas.Left="677" Canvas.Top="230"/>
+        <Label  x:Name="labelDeAP" Content="de" Canvas.Left="624" Canvas.Top="230"/>
+        <Button x:Name="bottonAPNext" Content="Next" Canvas.Left="726" Canvas.Top="230" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
+        <Button x:Name="bottonAPBefore" Content="Before" Canvas.Left="524" Canvas.Top="230" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
+        <TextBox x:Name="boxAP" Canvas.Left="584" Canvas.Top="230" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
 
     </Canvas>

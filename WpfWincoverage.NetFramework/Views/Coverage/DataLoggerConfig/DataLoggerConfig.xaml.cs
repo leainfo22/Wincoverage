@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfWincoverage.NetFramework.Models;
 
 namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
 {
@@ -26,6 +27,24 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.DataLoggerConfig
         {
             this.MainWin = MainWin;
             InitializeComponent();
+            List<ProjectConfModel> list = new List<ProjectConfModel>();
+            this.MainWin = MainWin;
+            for (int i = 0; i < 2; i++)
+            {
+                ProjectConfModel aux = new ProjectConfModel();
+                aux.Project_Name = "";
+                aux.Date = "";
+                aux.CPE = "";
+                aux.CPE_Model = "";
+                aux.CPE_FIRMWARE = "";
+                list.Add(aux);
+            }
+
+            dataGrid.ItemsSource = list;
+            dataGrid.MinColumnWidth = 80;
+            dataGrid.MinRowHeight = 20;
+            buttonDelete.IsEnabled = false;
+            buttonEdit.IsEnabled = false;
         }
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
         {

@@ -8,48 +8,49 @@
 
     <Canvas SizeChanged="Canvas_SizeChanged">
         <Menu x:Name="mainMenu" IsMainMenu="True" VerticalAlignment="Top">
-            <MenuItem x:Name="loginMenu" Header="_Login" Click="menu_Click">
-                <MenuItem Header="_Log in"/>
-                <MenuItem Header="_Log out" Click="Logout_Click"/>
+            <MenuItem x:Name="loginMenu" Header="{DynamicResource StrLogin}" Click="menu_Click">
+                <MenuItem Header="{DynamicResource StrLogin}"/>
+                <MenuItem Header="{DynamicResource StrLogout}" Click="Logout_Click"/>
                 <Separator />
-                <MenuItem Header="_Exit"/>
+                <MenuItem Header="{DynamicResource StrExit}"/>
             </MenuItem>
-            <MenuItem x:Name="configMenu" Header="_Configuration">
-                <MenuItem x:Name="userMenu" Header="_User Management" Click="userManagement_Click" />
-                <MenuItem Header="_Language">
-                    <MenuItem Header="Spanish" IsEnabled="False"/>
-                    <MenuItem Header="English" />
+            <MenuItem x:Name="configMenu" Header="{DynamicResource StrConfig}">
+                <MenuItem x:Name="userMenu" Header="{DynamicResource StrUser}" Click="userManagement_Click" />
+                <MenuItem Header="{DynamicResource StrLanguage}">
+                    <MenuItem Header="{DynamicResource StrSpanish}" Click="Switch_Espanol_Click"/>
+                    <MenuItem Header="{DynamicResource StrEnglish}" Click="Switch_English_Click"/>
+                    <MenuItem Header="{DynamicResource StrPortugues}" Click="Switch_Portugues_Click"/>
                 </MenuItem>
-                <MenuItem  x:Name="APMenu" Header="_AP Management" Click="AP_Click"/>
-                <MenuItem  x:Name="CPEMenu" Header="_CPE Management" Click="CPE_Click"/>
-                <MenuItem  x:Name="GPSMenu" Header="_GPS Management" Click="GPS_Click"/>
-                <MenuItem  x:Name="siteMenu" Header="_Site/Location Management" Click="Site_Click"/>
-                <MenuItem  x:Name="vectorMenu" Header="_Vector Managemet" Click="Vector_Click"/>
-                <MenuItem  x:Name="channelMenu" Header="_Channels Management" Click="Channel_Click"/>
+                <MenuItem  x:Name="APMenu"      Header="{DynamicResource StrAPManagement}"  Click="AP_Click"/>
+                <MenuItem  x:Name="CPEMenu"     Header="{DynamicResource StrCPEManagement}"  Click="CPE_Click"/>
+                <MenuItem  x:Name="GPSMenu"     Header="{DynamicResource StrGPSManagement}"  Click="GPS_Click"/>
+                <MenuItem  x:Name="siteMenu"    Header="{DynamicResource StrLocationManagement}"  Click="Site_Click"/>
+                <MenuItem  x:Name="vectorMenu"  Header="{DynamicResource StrVectorManagemet}"  Click="Vector_Click"/>
+                <MenuItem  x:Name="channelMenu" Header="{DynamicResource StrChannelsManagement}"  Click="Channel_Click"/>
             </MenuItem>
-            <MenuItem x:Name="winMenu" Header="_Coverage Measure" Click="menu_Click">
-                <MenuItem Header="_Local Project Configuration" Click="ProjectConf_Click"/>
-                <MenuItem Header="_Datalogger Configuration" Click="DataloggerConf_Click"/>
-                <MenuItem Header="_Local Project Capture" Click="LocalCapture_Click"/>
-                <MenuItem Header="_Datalogger Export" Click="DataloggerEx_Click"/>
-                <MenuItem x:Name="converMenu" Header="_Conversion">
-                    <MenuItem Header="_Project to KML" Click="KML_Click"/>
-                    <MenuItem Header="_Project to XMS" Click="XLS_Click"/>
-                    <MenuItem Header="_XLS->KML / KML->XLS" Click="XSLKML_Click"/>
+            <MenuItem x:Name="winMenu" Header="{DynamicResource StrCoverageMeasure}" Click="menu_Click">
+                <MenuItem              Header="{DynamicResource StrLocalProjectConfiguration}"  Click="ProjectConf_Click"/>
+                <MenuItem              Header="{DynamicResource StrDataloggerConfiguration}" Click="DataloggerConf_Click"/>
+                <MenuItem              Header= "{DynamicResource StrLocalProjectCapture}"  Click="LocalCapture_Click"/>
+                <MenuItem              Header="{DynamicResource StrDataloggerExport}"  Click="DataloggerEx_Click"/>
+                <MenuItem x:Name="converMenu" Header="{DynamicResource StrConversion}" >
+                    <MenuItem Header="{DynamicResource StrProjecttoKML}" Click="KML_Click"/>
+                    <MenuItem Header="{DynamicResource StrProjecttoXMS}"  Click="XLS_Click"/>
+                    <MenuItem Header="{DynamicResource StrXLSKML}" Click="XSLKML_Click"/>
                 </MenuItem>
-                <MenuItem Header="_Sharing">
-                    <MenuItem Header="_Project Configuration" Click="Share_Click"/>
-                    <MenuItem Header="_Project Result" Click="Share_Click"/>
+                <MenuItem Header="{DynamicResource StrSharing}">
+                    <MenuItem Header="{DynamicResource StrProjectConfiguration}" Click="Share_Click"/>
+                    <MenuItem Header="{DynamicResource StrProjectResult}" Click="Share_Click"/>
                 </MenuItem>
-                <MenuItem x:Name="vectorMenu2"  Header="Vector asignation" Click="Vector2_Click"/>
-                <MenuItem x:Name="compaMenu"  Header="Project comparison" Click="Project_Click"/>
+                <MenuItem x:Name="vectorMenu2" Header="{DynamicResource StrVectorAignation}" Click="Vector2_Click"/>
+                <MenuItem x:Name="compaMenu" Header="{DynamicResource StrProjectComparison}" Click="Project_Click"/>
             </MenuItem>
-            <MenuItem x:Name="helpMenu" Header="_Help"  Click="menu_Click">
-                <MenuItem Header="_Help and troubleshooting"/>
-                <MenuItem Header="_Tickets and support"/>
-                <MenuItem Header="_Hardware validation"/>
-                <MenuItem Header="_License"/>
-                <MenuItem Header="_Feedback"/>
+            <MenuItem x:Name="helpMenu" Header="{DynamicResource StrSharing}"  Click="menu_Click">
+                <MenuItem Header="{DynamicResource StrHelpAndTroubleshooting}" />
+                <MenuItem Header="{DynamicResource StrTicketsAndSupport}" />
+                <MenuItem Header="{DynamicResource StrHardwareValidation}"/>
+                <MenuItem Header="{DynamicResource StrLicense}"/>
+                <MenuItem Header="{DynamicResource StrProjectResult}"/>
             </MenuItem>
             <MenuItem Margin="290,0,0,0" x:Name="activeUserMenu" Header="Usuario: asdasda Rol: asdasdas"></MenuItem>
         </Menu>
@@ -67,8 +68,8 @@
         </Image>
         <Frame x:Name="Main" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
         <Label x:Name="labelText" Content="Welcome XXXX " Margin="0,281,0,0" FontSize="20" FontFamily="Arial" Canvas.Top="5" Canvas.Left="320"/>
-        <Button x:Name="button1" Content="Local" Canvas.Top="250" Canvas.Left="610" Click="LocalCapture_Click"/>
-        <Button x:Name="button2" Content="Datalogger Configuration" Canvas.Top="300" Canvas.Left="610" Click="ProjectConf_Click"/>
-        <Button x:Name="button3" Content="Datalogger Extraction" Canvas.Top="350" Canvas.Left="610" Click="DataloggerEx_Click"/>
+        <Button x:Name="button1" Content= "{DynamicResource StrLocalProjectCapture}" Canvas.Top="250" Canvas.Left="610" Click="LocalCapture_Click"/>
+        <Button x:Name="button2" Content="{DynamicResource StrLocalProjectConfiguration}"  Canvas.Top="300" Canvas.Left="610" Click="ProjectConf_Click"/>
+        <Button x:Name="button3" Content="{DynamicResource StrDataloggerExport}" Canvas.Top="350" Canvas.Left="610" Click="DataloggerEx_Click"/>
     </Canvas>
 </Window>

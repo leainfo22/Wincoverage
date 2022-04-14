@@ -80,11 +80,11 @@ namespace WpfWincoverage.NetFramework.Login
 
                 }
                 //cambiar para sacar los privilegios a cualquiera **lvasquez
-                else 
-                {
-                    UserCurrentModel.name = userBox.Text;
-                    UserCurrentModel.rol = "Administrador";
-                }
+                //else 
+                //{
+                //    UserCurrentModel.name = userBox.Text;
+                //    UserCurrentModel.rol = "Administrador";
+                //}
 
                 var w = Application.Current.Windows;
                 WelcomeProfile welcomeProfile = new WelcomeProfile();

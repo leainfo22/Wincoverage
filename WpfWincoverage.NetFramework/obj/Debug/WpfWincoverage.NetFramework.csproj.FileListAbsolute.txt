@@ -220,3 +220,6 @@ C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\WpfWincoverage.NetFramework\ob
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\WpfWincoverage.NetFramework.csproj.CopyComplete
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\WpfWincoverage.NetFramework.exe
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\WpfWincoverage.NetFramework.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\Dictionaries\StringDictionary.en.baml
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\Dictionaries\StringDictionary.es.baml
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\Dictionaries\StringDictionary.po.baml

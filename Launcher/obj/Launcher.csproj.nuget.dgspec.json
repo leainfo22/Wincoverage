@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj": {}
+    "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj": {
+    "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj",
         "projectName": "Launcher",
-        "projectPath": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj",
+        "projectPath": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj",
         "packagesPath": "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\obj\\",
+        "outputPath": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leandro Vasquez\\AppData\\Roaming\\NuGet\\NuGet.Config",

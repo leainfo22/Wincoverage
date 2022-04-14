@@ -8,3 +8,18 @@ C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding
 C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.csproj.CopyComplete
 C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.exe
 C:\Users\leand\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TcpBinding.Client.exe.config
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TcpBinding.Client.exe.manifest
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TcpBinding.Client.application
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TcpBinding.Client.exe
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TcpBinding.Client.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TpcBinding.Contracts.dll
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\bin\Release\TpcBinding.Contracts.pdb
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.csproj.AssemblyReference.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.csproj.SuggestedBindingRedirects.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.csproj.CoreCompileInputs.cache
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.exe.manifest
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.application
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.csproj.CopyComplete
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.exe
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\TcpBinding.Client\obj\Release\TcpBinding.Client.pdb

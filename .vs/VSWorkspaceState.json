@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WpfWincoverage.NetFramework"
+    "\\TcpBinding.Service\\Database",
+    "\\TcpBinding.Service\\Servicios",
+    "\\TpcBinding.Contracts",
+    "\\WpfWincoverage.NetFramework\\Database",
+    "\\WpfWincoverage.NetFramework\\Models",
+    "\\WpfWincoverage.NetFramework\\Views",
+    "\\WpfWincoverage.NetFramework\\Views\\Coverage"
   ],
-  "SelectedNode": "\\WpfWincoverage.NetFramework\\WelcomeProfile.xaml",
+  "SelectedNode": "\\TpcBinding.Contracts\\IServicioCPEAP.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -14,8 +14,8 @@
                 <ImageBrush ImageSource="/Views/Coverage/LocalProjectConf/logoGeyser.JPG"/>
             </Image.OpacityMask>
         </Image>
-        <Label x:Name="labelMnj" Content="Datalogger Configuration"  FontSize="36" FontFamily="Arial" RenderTransformOrigin="0.503,0.565" Canvas.Left="185"/>
-        <DataGrid x:Name="dataGrid" Height="85" Width="422" Canvas.Left="153" Canvas.Top="132" SelectionChanged="grid_Selected"/>
+        <Label x:Name="labelMnj" Content="Project Datalogger"  FontSize="36" FontFamily="Arial" RenderTransformOrigin="0.503,0.565" Canvas.Left="210" Canvas.Top="-3"/>
+        <DataGrid x:Name="dataGrid" Height="85" Width="435" Canvas.Left="153" Canvas.Top="132" SelectionChanged="grid_Selected"/>
         <Button x:Name="buttonADDAP" Content="New" RenderTransformOrigin="0.612,0.589" Height="40" Width="60"  Canvas.Left="155" Canvas.Top="267"  Click="buttonNew_Click"/>
         <Button x:Name="buttonEdit" Content="Edit" RenderTransformOrigin="0.348,-0.414" Width="63" Height="40"  Canvas.Left="239" Canvas.Top="267" Click="buttonEdit_Click"/>
         <Button x:Name="buttonDelete" Content="Remove" RenderTransformOrigin="0.348,-0.414" Width="64" Height="40"  Canvas.Left="409" Canvas.Top="267" Click="buttonDelete_Click" />

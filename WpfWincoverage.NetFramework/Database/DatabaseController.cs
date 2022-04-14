@@ -85,9 +85,36 @@ namespace WpfWincoverage.NetFramework.Database
             }
         }
 
+        public static List<CPEAModel> getCPEAPList()
+        {
+            List<CPEAModel> listProfiel = new List<CPEAModel>();
+            try
+            {
+                List<List<string>> usersList2 = new List<List<string>>();
+                usersList2 = TcpBinding.Client.Program.GetCPEAP();
+                foreach (List<string> list in usersList2)
+                {
+                    CPEAModel userModer = new CPEAModel();
+                    userModer.Code = list[0];
+                    userModer.Brand = list[1];
+                    userModer.Model = list[2];
+                    userModer.Firmware = list[3];
+                    userModer.Date = list[4];
+                    userModer.Last_edit_date = list[5];
+                    userModer.Edit_by = list[6];
+                    listProfiel.Add(userModer);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return listProfiel;
+        }
+
+
         public static void addUser(UserModel user)
         {
-
             try
             {
                 /*AzureUserService.UserServiceClient oCliente = new AzureUserService.UserServiceClient();
@@ -270,6 +297,9 @@ namespace WpfWincoverage.NetFramework.Database
 
             return coutAP;
         }
+
+
+        
 
         public static List<CPEAModel> getAPList(int limit, int offset)
         {

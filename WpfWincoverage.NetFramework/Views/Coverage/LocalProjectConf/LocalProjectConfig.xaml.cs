@@ -83,6 +83,7 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.LocalProjectConf
             buttonImport.Visibility = Visibility.Hidden;
             labelMnj.Visibility = Visibility.Hidden;
             imageMain2.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
             userFrame.Content = new NewProject(this.MainWin, true);
         }
 
@@ -95,6 +96,7 @@ namespace WpfWincoverage.NetFramework.Views.Coverage.LocalProjectConf
             buttonImport.Visibility = Visibility.Hidden;
             labelMnj.Visibility = Visibility.Hidden;
             imageMain2.Visibility = Visibility.Hidden;
+            button.Visibility = Visibility.Hidden;
             userFrame.Content = new NewProject(this.MainWin, false);
         }
 

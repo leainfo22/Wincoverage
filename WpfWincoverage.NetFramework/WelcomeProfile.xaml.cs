@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Data.SQLite;
+using System.IO;
 using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using WpfWincoverage.NetFramework.Models;
 
 namespace WpfWincoverage.NetFramework
@@ -16,12 +19,13 @@ namespace WpfWincoverage.NetFramework
 
         public WelcomeProfile()
         {
-            //timerSession = new Timer(10000); // fire every 1 second
-            //timerSession.Elapsed += timerSession_Tick;
+            timerSession = new Timer(10000); // fire every 1 second
+            timerSession.Elapsed += timerSession_Tick;
             dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(timerSession_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
-            //dispatcherTimer.Start();
+            dispatcherTimer.Interval = new TimeSpan(0, 5, 10);
+            //  dispatcherTimer.Start();
+            this.Resources.MergedDictionaries.Add(MainWindow.dictionary);
             InitializeComponent();
             activeUserMenu.Header = "Usuario: " + UserCurrentModel.name + "  Rol: " + UserCurrentModel.rol;
 
@@ -87,6 +91,7 @@ namespace WpfWincoverage.NetFramework
             button1.Visibility = Visibility.Hidden;
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
+            var CPE = Database.DatabaseController.getCPEList(3, 0);
             Main.Content = new Views.Configuration.CPE.CpeManagement(Main);
         }
 
@@ -98,9 +103,21 @@ namespace WpfWincoverage.NetFramework
             button1.Visibility = Visibility.Hidden;
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
+            var AP = Database.DatabaseController.getAPList(3,0); 
             Main.Content = new Views.Configuration.AP.ApManagement(Main);
         }
 
+        private void GPS_Click(object sender, RoutedEventArgs e)
+        {
+            imageMain2.Visibility = Visibility.Hidden;
+            imageMain.Visibility = Visibility.Hidden;
+            labelText.Visibility = Visibility.Hidden;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
+            button3.Visibility = Visibility.Hidden;
+            var GPS = Database.DatabaseController.getGPSList(3, 0);
+            Main.Content = new Views.Configuration.GPS.gpsManagement(Main);
+        }
         private void Vector_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -117,16 +134,6 @@ namespace WpfWincoverage.NetFramework
             {
                 Console.WriteLine(es.Message);
             }
-        }
-        private void GPS_Click(object sender, RoutedEventArgs e)
-        {
-            imageMain2.Visibility = Visibility.Hidden;
-            imageMain.Visibility = Visibility.Hidden;
-            labelText.Visibility = Visibility.Hidden;
-            button1.Visibility = Visibility.Hidden;
-            button2.Visibility = Visibility.Hidden;
-            button3.Visibility = Visibility.Hidden;
-           Main.Content = new Views.Configuration.GPS.gpsManagement(Main);
         }
 
         private void Site_Click(object sender, RoutedEventArgs e)
@@ -183,6 +190,7 @@ namespace WpfWincoverage.NetFramework
             button3.Visibility = Visibility.Hidden;
            Main.Content = new Views.Coverage.Project.Project(Main);
         }
+
         private void Vector2_Click(object sender, RoutedEventArgs e)
         {
             imageMain2.Visibility = Visibility.Hidden;
@@ -256,6 +264,80 @@ namespace WpfWincoverage.NetFramework
             button3.Visibility = Visibility.Hidden;
             Main.Content = new Views.Coverage.Share.Share(Main);
         }
+
+        private void Switch_Espanol_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection("Data Source=databaseLocal.db"))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+
+                    command.CommandText = String.Format("update configuracion  set language = '{0}'","Español");
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            this.Resources.MergedDictionaries.Clear();
+            ResourceDictionary dictionary = new ResourceDictionary();
+            dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.es.xaml", UriKind.Absolute);
+            this.Resources.MergedDictionaries.Add(dictionary);
+            InitializeComponent();
+
+        }
+        private void Switch_English_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection("Data Source=databaseLocal.db"))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+
+                    command.CommandText = String.Format("update configuracion  set language = '{0}'", "English");
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            this.Resources.MergedDictionaries.Clear();
+            ResourceDictionary dictionary = new ResourceDictionary();
+            dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.en.xaml", UriKind.Absolute);
+            this.Resources.MergedDictionaries.Add(dictionary);
+            InitializeComponent();
+
+        }
+        private void Switch_Portugues_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection("Data Source=databaseLocal.db"))
+                {
+                    connection.Open();
+                    var command = connection.CreateCommand();
+
+                    command.CommandText = String.Format("update configuracion  set language = '{0}'", "Portugues");
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            this.Resources.MergedDictionaries.Clear();
+            ResourceDictionary dictionary = new ResourceDictionary();
+            dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.po.xaml", UriKind.Absolute);
+            this.Resources.MergedDictionaries.Add(dictionary);
+            InitializeComponent();
+        }
+
+
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Logout", "Logout");
@@ -268,7 +350,7 @@ namespace WpfWincoverage.NetFramework
         }
         private void menu_Click(object sender, RoutedEventArgs e)
         {
-            //reseTimer();
+            reseTimer();
         }
 
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)
@@ -302,5 +384,6 @@ namespace WpfWincoverage.NetFramework
             dispatcherTimer.Stop();
             dispatcherTimer.Start();
         }
+
     }
 }

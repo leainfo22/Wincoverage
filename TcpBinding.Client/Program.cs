@@ -40,5 +40,16 @@ namespace TcpBinding.Client
             var lista = proxy?.GetUsuarios();
             return lista;
         }
+
+        public static List<List<string>> GetCPEAP()
+        {
+            var uri = "net.tcp://localhost:4073/ServicioCPEAP";
+            var binding = new NetTcpBinding(SecurityMode.None);
+            var channel = new ChannelFactory<IServiceCPEAP>(binding);
+            var endPoint = new EndpointAddress(uri);
+            var proxy = channel.CreateChannel(endPoint);
+            var lista = proxy?.GetCPEAP();
+            return lista;
+        }
     }
 }

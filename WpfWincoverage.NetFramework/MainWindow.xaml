@@ -8,11 +8,11 @@
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Menu IsMainMenu="True" VerticalAlignment="Top">
-            <MenuItem Header="_Login">
-                <MenuItem Header="_Log in" Click="Login_Click"/>
-                <MenuItem Header="_Log out" IsEnabled="False"/>
+            <MenuItem Header="{DynamicResource StrLogin}">
+                <MenuItem Header="{DynamicResource StrLogin}" Click="Login_Click"/>
+                <MenuItem Header="{DynamicResource StrLogout}" IsEnabled="False"/>
                 <Separator />
-                <MenuItem Header="_Exit" Click="Exit_Click"/>
+                <MenuItem  Header="{DynamicResource StrExit}" Click="Exit_Click"/>
             </MenuItem>
         </Menu>
         <Frame x:Name="Main" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>

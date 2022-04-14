@@ -230,6 +230,20 @@
     <Compile Include="WelcomeProfile.xaml.cs">
       <DependentUpon>WelcomeProfile.xaml</DependentUpon>
     </Compile>
+    <Page Include="Dictionaries\StringDictionary.en.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Dictionaries\StringDictionary.es.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Dictionaries\StringDictionary.po.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Login\ChangePass.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
