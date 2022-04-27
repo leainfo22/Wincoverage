@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alfonso\Desktop\Win\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\WpfWincoverage.NetFramework\obj\Debug\
 WpfWincoverage.NetFramework
 none
 false
 DEBUG;TRACE
-C:\Users\alfonso\Desktop\Win\Wincoverage\WpfWincoverage.NetFramework\App.xaml
-38-12614086
+C:\Users\Leandro Vasquez\source\repos\Wincoverage\WpfWincoverage.NetFramework\App.xaml
+38-1151226089
 
-49-2001161661
-132-347214606
+501676301057
+132-433399936
 Dictionaries\StringDictionary.en.xaml;Dictionaries\StringDictionary.es.xaml;Dictionaries\StringDictionary.po.xaml;Login\ChangePass.xaml;Login\ForgotPassView.xaml;Login\HomeView.xaml;Login\LoginView.xaml;MainWindow.xaml;Views\Configuration\AP\ApEditAdd.xaml;Views\Configuration\AP\ApManagement.xaml;Views\Configuration\Channel\channelEditAdd.xaml;Views\Configuration\Channel\channelManagement.xaml;Views\Configuration\cpeapEditAdd.xaml;Views\Configuration\cpeapManagement.xaml;Views\Configuration\CPE\CpeEditAdd.xaml;Views\Configuration\CPE\CpeManagement.xaml;Views\Configuration\GPS\gpsEditAdd.xaml;Views\Configuration\GPS\gpsManagement.xaml;Views\Configuration\NewUser.xaml;Views\Configuration\Site\siteEditAdd.xaml;Views\Configuration\Site\siteManagement.xaml;Views\Configuration\UserManagement.xaml;Views\Configuration\Vector\vectorPage.xaml;Views\Coverage\Conversion\KML.xaml;Views\Coverage\Conversion\KMLEdition.xaml;Views\Coverage\Conversion\XLS.xaml;Views\Coverage\Conversion\XLSKML.xaml;Views\Coverage\DataLoggerConfig\DataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\NewDataLoggerConfig.xaml;Views\Coverage\DataLoggerConfig\ProjectoConfigInDatalogger.xaml;Views\Coverage\DataLoggerEx\DataLoggerEx.xaml;Views\Coverage\LocalCapture\LocalCapture.xaml;Views\Coverage\LocalProjectConf\LocalProjectConfig.xaml;Views\Coverage\LocalProjectConf\NewProject.xaml;Views\Coverage\Project\Project.xaml;Views\Coverage\Share\Share.xaml;Views\Coverage\Vector\Vector.xaml;WelcomeProfile.xaml;
 
-False
+True
 
