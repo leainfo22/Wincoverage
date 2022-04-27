@@ -112,7 +112,7 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.AP
 
         private void Button_Exit(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new ApManagement(MainFrame);
+            MainFrame.Content = new ApManagement(MainFrame, this.Resources.MergedDictionaries[0].Source);
 
         }
         private void Button_Save(object sender, RoutedEventArgs e)

@@ -27,3 +27,17 @@ C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\T
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.CopyComplete
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.exe
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.pdb
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.exe.config
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.exe.manifest
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.application
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.exe
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TcpBinding.Service.pdb
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TpcBinding.Contracts.dll
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\bin\Debug\TpcBinding.Contracts.pdb
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csprojAssemblyReference.cache
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.CoreCompileInputs.cache
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.exe.manifest
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.application
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.csproj.CopyComplete
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.exe
+C:\Users\alfonso\Desktop\Win\Wincoverage\TcpBinding.Service\obj\Debug\TcpBinding.Service.pdb

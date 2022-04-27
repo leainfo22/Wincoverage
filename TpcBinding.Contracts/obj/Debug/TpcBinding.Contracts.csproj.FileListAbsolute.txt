@@ -18,3 +18,9 @@ C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TpcBinding.Contracts\obj\Debug
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.csproj.CopyComplete
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.dll
 C:\Users\Leandro Vasquez\Source\Repos\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.pdb
+C:\Users\alfonso\Desktop\Win\Wincoverage\TpcBinding.Contracts\bin\Debug\TpcBinding.Contracts.dll
+C:\Users\alfonso\Desktop\Win\Wincoverage\TpcBinding.Contracts\bin\Debug\TpcBinding.Contracts.pdb
+C:\Users\alfonso\Desktop\Win\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.csprojAssemblyReference.cache
+C:\Users\alfonso\Desktop\Win\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\alfonso\Desktop\Win\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.dll
+C:\Users\alfonso\Desktop\Win\Wincoverage\TpcBinding.Contracts\obj\Debug\TpcBinding.Contracts.pdb
