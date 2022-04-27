@@ -29,8 +29,11 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.AP
         private Frame MainWin;
         string type;
 
-        public ApManagement(Frame MainWin)
+        public ApManagement(Frame MainWin, Uri uri)
         {
+            ResourceDictionary dictionary = new ResourceDictionary();
+            dictionary.Source = uri;
+            this.Resources.MergedDictionaries.Add(dictionary);
             InitializeComponent();
             this.type = "";
             this.MainWin = MainWin;

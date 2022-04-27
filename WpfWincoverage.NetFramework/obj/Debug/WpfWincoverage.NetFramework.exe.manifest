@@ -169,7 +169,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>83Vs9o5MAxqFpvlGHi3+MmAd6dMfP26lmy5KC45ZIFc=</dsig:DigestValue>
+        <dsig:DigestValue>x5kKY4fTZ29HFrfsaTXxyO+6Ax7usGoNOwkbvnloN7E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -181,29 +181,29 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>28tOi55dn5f8BWtpYb3DnLBrCmpvWKpu98su/9Rc/TM=</dsig:DigestValue>
+        <dsig:DigestValue>Z2ra3+18K85adiPZItKxVUqW/Q8w/Cvo2TSehnk+2vI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfWincoverage.NetFramework.exe" size="475616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WpfWincoverage.NetFramework.exe" size="478176">
       <assemblyIdentity name="WpfWincoverage.NetFramework" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BV1ufG71TxMJDAahBjA8QN8uHWbNHXhTw1IONr3Dx1w=</dsig:DigestValue>
+        <dsig:DigestValue>iOtbV4UPUyP+x8yQhJf6GHjvo1wzKF0CHoVt/LFln5U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="WpfWincoverage.NetFramework.exe.config" size="187">
+  <file name="WpfWincoverage.NetFramework.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+      <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

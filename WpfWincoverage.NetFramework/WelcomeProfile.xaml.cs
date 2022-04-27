@@ -104,7 +104,7 @@ namespace WpfWincoverage.NetFramework
             button2.Visibility = Visibility.Hidden;
             button3.Visibility = Visibility.Hidden;
             var AP = Database.DatabaseController.getAPList(3,0); 
-            Main.Content = new Views.Configuration.AP.ApManagement(Main);
+            Main.Content = new Views.Configuration.AP.ApManagement(Main, this.Resources.MergedDictionaries[0].Source);
         }
 
         private void GPS_Click(object sender, RoutedEventArgs e)
@@ -128,7 +128,7 @@ namespace WpfWincoverage.NetFramework
                 button1.Visibility = Visibility.Hidden;
                 button2.Visibility = Visibility.Hidden;
                 button3.Visibility = Visibility.Hidden;
-                Main.Content = new Views.Configuration.Vector.vectorPage(Main);
+                Main.Content = new Views.Configuration.Vector.vectorPage(Main,this.Resources.MergedDictionaries[0].Source);
             }
             catch (Exception es)
             {
@@ -286,7 +286,14 @@ namespace WpfWincoverage.NetFramework
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.es.xaml", UriKind.Absolute);
             this.Resources.MergedDictionaries.Add(dictionary);
+            MainWindow.dictionary = dictionary;
             InitializeComponent();
+
+
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
 
         }
         private void Switch_English_Click(object sender, RoutedEventArgs e)
@@ -307,10 +314,19 @@ namespace WpfWincoverage.NetFramework
                 Console.WriteLine(ex.Message);
             }
             this.Resources.MergedDictionaries.Clear();
+
+
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.en.xaml", UriKind.Absolute);
             this.Resources.MergedDictionaries.Add(dictionary);
+            MainWindow.dictionary = dictionary;
             InitializeComponent();
+
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+
 
         }
         private void Switch_Portugues_Click(object sender, RoutedEventArgs e)
@@ -334,7 +350,14 @@ namespace WpfWincoverage.NetFramework
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.po.xaml", UriKind.Absolute);
             this.Resources.MergedDictionaries.Add(dictionary);
+            MainWindow.dictionary = dictionary;
             InitializeComponent();
+
+
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
         }
 
 

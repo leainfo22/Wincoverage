@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v/nR8SJhVuw6EUCDgbt2fKEaomucAjYYByzwXPBci/5C+GDgFBbeL8348w5OdFaeZkYFNUaf+0+Jesvjo2uohg==",
+  "dgSpecHash": "2814EKwJk1Vsto2DhDuCez0TYfCAWl7wqp334NrHr05zBYfkJt/t9KgXZHBac4JvngUOMhQmzrFWCBV3jUyclA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
-    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\alfonso\\Desktop\\Win\\Wincoverage\\Launcher\\Launcher.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

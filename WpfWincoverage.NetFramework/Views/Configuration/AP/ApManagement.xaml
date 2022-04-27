@@ -15,19 +15,19 @@
             </Image.OpacityMask>
         </Image>
 
-        <Label x:Name="labelMnj" Content="AP Management"  FontSize="36" FontFamily="Arial" Margin="130,10,218,392" RenderTransformOrigin="0.409,0.594" Canvas.Left="38" Canvas.Top="23"/>
+        <Label x:Name="labelMnj" Content="{DynamicResource StrAPViewTitulo}"  FontSize="36" FontFamily="Arial" Margin="130,10,218,392" RenderTransformOrigin="0.409,0.594" Canvas.Left="38" Canvas.Top="23"/>
         <DataGrid x:Name="dataAP"  SelectionChanged="grid_Selected" Canvas.Left="102" Canvas.Top="101"/>
-        <Label  x:Name="labelListAP" Content="AP List" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="38" Canvas.Top="126"/>
-        <Button x:Name="buttonADDAP" Content="ADD AP"  RenderTransformOrigin="-1.054,0.536" Height="35" Width="60" Click="buttonAddAP_Click" Canvas.Left="165" Canvas.Top="300"/>
-        <Button x:Name="buttonEdit" Content="Edit"  RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="256" Canvas.Top="300"/>
-        <Button x:Name="buttonDelete" Content="Remove" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonDelete_Click" Canvas.Left="61" Canvas.Top="300"/>
-        <Button x:Name="buttonImport" Content="Import" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonImport_Click" Canvas.Left="479" Canvas.Top="300"/>
-        <Button x:Name="buttonViz" Content="Visualize" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="572" Canvas.Top="300"/>
-        <Button x:Name="button" Content="Back" Canvas.Left="674" Canvas.Top="300" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
+        <Label  x:Name="labelListAP" Content="{DynamicResource StrAPViewLista}" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="38" Canvas.Top="126"/>
+        <Button x:Name="buttonADDAP" Content="{DynamicResource StrAPViewAddAP}"  RenderTransformOrigin="-1.054,0.536" Height="35" Width="60" Click="buttonAddAP_Click" Canvas.Left="165" Canvas.Top="300"/>
+        <Button x:Name="buttonEdit" Content="{DynamicResource StrAPViewEdit}"  RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="256" Canvas.Top="300"/>
+        <Button x:Name="buttonDelete" Content="{DynamicResource StrAPViewRemove}" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonDelete_Click" Canvas.Left="61" Canvas.Top="300"/>
+        <Button x:Name="buttonImport" Content="{DynamicResource StrAPViewImport}" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonImport_Click" Canvas.Left="479" Canvas.Top="300"/>
+        <Button x:Name="buttonViz" Content="{DynamicResource StrAPViewVisualize}" RenderTransformOrigin="0.348,-0.414" Width="64" Height="35" Click="buttonEdit_Click" Canvas.Left="572" Canvas.Top="300"/>
+        <Button x:Name="button" Content="{DynamicResource StrAPViewBack}" Canvas.Left="674" Canvas.Top="300" Height="35" Width="66" RenderTransformOrigin="0.598,0.329" Click="backButton_Click"/>
         <Label  x:Name="labelAP" Content="" Canvas.Left="677" Canvas.Top="230"/>
         <Label  x:Name="labelDeAP" Content="de" Canvas.Left="624" Canvas.Top="230"/>
-        <Button x:Name="bottonAPNext" Content="Next" Canvas.Left="726" Canvas.Top="230" RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
-        <Button x:Name="bottonAPBefore" Content="Before" Canvas.Left="524" Canvas.Top="230" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
+        <Button x:Name="bottonAPNext" Content="→" Canvas.Left="726" Canvas.Top="230" Height="25"  RenderTransformOrigin="0.038,-0.087" Click="Button_NextAP"/>
+        <Button x:Name="bottonAPBefore" Content="←" Canvas.Left="524" Canvas.Top="230"  Height="25" RenderTransformOrigin="0.038,-0.087" Click="Button_BeforeAP"/>
         <TextBox x:Name="boxAP" Canvas.Left="584" Canvas.Top="230" Text="1" TextWrapping="Wrap" Width="14" Height="17"/>
         <Frame x:Name="userFrame" Margin="10,23,10,10" NavigationUIVisibility="Hidden"/>
 

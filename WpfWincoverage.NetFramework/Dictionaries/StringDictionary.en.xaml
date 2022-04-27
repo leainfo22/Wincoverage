@@ -46,4 +46,14 @@
     <System:String x:Key="StrLicense">License</System:String>
     <System:String x:Key="StrFeedback">Feedback</System:String>
 
+
+    <System:String x:Key="StrAPViewRemove">Remove</System:String>
+    <System:String x:Key="StrAPViewImport">Import</System:String>
+    <System:String x:Key="StrAPViewEdit">Edit</System:String>
+    <System:String x:Key="StrAPViewAddAP">ADD AP</System:String>
+    <System:String x:Key="StrAPViewLista">AP List</System:String>
+    <System:String x:Key="StrAPViewTitulo">AP Management</System:String>
+    <System:String x:Key="StrAPViewVisualize">Visualize</System:String>
+    <System:String x:Key="StrAPViewBack">Back</System:String>
+
 </ResourceDictionary>

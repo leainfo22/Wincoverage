@@ -8,20 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\": {}
+    "C:\\Users\\alfonso\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj",
+      "projectUniqueName": "C:\\Users\\alfonso\\Desktop\\Win\\Wincoverage\\Launcher\\Launcher.csproj",
       "projectName": "Launcher",
-      "projectPath": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj",
-      "packagesPath": "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\obj\\",
+      "projectPath": "C:\\Users\\alfonso\\Desktop\\Win\\Wincoverage\\Launcher\\Launcher.csproj",
+      "packagesPath": "C:\\Users\\alfonso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alfonso\\Desktop\\Win\\Wincoverage\\Launcher\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Leandro Vasquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\alfonso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -55,30 +60,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.12, 5.0.12]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

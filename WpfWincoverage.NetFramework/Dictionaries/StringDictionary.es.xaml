@@ -47,4 +47,14 @@
     <System:String x:Key="StrFeedback">Comentarios</System:String>
 
 
+    <System:String x:Key="StrAPViewRemove">Remover</System:String>
+    <System:String x:Key="StrAPViewImport">Importar</System:String>
+    <System:String x:Key="StrAPViewEdit">Editar</System:String>
+    <System:String x:Key="StrAPViewAddAP">Añadir AP</System:String>
+    <System:String x:Key="StrAPViewLista">Lista AP</System:String>
+    <System:String x:Key="StrAPViewTitulo">Administrador de AP</System:String>
+    <System:String x:Key="StrAPViewVisualize">Visualizar</System:String>
+    <System:String x:Key="StrAPViewBack">Atrás</System:String>
+
+
 </ResourceDictionary>
