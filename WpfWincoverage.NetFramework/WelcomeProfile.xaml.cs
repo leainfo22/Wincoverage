@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SQLite;
+using System.Diagnostics;
 using System.IO;
 using System.Timers;
 using System.Windows;
@@ -24,7 +25,7 @@ namespace WpfWincoverage.NetFramework
             dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(timerSession_Tick);
             dispatcherTimer.Interval = new TimeSpan(0, 5, 10);
-            //  dispatcherTimer.Start();
+            //dispatcherTimer.Start();
             this.Resources.MergedDictionaries.Add(MainWindow.dictionary);
             InitializeComponent();
             activeUserMenu.Header = "Usuario: " + UserCurrentModel.name + "  Rol: " + UserCurrentModel.rol;
@@ -49,6 +50,40 @@ namespace WpfWincoverage.NetFramework
             }
 
         }
+
+        public WelcomeProfile(bool isMain)
+        {
+            timerSession = new Timer(10000); // fire every 1 second
+            timerSession.Elapsed += timerSession_Tick;
+            dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(timerSession_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0, 5, 10);
+            //dispatcherTimer.Start();
+            this.Resources.MergedDictionaries.Add(MainWindow.dictionary);
+            InitializeComponent();
+            activeUserMenu.Header = "Usuario: " + UserCurrentModel.name + "  Rol: " + UserCurrentModel.rol;
+
+            if (UserCurrentModel.rol == "Ingeniero")
+            {
+                configMenu.Items.Remove(userMenu);
+
+            }
+            if (UserCurrentModel.rol == "Terreno")
+            {
+                configMenu.Items.Remove(userMenu);
+                configMenu.Items.Remove(CPEMenu);
+                configMenu.Items.Remove(APMenu);
+                configMenu.Items.Remove(GPSMenu);
+                configMenu.Items.Remove(siteMenu);
+                configMenu.Items.Remove(vectorMenu);
+                configMenu.Items.Remove(channelMenu);
+                winMenu.Items.Remove(converMenu);
+                winMenu.Items.Remove(compaMenu);
+
+            }
+
+        }
+
         private void timerSession_Tick(object sender, EventArgs e)
         {
             const string message = "Your session expired.";
@@ -128,7 +163,7 @@ namespace WpfWincoverage.NetFramework
                 button1.Visibility = Visibility.Hidden;
                 button2.Visibility = Visibility.Hidden;
                 button3.Visibility = Visibility.Hidden;
-                Main.Content = new Views.Configuration.Vector.vectorPage(Main);
+                Main.Content = new Views.Configuration.Vector.vectorPage(Main,this.Resources.MergedDictionaries[0].Source);
             }
             catch (Exception es)
             {
@@ -282,13 +317,37 @@ namespace WpfWincoverage.NetFramework
             {
                 Console.WriteLine(ex.Message);
             }
+
+            
+
             this.Resources.MergedDictionaries.Clear();
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.es.xaml", UriKind.Absolute);
             this.Resources.MergedDictionaries.Add(dictionary);
             InitializeComponent();
 
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+            
         }
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            const string message = "Thanks for using Wincoverage.";
+            const string caption = "Attention";
+            var result = MessageBox.Show(message, caption);
+            Process[] runningProcesses = Process.GetProcesses();
+            foreach (Process process in runningProcesses)
+            {
+                if (process.ProcessName.Contains("TcpBinding"))
+                    process.Kill();
+            }
+            Close();
+
+            //userBox.Visibility = Visibility.Visible;
+        }
+
         private void Switch_English_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -306,11 +365,19 @@ namespace WpfWincoverage.NetFramework
             {
                 Console.WriteLine(ex.Message);
             }
+            
+
             this.Resources.MergedDictionaries.Clear();
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.en.xaml", UriKind.Absolute);
             this.Resources.MergedDictionaries.Add(dictionary);
             InitializeComponent();
+
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
+            
 
         }
         private void Switch_Portugues_Click(object sender, RoutedEventArgs e)
@@ -330,11 +397,16 @@ namespace WpfWincoverage.NetFramework
             {
                 Console.WriteLine(ex.Message);
             }
-            this.Resources.MergedDictionaries.Clear();
+            Main.Resources.MergedDictionaries.Clear();
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Source = new Uri(Directory.GetCurrentDirectory() + "\\StringDictionary.po.xaml", UriKind.Absolute);
-            this.Resources.MergedDictionaries.Add(dictionary);
+            Main.Resources.MergedDictionaries.Add(dictionary);
             InitializeComponent();
+
+            var w = Application.Current.Windows;
+            WelcomeProfile welcomeProfile = new WelcomeProfile();
+            welcomeProfile.Show();
+            foreach (Window ww in w) ww.Close();
         }
 
 

@@ -62,7 +62,7 @@ namespace WpfWincoverage.NetFramework
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Login.LoginView(Main, Application.Current.MainWindow);
+            Main.Content = new Login.LoginView(Main, Application.Current.MainWindow,dictionary);
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)

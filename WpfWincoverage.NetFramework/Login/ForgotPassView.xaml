@@ -9,12 +9,12 @@
 
     <Grid>
 
-        <TextBox x:Name="userBox"   HorizontalAlignment="Center" Margin="0,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.476,-0.563" Height="26" TextAlignment="Center" />
+        <TextBox x:Name="userBox"   HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top" Width="168" Height="26" SelectionOpacity="0.8"/>
         <PasswordBox  x:Name="passBox" HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Width="168" Height="26" SelectionOpacity="0.8"/>
-        <Label  x:Name="mensaje"  Content="RESET PASSWORD" HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" FontFamily="Arial Narrow" FontSize="20"/>
-        <Label Content="Email" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top"/>
-        <Label Content="User" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,-0.665"/>
-        <Button Content="Reset" HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.093,0.459" Click="Reset_Click"/>
+        <Label  x:Name="mensaje"  Content="{DynamicResource StrLoginRepeat}" HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" FontFamily="Arial Narrow" FontSize="20"/>
+        <Label Content="{DynamicResource StrLoginUser}" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top"/>
+        <Label Content="{DynamicResource StrLoginEmail}" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,-0.665"/>
+        <Button Content="   OK   " HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.093,0.459" Click="Reset_Click"/>
 
     </Grid>
 </Page>

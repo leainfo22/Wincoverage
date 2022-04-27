@@ -11,10 +11,12 @@ namespace WpfWincoverage.NetFramework.Login
     {
         public Frame MainFrame;
         public bool flag;
-        public ChangePass(Frame Main, bool isForgotPass)
+        public ChangePass(Frame Main, bool isForgotPass,ResourceDictionary dictionary)
         {
             MainFrame = Main;
             flag = isForgotPass;
+            this.Resources.MergedDictionaries.Add(dictionary);
+
             InitializeComponent();
             if (flag)
             {

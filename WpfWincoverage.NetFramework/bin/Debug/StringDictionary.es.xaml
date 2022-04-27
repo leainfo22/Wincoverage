@@ -7,6 +7,20 @@
     <System:String x:Key="StrLogout">Cerrar Sesión</System:String>
     <System:String x:Key="StrExit">Salir</System:String>
 
+    <System:String x:Key="StrWelcomeMsg">Bienvenido</System:String>
+    <System:String x:Key="StrOlvideCon">Olvidé la contraseña</System:String>
+    <System:String x:Key="StrLoginLogin">Login</System:String>
+    <System:String x:Key="StrLoginPass">Contraseña</System:String>
+    <System:String x:Key="StrLoginUser">Usuario</System:String>
+    <System:String x:Key="StrLoginCambiar">Cambiar contraseña</System:String>
+
+    <System:String x:Key="StrLoginTitleChange">Cambiar Contraseña</System:String>
+    <System:String x:Key="StrLoginRepeat">Repita la contraseña</System:String>
+    <System:String x:Key="StrLoginNew">Nueva contraseña</System:String>
+    <System:String x:Key="StrLoginEmail">Email</System:String>
+    <System:String x:Key="StrLoginCurrent">Contraseña actual</System:String>
+
+
     <System:String x:Key="StrConfig">Configuración</System:String>
     <System:String x:Key="StrUser">Mantenedor de usuarios</System:String>
     <System:String x:Key="StrLanguage">Lenguaje</System:String>

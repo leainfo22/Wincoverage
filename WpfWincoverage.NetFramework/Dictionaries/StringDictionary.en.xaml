@@ -7,6 +7,20 @@
     <System:String x:Key="StrLogout">Log out</System:String>
     <System:String x:Key="StrExit">Exit</System:String>
 
+    <System:String x:Key="StrWelcomeMsg">Welcome</System:String>
+    <System:String x:Key="StrOlvideCon">I forgot my password</System:String>
+    <System:String x:Key="StrLoginLogin">Login</System:String>
+    <System:String x:Key="StrLoginPass">Password</System:String>
+    <System:String x:Key="StrLoginUser">User</System:String>
+    <System:String x:Key="StrLoginCambiar">Change password</System:String>
+    <System:String x:Key="StrLoginEmail">Email</System:String>
+    <System:String x:Key="StrLoginCurrent">Current Password</System:String>
+
+
+    <System:String x:Key="StrLoginTitleChange">Change password</System:String>
+    <System:String x:Key="StrLoginRepeat">Repeat Password</System:String>
+    <System:String x:Key="StrLoginNew">New Password</System:String>
+
     <System:String x:Key="StrConfig">Configuration</System:String>
     <System:String x:Key="StrUser">User Management</System:String>
     <System:String x:Key="StrLanguage">Language</System:String>
@@ -22,11 +36,12 @@
     <System:String x:Key="StrVectorManagemet">Vector Management</System:String>
     <System:String x:Key="StrChannelsManagement">Channel Management</System:String>
 
-    <System:String x:Key="StrCoverageMeasure">Coverage Measure Management</System:String>
-    <System:String x:Key="StrLocalProjectConfiguration">Project Configuration</System:String>
+    <System:String x:Key="StrCoverageMeasure">Coverage Measure</System:String>
+    <System:String x:Key="StrLocalProjectConfiguration">Local Project Configuration</System:String>
     <System:String x:Key="StrDataloggerConfiguration">Datalogger Configuration</System:String>
-    <System:String x:Key="StrLocalProjectCapture">Project Capture</System:String>
-    <System:String x:Key="StrDataloggerExport">Datalogger Export</System:String>
+    <System:String x:Key="StrLocalProjectCapture">Local Project Capture</System:String>
+    <System:String x:Key="StrDataloggerExport">Datalogger Extraction
+    </System:String>
 
     <System:String x:Key="StrConversion">Conversion</System:String>
     <System:String x:Key="StrProjecttoKML">Project to KML</System:String>

@@ -12,11 +12,12 @@ namespace WpfWincoverage.NetFramework.Login
         public Frame MainFrame;
         public Window windowHome;
 
-        public LoginView(Frame Main, Window home)
+        public LoginView(Frame Main, Window home,ResourceDictionary dictionary)
         {
             InitializeComponent();
             MainFrame = Main;
             windowHome = home;
+            this.Resources.MergedDictionaries.Add(dictionary);
         }
 
         private void ForgotButton_Click(object sender, RoutedEventArgs e)
@@ -29,8 +30,8 @@ namespace WpfWincoverage.NetFramework.Login
             loginButton.Visibility = Visibility.Hidden;
             forgotButton.Visibility = Visibility.Hidden;
             buttonChange.Visibility = Visibility.Hidden;
-            userBox.Visibility = Visibility.Visible;
-            LoginFrame.Content = new ForgotPassView(MainFrame);
+            userBox.Visibility = Visibility.Hidden;
+            LoginFrame.Content = new ForgotPassView(MainFrame, this.Resources.MergedDictionaries[0]);
         }
 
         private void ButtonChange_Click(object sender, RoutedEventArgs e)
@@ -49,7 +50,7 @@ namespace WpfWincoverage.NetFramework.Login
                 loginButton.Visibility = Visibility.Hidden;
                 forgotButton.Visibility = Visibility.Hidden;
                 buttonChange.Visibility = Visibility.Hidden;
-                //LoginFrame.Content = new ChangePass(MainFrame, true);
+                LoginFrame.Content = new ChangePass(MainFrame, true, this.Resources.MergedDictionaries[0]);
             }
 
         }
@@ -87,7 +88,7 @@ namespace WpfWincoverage.NetFramework.Login
                 //}
 
                 var w = Application.Current.Windows;
-                WelcomeProfile welcomeProfile = new WelcomeProfile();
+                WelcomeProfile welcomeProfile = new WelcomeProfile(true);
                 welcomeProfile.Show();
                 foreach (Window ww in w) ww.Close();
             }

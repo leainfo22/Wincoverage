@@ -21,10 +21,11 @@ namespace WpfWincoverage.NetFramework.Login
     public partial class ForgotPassView : Page
     {
         public Frame MainFrame;
-        public ForgotPassView(Frame Main)
+        public ForgotPassView(Frame Main, ResourceDictionary dictionary)
         {
             MainFrame = Main;
             InitializeComponent();
+            this.Resources.MergedDictionaries.Add(dictionary);
         }
 
         private void Reset_Click(object sender, RoutedEventArgs e)

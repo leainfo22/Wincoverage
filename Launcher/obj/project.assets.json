@@ -8,19 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\": {}
+    "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj",
+      "projectUniqueName": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj",
       "projectName": "Launcher",
-      "projectPath": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\Launcher.csproj",
+      "projectPath": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\Launcher.csproj",
       "packagesPath": "C:\\Users\\Leandro Vasquez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leandro Vasquez\\Source\\Repos\\Wincoverage\\Launcher\\obj\\",
+      "outputPath": "C:\\Users\\Leandro Vasquez\\source\\repos\\Wincoverage\\Launcher\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Leandro Vasquez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

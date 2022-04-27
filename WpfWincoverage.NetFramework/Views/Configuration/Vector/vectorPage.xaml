@@ -24,7 +24,7 @@
         <TextBox x:Name="textBoxXSD" Canvas.Left="103" Canvas.Top="145" Text="" TextWrapping="Wrap" Width="297" Height="22"/>
         <TextBox x:Name="textBoxXML" Canvas.Left="103" Canvas.Top="242" Text="" TextWrapping="Wrap" Width="297" Height="22"/>
         <Button x:Name="buttonXSDbrow" Content="Browse" Canvas.Left="439" Canvas.Top="145" Height="22" Width="59"  Click="buttonImport_Click"/>
-        <Button x:Name="buttonSave" Content="Save" Canvas.Left="523" Canvas.Top="145" Height="22" Width="59"/>
+        <Button x:Name="buttonSave" Content="{DynamicResource StrSpanish}" Canvas.Left="523" Canvas.Top="145" Height="22" Width="59"/>
         <Button x:Name="buttonXMLbrow" Content="Browse" Canvas.Left="439" Canvas.Top="244" Height="22" Width="59"  Click="buttonImport_Click"/>
         <Button x:Name="buttonImport" Content="Import" Canvas.Left="523" Canvas.Top="244" Height="22" Width="59"/>
         <Button x:Name="buttonExport" Content="Export" Canvas.Left="605" Canvas.Top="244" Height="22" Width="59" RenderTransformOrigin="0.545,0.857"/>

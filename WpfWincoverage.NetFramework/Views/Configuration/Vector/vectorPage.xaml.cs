@@ -21,8 +21,11 @@ namespace WpfWincoverage.NetFramework.Views.Configuration.Vector
     /// </summary>
     public partial class vectorPage : Page
     {
-        public vectorPage(Frame MainWin)
+        public vectorPage(Frame MainWin, Uri uri)
         {
+            ResourceDictionary dictionary = new ResourceDictionary();
+            dictionary.Source = uri;
+            this.Resources.MergedDictionaries.Add(dictionary);
             InitializeComponent();
         }
         private void Canvas_SizeChanged(object sender, SizeChangedEventArgs e)

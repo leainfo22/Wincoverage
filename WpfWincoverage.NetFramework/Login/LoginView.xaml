@@ -26,12 +26,12 @@
 
         <TextBox x:Name="userBox"   HorizontalAlignment="Center" Margin="0,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.476,-0.563" Height="26" TextAlignment="Left" />
         <PasswordBox  x:Name="passBox" HorizontalAlignment="Stretch" Margin="0,231,0,0" VerticalAlignment="Top" Width="168" Height="26" SelectionOpacity="0.8"/>
-        <Label  x:Name="mensaje"  Content="MENSAJE DE BIENVENIDA" HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" FontFamily="Arial Narrow" FontSize="20"/>
-        <Button  x:Name="forgotButton" Content="I forgot my password" HorizontalAlignment="Center" Margin="0,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,-0.499" Click="ForgotButton_Click" />
-        <Button  x:Name="loginButton" Content="Login" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Click="LoginButton_Click" />
-        <Label  x:Name="labelPass" Content="Password" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top"/>
-        <Label  x:Name="labelUser" Content="User" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,-0.665"/>
+        <Label  x:Name="mensaje"  Content="{DynamicResource StrWelcomeMsg}" HorizontalAlignment="Center" Margin="0,93,0,0" VerticalAlignment="Top" FontFamily="Arial Narrow" FontSize="20"/>
+        <Button  x:Name="forgotButton" Content="{DynamicResource StrOlvideCon}" HorizontalAlignment="Center" Margin="0,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,-0.499" Click="ForgotButton_Click" />
+        <Button  x:Name="loginButton" Content="{DynamicResource StrLoginLogin}" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Click="LoginButton_Click" />
+        <Label  x:Name="labelPass"  Content="{DynamicResource StrLoginPass}" HorizontalAlignment="Center" Margin="0,205,0,0" VerticalAlignment="Top"/>
+        <Label  x:Name="labelUser" Content="{DynamicResource StrLoginUser}" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.43,-0.665"/>
         <Frame x:Name="LoginFrame" Margin="10,5,10,5" NavigationUIVisibility="Hidden" ></Frame>
-        <Button x:Name="buttonChange" Content="Change password" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Click="ButtonChange_Click"/>
+        <Button x:Name="buttonChange" Content="{DynamicResource StrLoginCambiar}" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Click="ButtonChange_Click"/>
     </Grid>
 </Page>

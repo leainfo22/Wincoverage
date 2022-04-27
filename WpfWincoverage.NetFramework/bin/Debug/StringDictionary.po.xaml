@@ -7,6 +7,21 @@
     <System:String x:Key="StrLogout">Log out</System:String>
     <System:String x:Key="StrExit">Sair</System:String>
 
+    <System:String x:Key="StrWelcomeMsg">Bem-Vindo</System:String>
+    <System:String x:Key="StrOlvideCon">Esqueci a minha senha</System:String>
+    <System:String x:Key="StrLoginLogin">Login</System:String>
+    <System:String x:Key="StrLoginPass">Senha</System:String>
+    <System:String x:Key="StrLoginUser">Usuário</System:String>
+    <System:String x:Key="StrLoginCambiar">Mudar minha senha</System:String>
+
+    <System:String x:Key="StrLoginTitleChange">Mudar senha</System:String>
+    <System:String x:Key="StrLoginRepeat">Repita a senha</System:String>
+    <System:String x:Key="StrLoginNew">Nova senha</System:String>
+    <System:String x:Key="StrLoginEmail">Email</System:String>
+    <System:String x:Key="StrLoginCurrent">Senha atual</System:String>
+
+
+
     <System:String x:Key="StrConfig">Configuração</System:String>
     <System:String x:Key="StrUser">Gerenciamento de usuários</System:String>
     <System:String x:Key="StrLanguage">Linguagem</System:String>
